@@ -29,7 +29,13 @@ body {
 }
 
 header {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   min-height: 100%;
   background-image: url(../img/bgc-header.png);
@@ -63,6 +69,11 @@ header .nav-container .nav-link {
   font-weight: 500;
 }
 header .nav-container .crappo {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: start;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -88,12 +99,12 @@ header .nav-container .register p {
 header .header-content {
   display: grid;
   width: 90%;
-  grid-template-columns: auto repeat(3, 25%);
+  grid-template-columns: 50%;
   margin: 100px 5%;
 }
 header .header-content .friday-info {
-  grid-column: 1/3;
-  padding: 30px 0;
+  grid-column: 1/2;
+  padding: 20px 0;
 }
 header .header-content .friday-info p {
   display: inline;
@@ -113,19 +124,19 @@ header .header-content .friday-info p span {
   margin-right: 15px;
 }
 header .header-content .fastest-platform {
-  grid-column: 1/3;
+  grid-column: 1/2;
   font-size: 64px;
   font-weight: 700;
 }
 header .header-content .buy-info {
-  grid-column: 1/3;
+  grid-column: 1/2;
   padding: 30px 0;
   color: rgba(224, 224, 224, 0.8);
   letter-spacing: 0.01rem;
   line-height: 28px;
 }
 header .header-content .try-button {
-  grid-column: 1/3;
+  grid-column: 1/2;
   display: inline;
   font-style: normal;
   width: 200px;
@@ -157,6 +168,13 @@ header .header-content .try-button .button-container .cirlce {
 }
 
 .first__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   min-height: 865px;
   background-image: url(../img/sec-section.png);
@@ -168,10 +186,6 @@ header .header-content .try-button .button-container .cirlce {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -212,4 +226,17 @@ header .header-content .try-button .button-container .cirlce {
   color: #E0E0E0;
   letter-spacing: 1px;
   font-weight: 500;
+}
+.first__section .first__section--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  row-gap: 3rem;
 }
