@@ -1,0 +1,22 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url(../img/abstraction-3527172_1920.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    width: 1440px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(13, 13, 43);
+    font-family: 'Rubik', sans-serif;
+}

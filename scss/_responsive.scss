@@ -1,0 +1,110 @@
+ @media (min-width: 1440px) {
+            
+    .nav-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        .crappo {
+            grid-column: 1 / 2;
+        }
+
+        .products {
+            grid-column: 3 / 4;
+        }
+
+        .features {
+            grid-column: 4 / 5;
+        }
+
+        .about {            
+            grid-column: 5 / 6;
+        }
+        
+        .contact {
+            grid-column: 6 / 7;
+        }
+
+        .login {
+            grid-column: 7 / 8;
+        }
+
+        .register {
+            grid-column: 8 / 9;
+            grid-row: 1 / 2;
+        }
+    }
+
+    .image-svg {
+        // display: none;
+    
+        .bold--line__left {
+            z-index: -1;
+            position: absolute;
+            // right: 300px;
+            left: 400px;
+            top: 620px;
+        }
+    
+        .bold--line__right {
+            z-index: -1;
+            position: absolute;
+            right: 340px;
+            bottom: 70px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        .crappo {
+            grid-column: 1 / 2;
+        }
+
+        .products {
+            grid-column: 3 / 4;
+        }
+
+        .features {
+            grid-column: 4 / 5;
+        }
+
+        .about {            
+            grid-column: 5 / 6;
+        }
+        
+        .contact {
+            grid-column: 6 / 7;
+        }
+
+        .login {
+            grid-column: 7 / 8;
+        }
+
+        .register {
+            grid-column: 8 / 9;
+            grid-row: 1 / 2;
+        }
+    }
+
+    .image-svg {
+        // display: none;
+    
+        .bold--line__left {
+            z-index: -1;
+            position: absolute;
+            // right: 300px;
+            left: 400px;
+            top: 620px;
+        }
+    
+        .bold--line__right {
+            z-index: -1;
+            position: absolute;
+            right: 340px;
+            bottom: 70px;
+        }
+    }
+}
