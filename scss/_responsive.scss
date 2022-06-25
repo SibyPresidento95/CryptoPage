@@ -1,55 +1,35 @@
  @media (min-width: 1440px) {
             
     .nav-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         
-        .crappo {
-            grid-column: 1 / 2;
-        }
-
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr; 
+        
         .products {
-            grid-column: 3 / 4;
+            grid-column: 7 / 8;
+            
         }
 
         .features {
-            grid-column: 4 / 5;
+            grid-column: 8 / 9;
         }
 
         .about {            
-            grid-column: 5 / 6;
+            grid-column: 9 / 10;
         }
         
         .contact {
-            grid-column: 6 / 7;
+            grid-column: 10 / 11;
         }
 
         .login {
-            grid-column: 7 / 8;
+            grid-column: 11 / 12;
         }
 
         .register {
-            grid-column: 8 / 9;
+            grid-column: 12 / 13;
             grid-row: 1 / 2;
-        }
-    }
-
-    .image-svg {
-        // display: none;
-    
-        .bold--line__left {
-            z-index: -1;
-            position: absolute;
-            // right: 300px;
-            left: 400px;
-            top: 620px;
-        }
-    
-        .bold--line__right {
-            z-index: -1;
-            position: absolute;
-            right: 340px;
-            bottom: 70px;
         }
     }
 }
@@ -58,6 +38,7 @@
     .nav-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         
         .crappo {
             grid-column: 1 / 2;
@@ -86,25 +67,6 @@
         .register {
             grid-column: 8 / 9;
             grid-row: 1 / 2;
-        }
-    }
-
-    .image-svg {
-        // display: none;
-    
-        .bold--line__left {
-            z-index: -1;
-            position: absolute;
-            // right: 300px;
-            left: 400px;
-            top: 620px;
-        }
-    
-        .bold--line__right {
-            z-index: -1;
-            position: absolute;
-            right: 340px;
-            bottom: 70px;
         }
     }
 }
