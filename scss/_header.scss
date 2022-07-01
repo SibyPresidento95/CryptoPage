@@ -1,8 +1,9 @@
 header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: grid;
+    // flex-direction: column;
+    // width: 100%;
     min-height: 100%;
+    // width: 1440px;
     background-image: url(../img/bgc-header.png);
         // background-attachment: fixed;
     background-size: auto;
@@ -15,7 +16,7 @@ header {
         // justify-content: end;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-        grid-template-rows: minmax(80px, 1fr);
+        // grid-template-rows: minmax(80px, 1fr);
         margin-top: 50px;
         // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
         // grid-template-rows: 1fr; 
@@ -95,7 +96,7 @@ header {
     .header__content {
         display: grid;
         width: 90%;
-        grid-template-columns: 50%;
+        // grid-template-columns: 50%;
         margin: 100px 5%;
 
         .header__content--primary {
