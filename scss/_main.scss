@@ -20,4 +20,15 @@ body {
     margin-left: auto;
     background-color: rgb(13, 13, 43);
     font-family: 'Rubik', sans-serif;
+
+    .btn {
+        display: block;
+        font-style: normal;
+        height: 65px;
+        background-color: $button__color;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
 }

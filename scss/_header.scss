@@ -4,22 +4,41 @@ header {
     width: 100%;
     min-height: 100%;
     background-image: url(../img/bgc-header.png);
+        // background-attachment: fixed;
+    background-size: auto;
     margin-left: auto;
     margin-right: auto;
     color: #fff;
 
-    .nav-container {
-        display: flex;
-        justify-content: end;
-        //display: grid;
+    .nav {
+        // display: flex;
+        // justify-content: end;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-template-rows: minmax(80px, 1fr);
+        margin-top: 50px;
         // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
         // grid-template-rows: 1fr; 
-        height: 150px;
+        min-height: 80px;
         margin-left: 5%;
         margin-right: 5%;
+
+        .crappo {
+            justify-content: flex-start;
+            align-content: start;
+
+            grid-column: 1 / 2;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+            .crappo-icon {
+                margin-right: 15px;
+                font-size: 30px;
+            }
+        }
         
-        
-        .nav-link {
+        a.nav-link {
             
             display: flex;
             align-items: center;
@@ -31,39 +50,26 @@ header {
             font-weight: 500;
         }
         
-        .crappo {
-            justify-content: flex-start;
-            align-content: start;
-
-            // grid-column: 1 / 2;
-            text-transform: uppercase;
-            font-weight: 600;
-            letter-spacing: 1px;
-            font-family: 'Montserrat', sans-serif;
-            .icon {
-                margin-right: 15px;
-                font-size: 30px;
-            }
-        }
-        // .products {
-        //     grid-column: 7 / 8;
+        .products {
+            grid-column: 9 / 10;
             
-        // }
+        }
 
-        // .features {
-        //     grid-column: 8 / 9;
-        // }
+        .features {
+            grid-column: 10 / 11;
+        }
 
-        // .about {            
-        //     grid-column: 9 / 10;
-        // }
+        .about {            
+            grid-column: 11 / 12;
+        }
         
-        // .contact {
-        //     grid-column: 10 / 11;
-        // }
+        .contact {
+            grid-column: 12 / 13;
+        }
 
         .login {
-            // grid-column: 11 / 12;
+            grid-column: 13 / 15;
+
             p {
                 border-right: solid rgba($color: #fff, $alpha: .5) 1px;
                 padding-left: 40px;
@@ -75,8 +81,8 @@ header {
         }
 
         .register {
-            // grid-column: 12 / 13;
-            // grid-row: 1 / 2;
+            grid-column: 15 / 17;
+            grid-row: 1 / 2;
             p {
                 background-color: #3671E9;
                 padding: 20px 30px;
@@ -86,13 +92,13 @@ header {
         }
     }
 
-    .header-content {
+    .header__content {
         display: grid;
         width: 90%;
         grid-template-columns: 50%;
         margin: 100px 5%;
 
-        .friday-info {
+        .header__content--primary {
             grid-column: 1 / 2;
             padding: 20px 0;
             p {
@@ -116,13 +122,13 @@ header {
 
         }
 
-        .fastest-platform {
+        .header__content--secondary {
             grid-column: 1 / 2;
             font-size: 64px;
             font-weight: 700;
         }
         
-        .buy-info {
+        .header__content--third {
             grid-column: 1 / 2;
             padding: 30px 0;
             color: rgba($color: #e0e0e0, $alpha: .8);
@@ -130,21 +136,14 @@ header {
             line-height: 28px;
         }
 
-        .try-button {
-            // box-sizing: content-box;
-            
+        .header__content--button {
+            // box-sizing: border-box;
             grid-column: 1 / 2;
-            display: inline;
-            font-style: normal;
             width: 200px;
-            height: 65px;
-            background-color: #3671E9;
-            font-size: 18px;
-            font-weight: 500;
             padding: 15px 20px 20px 25px;
-            border-radius: 50px;
             
-            .button-container {
+            
+            .btn__container {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
@@ -164,7 +163,7 @@ header {
                     }
                 }
     
-                .cirlce {
+                .btn__container--icon {
                     grid-column: 5 / 6;
                 }
             }

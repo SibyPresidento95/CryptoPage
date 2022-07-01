@@ -1,4 +1,4 @@
-.first__section {
+.hero {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -8,7 +8,7 @@
     margin-right: auto;
     color: #fff;
 
-    .first--section__container {
+    .hero__section {
         display: flex;
         // flex-direction: row;
         justify-content: space-evenly;
@@ -17,7 +17,7 @@
         margin-left: auto;
         margin-top: 100px;
         
-        .values {
+        .counter__tile {
             display: flex;
             // justify-content: space-evenly;
 
@@ -27,32 +27,55 @@
                 margin-right: 25px;
             }
 
-            span {
-                display: flex;
-                // flex-direction: column;
-                font-size: 45px;
-                font-weight: 700;
-                margin-bottom: 10px;
-            }
             
             p {
                 display: flex;
                 flex-direction: column;
                 font-family: 'Rubik';
-                color: #E0E0E0;
+                color: $primary;
                 letter-spacing: 1px;
                 font-weight: 500;
                 
+                span {
+                    display: flex;
+                    // flex-direction: column;
+                    font-size: 45px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
             }
         }
     }
 
-    .first__section--text {
+    .hero__section--text {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        // justify-content: flex-end;
+        align-items: end;
         row-gap: 3rem;
         // justify-content: center;
         // align-content: end;
+
+        .why__crappo {
+            p {
+                font-size: 40px;
+                font-weight:600;
+                span {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .crappo__info {
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: $primary;
+        }
+
+        .btn-property {
+            display: flex;
+            // text-align: center;
+            justify-content: center;    
+        }
     }
 }

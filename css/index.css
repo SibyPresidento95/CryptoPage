@@ -21,11 +21,14 @@ body {
   background-color: rgb(13, 13, 43);
   font-family: "Rubik", sans-serif;
 }
-
-:root {
-  --small-font: #E0E0E0;
-  --alpha-font: rgba($color: #fff, $alpha: .9);
-  --button-color: #3671E9;
+body .btn {
+  display: block;
+  font-style: normal;
+  height: 65px;
+  background-color: #3671E9;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 header {
@@ -39,22 +42,37 @@ header {
   width: 100%;
   min-height: 100%;
   background-image: url(../img/bgc-header.png);
+  background-size: auto;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
 }
-header .nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  height: 150px;
+header .nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-rows: minmax(80px, 1fr);
+  margin-top: 50px;
+  min-height: 80px;
   margin-left: 5%;
   margin-right: 5%;
 }
-header .nav-container .nav-link {
+header .nav .crappo {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  grid-column: 1/2;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+header .nav .crappo .crappo-icon {
+  margin-right: 15px;
+  font-size: 30px;
+}
+header .nav a.nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,45 +86,49 @@ header .nav-container .nav-link {
   margin: 0 20px 0 10px;
   font-weight: 500;
 }
-header .nav-container .crappo {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: start;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
+header .nav .products {
+  grid-column: 9/10;
 }
-header .nav-container .crappo .icon {
-  margin-right: 15px;
-  font-size: 30px;
+header .nav .features {
+  grid-column: 10/11;
 }
-header .nav-container .login p {
+header .nav .about {
+  grid-column: 11/12;
+}
+header .nav .contact {
+  grid-column: 12/13;
+}
+header .nav .login {
+  grid-column: 13/15;
+}
+header .nav .login p {
   border-right: solid rgba(255, 255, 255, 0.5) 1px;
   padding-left: 40px;
   padding-right: 30px;
   font-weight: 600;
   font-size: 18px;
 }
-header .nav-container .register p {
+header .nav .register {
+  grid-column: 15/17;
+  grid-row: 1/2;
+}
+header .nav .register p {
   background-color: #3671E9;
   padding: 20px 30px;
   border-radius: 35px;
   font-size: 18px;
 }
-header .header-content {
+header .header__content {
   display: grid;
   width: 90%;
   grid-template-columns: 50%;
   margin: 100px 5%;
 }
-header .header-content .friday-info {
+header .header__content .header__content--primary {
   grid-column: 1/2;
   padding: 20px 0;
 }
-header .header-content .friday-info p {
+header .header__content .header__content--primary p {
   display: inline;
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.8);
@@ -114,7 +136,7 @@ header .header-content .friday-info p {
   border-radius: 20px;
   z-index: -1;
 }
-header .header-content .friday-info p span {
+header .header__content .header__content--primary p span {
   background-color: rgba(255, 255, 255, 0.9);
   color: rgb(56, 56, 56);
   text-transform: uppercase;
@@ -123,35 +145,28 @@ header .header-content .friday-info p span {
   border-radius: 20px;
   margin-right: 15px;
 }
-header .header-content .fastest-platform {
+header .header__content .header__content--secondary {
   grid-column: 1/2;
   font-size: 64px;
   font-weight: 700;
 }
-header .header-content .buy-info {
+header .header__content .header__content--third {
   grid-column: 1/2;
   padding: 30px 0;
   color: rgba(224, 224, 224, 0.8);
   letter-spacing: 0.01rem;
   line-height: 28px;
 }
-header .header-content .try-button {
+header .header__content .header__content--button {
   grid-column: 1/2;
-  display: inline;
-  font-style: normal;
   width: 200px;
-  height: 65px;
-  background-color: #3671E9;
-  font-size: 18px;
-  font-weight: 500;
   padding: 15px 20px 20px 25px;
-  border-radius: 50px;
 }
-header .header-content .try-button .button-container {
+header .header__content .header__content--button .btn__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-header .header-content .try-button .button-container a {
+header .header__content .header__content--button .btn__container a {
   display: grid;
   grid-column: 1/5;
   text-decoration: none;
@@ -160,14 +175,14 @@ header .header-content .try-button .button-container a {
       -ms-flex-align: center;
           align-items: center;
 }
-header .header-content .try-button .button-container a p span {
+header .header__content .header__content--button .btn__container a p span {
   text-transform: uppercase;
 }
-header .header-content .try-button .button-container .cirlce {
+header .header__content .header__content--button .btn__container .btn__container--icon {
   grid-column: 5/6;
 }
 
-.first__section {
+.hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +197,7 @@ header .header-content .try-button .button-container .cirlce {
   margin-right: auto;
   color: #fff;
 }
-.first__section .first--section__container {
+.hero .hero__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,27 +209,19 @@ header .header-content .try-button .button-container .cirlce {
   margin-left: auto;
   margin-top: 100px;
 }
-.first__section .first--section__container .values {
+.hero .hero__section .counter__tile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.first__section .first--section__container .values img {
+.hero .hero__section .counter__tile img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 80px;
   margin-right: 25px;
 }
-.first__section .first--section__container .values span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 45px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.first__section .first--section__container .values p {
+.hero .hero__section .counter__tile p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,7 +234,15 @@ header .header-content .try-button .button-container .cirlce {
   letter-spacing: 1px;
   font-weight: 500;
 }
-.first__section .first__section--text {
+.hero .hero__section .counter__tile p span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.hero .hero__section--text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,8 +250,28 @@ header .header-content .try-button .button-container .cirlce {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   row-gap: 3rem;
+}
+.hero .hero__section--text .why__crappo p {
+  font-size: 40px;
+  font-weight: 600;
+}
+.hero .hero__section--text .why__crappo p span {
+  text-transform: uppercase;
+}
+.hero .hero__section--text .crappo__info {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #E0E0E0;
+}
+.hero .hero__section--text .btn-property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

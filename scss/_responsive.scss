@@ -1,73 +1,74 @@
- @media (min-width: 1440px) {
+ @media (min-width: 600px) {
     
-        .nav-container {
-            
+    body {
+        .nav {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-            grid-template-rows: 1fr; 
+            grid-template-columns: repeat(8, 1fr);
             
-            .products {
-                grid-column: 7 / 8;
+            // .products {
+            //     grid-column: 7 / 8;
                 
-            }
+            // }
 
-            .features {
-                grid-column: 8 / 9;
-            }
+            // .features {
+            //     grid-column: 8 / 9;
+            // }
 
-            .about {            
-                grid-column: 9 / 10;
-            }
+            // .about {            
+            //     grid-column: 9 / 10;
+            // }
             
-            .contact {
-                grid-column: 10 / 11;
-            }
+            // .contact {
+            //     grid-column: 10 / 11;
+            // }
 
-            .login {
-                grid-column: 11 / 12;
-            }
+            // .login {
+            //     grid-column: 11 / 12;
+            // }
 
-            .register {
-                grid-column: 12 / 13;
-                grid-row: 1 / 2;
-            }
-        }
-            
-}
-
-@media (min-width: 1200px) {
-    .nav-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        
-        .crappo {
-            grid-column: 1 / 2;
+            // .register {
+            //     grid-column: 12 / 13;
+            //     // grid-row: 1 / 2;
+            // }
         }
 
-        .products {
-            grid-column: 3 / 4;
-        }
-
-        .features {
-            grid-column: 4 / 5;
-        }
-
-        .about {            
-            grid-column: 5 / 6;
-        }
-        
-        .contact {
-            grid-column: 6 / 7;
-        }
-
-        .login {
-            grid-column: 7 / 8;
-        }
-
-        .register {
-            grid-column: 8 / 9;
-            grid-row: 1 / 2;
-        }
     }
+            
 }
+
+// @media (min-width: 1200px) {
+//     .nav-container {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+//         grid-template-rows: 1fr;
+        
+//         .crappo {
+//             grid-column: 1 / 2;
+//         }
+
+//         .products {
+//             grid-column: 3 / 4;
+//         }
+
+//         .features {
+//             grid-column: 4 / 5;
+//         }
+
+//         .about {            
+//             grid-column: 5 / 6;
+//         }
+        
+//         .contact {
+//             grid-column: 6 / 7;
+//         }
+
+//         .login {
+//             grid-column: 7 / 8;
+//         }
+
+//         .register {
+//             grid-column: 8 / 9;
+//             grid-row: 1 / 2;
+//         }
+//     }
+// }
