@@ -8,7 +8,7 @@
     margin-right: auto;
     color: #fff;
 
-    .hero__section {
+    .hero__primary {
         display: flex;
         // flex-direction: row;
         justify-content: space-evenly;
@@ -47,14 +47,17 @@
         }
     }
 
-    .hero__section--text {
-        display: flex;
-        flex-direction: column;
-        // justify-content: flex-end;
-        align-items: end;
-        row-gap: 3rem;
-        // justify-content: center;
-        // align-content: end;
+    .hero__secondary {
+        display: grid;
+        margin: 200px 5%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 25px;
+
+        .secondary {
+            grid-column: 3 / 5;
+            margin-left: 100px;
+        }
 
         .why__crappo {
             p {
@@ -72,10 +75,11 @@
             color: $primary;
         }
 
-        .btn-property {
+        .btn__property {
             display: flex;
-            // text-align: center;
-            justify-content: center;    
+            width: 140px;
+            justify-content: center;
+            align-items: center;   
         }
     }
 }
