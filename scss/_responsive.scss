@@ -50,56 +50,51 @@
 
 @media (max-width: 992px) {
     
-    body {
-        width: 992px;
         header {
             display: grid;
             background-image: url(../img/bgc-header3.png);
             // width: 992px;
             background-size: contain;
             .nav {
-                grid-template-columns: repeat(1, 1fr);
+                
+                // grid-template-columns: repeat(1, 1fr);
 
-                // .crappo {
-                //     display: none;
-                // }
+                // // .crappo {
+                // //     display: none;
+                // // }
                 
                 .products {
-                    grid-column: 2 / 3;
+                    display: none;
                 }
                 
                 .features {
-                    grid-column: 3 / 4;
+                    display: none;
                 }
                 
                 .about {            
-                    grid-column: 3 / 4;
+                    display: none;
                 }
                 
                 .contact {
-                    grid-column: 3 / 4;
+                    display: none;
                 }
                 
                 .login {
-                    grid-column: 4 / 5;
+                    display: none;
                 }
                     
                 .register {
-                    grid-column: 5 / 6;
+                    display: none;
                 }
             }
             
         }
 
-    }
             
 }
 
     
     @media (max-width: 1150px) {
-
-        body {
-            width: 1150px;
 
             header {
                 // grid-template-columns: repeat(20%, 1fr);
@@ -145,7 +140,6 @@
                 }
                 
             }
-        }
     }
 
     @media (max-width: 1350px) {

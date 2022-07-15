@@ -265,66 +265,57 @@ header .header__content .header__content--button .btn__container .btn__container
 }
 
 @media (max-width: 992px) {
-  body {
-    width: 992px;
-  }
-  body header {
+  header {
     display: grid;
     background-image: url(../img/bgc-header3.png);
     background-size: contain;
   }
-  body header .nav {
-    grid-template-columns: repeat(1, 1fr);
+  header .nav .products {
+    display: none;
   }
-  body header .nav .products {
-    grid-column: 2/3;
+  header .nav .features {
+    display: none;
   }
-  body header .nav .features {
-    grid-column: 3/4;
+  header .nav .about {
+    display: none;
   }
-  body header .nav .about {
-    grid-column: 3/4;
+  header .nav .contact {
+    display: none;
   }
-  body header .nav .contact {
-    grid-column: 3/4;
+  header .nav .login {
+    display: none;
   }
-  body header .nav .login {
-    grid-column: 4/5;
-  }
-  body header .nav .register {
-    grid-column: 5/6;
+  header .nav .register {
+    display: none;
   }
 }
 @media (max-width: 1150px) {
-  body {
-    width: 1150px;
-  }
-  body header {
+  header {
     background-image: url(../img/bgc-header2.png);
   }
-  body header .nav .products {
+  header .nav .products {
     grid-column: 5/6;
   }
-  body header .nav .features {
+  header .nav .features {
     grid-column: 6/7;
   }
-  body header .nav .about {
+  header .nav .about {
     grid-column: 7/8;
   }
-  body header .nav .contact {
+  header .nav .contact {
     grid-column: 8/9;
   }
-  body header .nav .login {
+  header .nav .login {
     grid-column: 9/10;
   }
-  body header .nav .login p {
+  header .nav .login p {
     padding-right: 20px;
   }
-  body header .nav .register {
+  header .nav .register {
     grid-column: 10/11;
     padding-left: 50px;
   }
-  body header .header__content .header__content--secondary {
+  header .header__content .header__content--secondary {
     font-size: 44px;
   }
 }
