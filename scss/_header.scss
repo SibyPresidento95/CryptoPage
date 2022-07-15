@@ -3,7 +3,7 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     // min-height: 100%;
     background-image: url(../img/bgc-header.png);
-    background-size: auto;
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
     color: #fff;
@@ -18,8 +18,8 @@ header {
         margin-right: 5%;
 
         .crappo {
-            justify-content: flex-start;
-            align-content: start;
+            // justify-content: flex-start;
+            // align-content: start;
 
             grid-column: 1 / 2;
             text-transform: uppercase;

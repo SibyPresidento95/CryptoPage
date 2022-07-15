@@ -48,98 +48,115 @@
 
 
 
-// @media (min-width: 900px) {
+@media (max-width: 992px) {
     
-//     body {
-//         width: 900px;
-//         header {
-//             background-image: url(../img/bgc-header3.png);
-//             width: 900px;
-
-//             display: grid;
-//             .nav {
-//                 grid-template-columns: repeat(4, 1fr);
-                
-//                 // .products {
-//                     //     grid-column: 7 / 8;
-                    
-//                 // }
-                
-//                 // .features {
-//                     //     grid-column: 8 / 9;
-//                 // }
-                
-//                 // .about {            
-//                     //     grid-column: 9 / 10;
-//                 // }
-                
-//                 // .contact {
-//                 //     grid-column: 10 / 11;
-//                 // }
-                
-//                 // .login {
-//                     //     grid-column: 11 / 12;
-//                     // }
-                    
-//                     // .register {
-//                         //     grid-column: 12 / 13;
-//                 //     // grid-row: 1 / 2;
-//                 // }
-//             }
-            
-//         }
-
-//     }
-            
-// }
-
-// @media (min-width: 1200px) {
-//     .nav-container {
-//         display: grid;
-//         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-//         grid-template-rows: 1fr;
-        
-//         .crappo {
-//             grid-column: 1 / 2;
-//         }
-
-//         .products {
-    //             grid-column: 3 / 4;
-    //         }
-    
-    //         .features {
-        //             grid-column: 4 / 5;
-        //         }
-
-//         .about {            
-//             grid-column: 5 / 6;
-//         }
-
-//         .contact {
-    //             grid-column: 6 / 7;
-    //         }
-    
-    //         .login {
-        //             grid-column: 7 / 8;
-//         }
-
-//         .register {
-    //             grid-column: 8 / 9;
-    //             grid-row: 1 / 2;
-    //         }
-    //     }
-    // }
-    
-    @media (max-width: 1200px) {
-
+    body {
+        width: 992px;
         header {
             display: grid;
-            grid-template-columns: repeat(20%, 1fr);
-            background-image: url(../img/bgc-header2.png);
+            background-image: url(../img/bgc-header3.png);
+            // width: 992px;
+            background-size: contain;
+            .nav {
+                grid-template-columns: repeat(1, 1fr);
+
+                // .crappo {
+                //     display: none;
+                // }
+                
+                .products {
+                    grid-column: 2 / 3;
+                }
+                
+                .features {
+                    grid-column: 3 / 4;
+                }
+                
+                .about {            
+                    grid-column: 3 / 4;
+                }
+                
+                .contact {
+                    grid-column: 3 / 4;
+                }
+                
+                .login {
+                    grid-column: 4 / 5;
+                }
+                    
+                .register {
+                    grid-column: 5 / 6;
+                }
+            }
+            
+        }
+
+    }
+            
+}
+
+    
+    @media (max-width: 1150px) {
+
+        body {
+            width: 1150px;
+
+            header {
+                // grid-template-columns: repeat(20%, 1fr);
+                background-image: url(../img/bgc-header2.png);
+                
+                .nav {
+                    // grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    
+                    .products {
+                        grid-column: 5 / 6;
+                    }
+                    
+                    .features {
+                        grid-column: 6 / 7;
+                    }
+                
+                    .about {            
+                        grid-column: 7 / 8;
+                    }
+                    
+                    .contact {
+                        grid-column: 8 / 9;
+                    }
+                    
+                    .login {
+                        grid-column: 9 / 10;
+                        
+                        p {
+                            padding-right: 20px;
+                        }
+                    }
+        
+                    .register {
+                        grid-column: 10 / 11;
+                        padding-left: 50px;
+                    }
+                }
+    
+                .header__content {
+                    .header__content--secondary {
+                        font-size: 44px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    @media (max-width: 1350px) {
+
+        header {
+            // grid-template-columns: repeat(20%, 1fr);
+            background-image: url(../img/bgc-header4.png);
             
             .nav {
                 grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-                
+
                 .products {
                     grid-column: 7 / 8;
                 
@@ -179,3 +196,53 @@
             
         }
     }
+
+    // @media (max-width: 1440px) {
+
+    //     header {
+    //         display: grid;
+    //         grid-template-columns: repeat(20%, 1fr);
+    //         background-image: url(../img/bgc-header.png);
+            
+    //         .nav {
+    //             grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+
+    //             .products {
+    //                 grid-column: 7 / 8;
+                
+    //             }
+                
+    //             .features {
+    //                 grid-column: 8 / 9;
+    //             }
+            
+    //             .about {            
+    //                 grid-column: 9 / 10;
+    //             }
+                
+    //             .contact {
+    //                 grid-column: 10 / 11;
+    //             }
+                
+    //             .login {
+    //                 grid-column: 11 / 12;
+                    
+    //                 p {
+    //                     padding-right: 20px;
+    //                 }
+    //             }
+    
+    //             .register {
+    //                 grid-column: 12 / 13;
+    //                 padding-left: 50px;
+    //             }
+    //         }
+
+    //         // .header__content {
+    //         //     .header__content--secondary {
+    //         //         font-size: 44px;
+    //         //     }
+    //         // }
+            
+    //     }
+    // }
