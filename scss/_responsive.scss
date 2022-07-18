@@ -1,3 +1,60 @@
+@media (max-width: 600px) {
+    header {
+        .menu {
+            background-color: #111;
+            position: fixed;
+            min-height: 90px;
+            .hamburger {
+                top: -10px;
+                z-index: 2;
+            }
+            .logo {
+                // position: fixed;
+                .crappo {
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+    }
+    .hero {
+        .content {
+            .content_primary {
+                p {
+                    display: block;
+                    min-width: 200px;
+                    line-height: 28px;
+                }
+            }
+            .content_secondary {
+                font-size: 34px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .hero {
+        .content {
+            .content_primary {
+                max-width: 370px;
+                
+            }
+            .hero_content {
+                margin-right: auto;
+                margin-left: auto;
+                grid-column: 1 / 3;
+            }
+            .crypto_icon {
+                display: none;
+            }   
+        }
+    }
+}
+
 @media (max-width: 991px) {
     
     header {
@@ -8,24 +65,65 @@
             right: 10px;
         }
         
-        .nav {    
-            display: none !important;
+        nav {    
+            display: none;
         }
         
     }
-}
-    
-// @media (max-width: 1150px) {
-//         // header {
 
-            
-//         //     // .nav {
-                
-                
-//         //     // }
-            
-//         // }
-// }
+    .hero {
+        .content {
+            .content_primary {
+                p {
+                    display: block;
+                    min-width: 200px;
+                    line-height: 28px;
+                }
+            }
+            .content_secondary {
+                font-size: 40px;
+            }
+        }
+        .crypto_icon {
+            height: 330px;
+        }
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1150px) {
+    .hero {
+        .content {
+            .content_secondary {
+                font-size: 44px;
+            }
+        }
+        .crypto_icon {
+            height: 430px;
+        }
+    }
+}
+
+@media (min-width: 1150px) and (max-width: 1440px) {
+    .hero {
+        .content {
+            .content_secondary {
+                font-size: 52px;
+            }
+        }
+        .crypto_icon {
+            height: 550px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        .crypto_icon {
+            position: relative;
+            right: -110px;
+        }
+    }
+}
 
 // @media (max-width: 1350px) {
 
