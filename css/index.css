@@ -108,8 +108,8 @@ header .menu .hamburger:hover span {
 }
 header .menu .hamburger span {
   display: block;
-  border-top: 4px #E8A96F solid;
-  border-bottom: 4px #E8A96F solid;
+  border-top: 4px #2ad4cc solid;
+  border-bottom: 4px #2ad4cc solid;
   -webkit-box-shadow: 1px 1px 1px;
           box-shadow: 1px 1px 1px;
   border-radius: 10px;
