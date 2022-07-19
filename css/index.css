@@ -248,6 +248,8 @@ header nav ul li .register p {
   text-transform: uppercase;
 }
 .hero .content .crypto_icon {
+  position: fixed;
+  right: 5%;
   grid-column: 2/3;
   grid-row: 1/5;
 }
@@ -328,11 +330,5 @@ header nav ul li .register p {
   }
   .hero .crypto_icon {
     height: 550px;
-  }
-}
-@media (min-width: 1440px) {
-  .hero .crypto_icon {
-    position: relative;
-    right: -110px;
   }
 }

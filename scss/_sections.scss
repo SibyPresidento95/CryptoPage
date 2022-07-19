@@ -75,7 +75,8 @@
             }   
         }
         .crypto_icon {
-
+            position: fixed;
+            right: 5%;
 
             grid-column: 2 / 3;
             grid-row: 1 / 5;
