@@ -248,7 +248,7 @@ header nav ul li .register p {
   text-transform: uppercase;
 }
 .hero .content .crypto_icon {
-  position: fixed;
+  position: absolute;
   right: 5%;
   grid-column: 2/3;
   grid-row: 1/5;
