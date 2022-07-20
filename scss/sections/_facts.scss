@@ -1,0 +1,21 @@
+.facts {
+    height: 500px;
+    background-image: url('../img/background/section-experience-XL.png');
+    color: $primary;
+    .experience {
+        display: flex;
+        justify-content: space-around;
+        .data {
+            display: flex;
+            p {
+                min-width: 210px;
+                padding-left: 25px;
+                color: $greycolor;
+                span {
+                    font-size: 40px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

@@ -254,9 +254,31 @@ header nav ul li .register p {
   grid-row: 1/5;
 }
 
-.experience {
-  height: 1500px;
+.facts {
+  height: 500px;
   background-image: url("../img/background/section-experience-XL.png");
+  color: #E0E0E0;
+}
+.facts .experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.facts .experience .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.facts .experience .data p {
+  min-width: 210px;
+  padding-left: 25px;
+  color: #c2c2c2;
+}
+.facts .experience .data p span {
+  font-size: 40px;
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {
