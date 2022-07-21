@@ -1,5 +1,5 @@
 .facts {
-    height: 500px;
+    min-height: 700px;
     background-image: url('../img/background/section-experience-XL.png');
     color: $primary;
     .experience {
@@ -15,6 +15,43 @@
                     font-size: 40px;
                     font-weight: 600;
                 }
+            }
+        }
+    }
+    .facts_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 0.8fr 1.4fr;
+        // margin: 50px 5%;
+        img {
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+            position: relative;
+            top: -100px;
+        }
+        .spanch_bob {
+            grid-column: 2 / 3;
+            margin-left: 15%;
+        }
+        .facts_question {
+            font-size: 50px;
+            font-weight: 600;
+        }
+        .facts_text {
+            display: flex;
+            align-items: center;
+            color: rgba($color: #e0e0e0, $alpha: .8);
+        }
+        .facts_learn {
+            width: 140px;
+            height: 60px;
+            background-color: $button__color;
+            border: none;
+            border-radius: 30px;
+            p {
+                font-size: 18px;
+                color: $primary;
+                font-weight: 500;
             }
         }
     }
