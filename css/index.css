@@ -322,6 +322,55 @@ header nav ul li .register p {
   font-weight: 500;
 }
 
+.trade {
+  background-color: rgb(245, 245, 245);
+  height: 1480px;
+  color: #E0E0E0;
+}
+.trade .primary_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url("../../img/background/section-trade-XL.png");
+  height: 450px;
+  margin: 100px 0;
+}
+.trade .primary_header p {
+  font-size: 40px;
+  font-weight: 600;
+}
+.trade .primary_header span {
+  margin-top: 40px;
+  color: #c2c2c2;
+}
+.trade .calculator {
+  position: relative;
+  bottom: 240px;
+  margin: 0 auto;
+  height: 350px;
+  width: 70vw;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.trade .secondary_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 100px 0;
+}
+
 @media (max-width: 600px) {
   header .menu {
     background-color: #111;
@@ -392,6 +441,9 @@ header nav ul li .register p {
   }
 }
 @media (max-width: 767px) {
+  .hero .content {
+    text-align: center;
+  }
   .hero .content .content_primary {
     max-width: 370px;
   }
