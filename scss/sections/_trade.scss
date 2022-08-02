@@ -25,13 +25,46 @@
         bottom: 140px;
         margin: 0 auto;
         height: 350px;
-        width: 70vw;
+        width: 70%;
         background-color: #fff;
+        color: #303030;
         border-radius: 20px;
         .calculator_in {
-            .text_in {
-                background-color: #333;
+            display: flex;
+            flex-direction: row;
+            padding-top: 30px;
+            font-size: 20px;
+            input {
+                margin: 30px 12%;
+                height: 2rem;
+                font-size: 18px;
+                border-top-style: none;
+                border-left-style: none;
+                border-right-style: none;
+                outline: none;
             }
+        }
+        input:valid ~ .input_text,
+        input:focus ~ .input_text {
+            opacity: 0;
+        }
+        .input_text {
+            position: relative;
+            bottom: 60px;
+            margin: 0 12%;
+            transition: 0.5s;
+        }
+        .left_in {
+            width: 50%;
+            .text_in {
+                width: 80%;
+            }
+        }
+        button {
+            margin: 5px 5% 5px 10%;
+            border: none;
+            color: $primary;
+            width: 140px;
         }
     }
     .secondary_header {
@@ -41,3 +74,49 @@
         }
     }
 }
+
+// .left_in {
+            //     width: 50%;
+            //     .text_in {
+            //         width: 80%;
+            //     }
+            //     .input_text {
+            //         color: $primary;
+            //         position: absolute;
+            //         top: 65px;
+            //         left: 30px;
+            //         transition: 0.5s;
+            //     }
+            // }
+            // input:valid ~ span,
+            // input:focus ~ span {
+            //     opacity: 0;
+            //     font-size: 12px;
+            // }
+            // .right_in {
+            //     position: absolute;
+            //     right: 25%;
+            //     width: 30%;
+            //     .type_of_currency {
+            //         width: 90%;
+            //     }
+            //     .ths {
+            //         position: relative;
+            //         bottom: 60px;
+            //         left: 30px;
+            //         transition-delay: opacity 0.3s;
+            //     }
+            //     img {
+            //         position: relative;
+            //         bottom: 60px;
+            //         left: 240px;
+            //         cursor: pointer;
+            //     }
+            //     .type_of_currency:focus ~ img {
+            //         left: 249px;
+            //     }
+        // drugi sposób to użycie grid w klasie right_in
+
+            // }
+        // }
+           // }

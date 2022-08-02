@@ -355,12 +355,53 @@ header nav ul li .register p {
   bottom: 140px;
   margin: 0 auto;
   height: 350px;
-  width: 70vw;
+  width: 70%;
   background-color: #fff;
+  color: #303030;
   border-radius: 20px;
 }
-.trade .calculator .calculator_in .text_in {
-  background-color: #333;
+.trade .calculator .calculator_in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 30px;
+  font-size: 20px;
+}
+.trade .calculator .calculator_in input {
+  margin: 30px 12%;
+  height: 2rem;
+  font-size: 18px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  outline: none;
+}
+.trade .calculator input:valid ~ .input_text,
+.trade .calculator input:focus ~ .input_text {
+  opacity: 0;
+}
+.trade .calculator .input_text {
+  position: relative;
+  bottom: 60px;
+  margin: 0 12%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.trade .calculator .left_in {
+  width: 50%;
+}
+.trade .calculator .left_in .text_in {
+  width: 80%;
+}
+.trade .calculator button {
+  margin: 5px 5% 5px 10%;
+  border: none;
+  color: #E0E0E0;
+  width: 140px;
 }
 .trade .secondary_header {
   -webkit-box-pack: center;
