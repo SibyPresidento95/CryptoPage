@@ -372,7 +372,7 @@ header nav ul li .register p {
   font-size: 20px;
 }
 .trade .calculator .calculator_in input {
-  margin: 30px 12%;
+  margin: 30px 10%;
   height: 2rem;
   font-size: 18px;
   border-top-style: none;
@@ -387,7 +387,7 @@ header nav ul li .register p {
 .trade .calculator .input_text {
   position: relative;
   bottom: 60px;
-  margin: 0 12%;
+  margin: 0 10%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -395,10 +395,25 @@ header nav ul li .register p {
   width: 50%;
 }
 .trade .calculator .left_in .text_in {
-  width: 80%;
+  width: 90%;
+}
+.trade .calculator .right_in {
+  width: 30%;
+}
+.trade .calculator .right_in .type_of_currency {
+  width: 85%;
+  margin-left: 15%;
+}
+.trade .calculator .right_in .ths {
+  margin-left: 15%;
+}
+.trade .calculator .right_in img {
+  position: relative;
+  bottom: 60px;
+  left: 150px;
 }
 .trade .calculator button {
-  margin: 5px 5% 5px 10%;
+  margin: 5px 5% 5px 5%;
   border: none;
   color: #E0E0E0;
   width: 140px;
@@ -617,6 +632,11 @@ header nav ul li .register p {
   }
   .facts .facts_info .facts_question {
     font-size: 44px;
+  }
+}
+@media (min-width: 1440px) {
+  .trade .calculator {
+    width: 1005px;
   }
 }
 @media (min-width: 1150px) and (max-width: 1440px) {

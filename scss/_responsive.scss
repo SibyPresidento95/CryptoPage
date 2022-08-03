@@ -218,6 +218,14 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .trade {
+        .calculator {
+            width: 1005px;
+        }
+    }
+}
+
 
 @media (min-width: 1150px) and (max-width: 1440px) {
     .hero {
