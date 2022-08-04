@@ -20,12 +20,12 @@
             color: $greycolor;
         }
     }
-    .calculator {
+    .calculator_container {
         position: relative;
         bottom: 140px;
         margin: 0 auto;
         height: 350px;
-        width: 70%;
+        width: 1005px;
         background-color: #fff;
         color: #303030;
         border-radius: 20px;
@@ -43,43 +43,45 @@
                 border-right-style: none;
                 outline: none;
             }
-        }
-        input:valid ~ .input_text,
-        input:focus ~ .input_text {
-            opacity: 0;
-        }
-        .input_text {
-            position: relative;
-            bottom: 60px;
-            margin: 0 10%;
-            transition: 0.5s;
-        }
-        .left_in {
-            width: 50%;
-            .text_in {
-                width: 90%;
+            input:valid ~ .input_text,
+            input:focus ~ .input_text {
+                opacity: 0;
             }
-        }
-        .right_in {
-            width: 30%;
-            .type_of_currency {
-                width: 85%;
-                margin-left: 15%;
-            }
-            .ths {
-                margin-left: 15%;
-            }
-            img {
+            .input_text {
                 position: relative;
                 bottom: 60px;
-                left: 150px;
+                margin: 0 10%;
+                transition: 0.5s;
             }
-        }
-        button {
-            margin: 5px 5% 5px 5%;
-            border: none;
-            color: $primary;
-            width: 140px;
+            .left_input {
+                width: 50%;
+                .text_in {
+                    width: 90%;
+                }
+            }
+            .right_input {
+                width: 30%;
+                .type_of_currency {
+                    width: 85%;
+                    margin-left: 15%;
+                }
+                .ths {
+                    margin-left: 15%;
+                }
+                img {
+                    position: relative;
+                    bottom: 60px;
+                    left: 150px;
+                    cursor: pointer;
+                }
+            }
+            button {
+                margin: 5px 5% 5px 5%;
+                border: none;
+                color: $primary;
+                width: 140px;
+                cursor: pointer;
+            }
         }
     }
     .secondary_header {

@@ -69,6 +69,26 @@
             }
         }
     }
+    .trade {
+        .calculator_container {
+            min-height: 400px;
+            width: 350px;
+            .calculator_in {
+                display: flex;
+                flex-direction: column;
+                button {
+                    position: relative;
+                    left: 60%;
+                    bottom: 150px;
+                }
+                .right_input {
+                    img {
+                        left: 55px;
+                    }
+                }
+            } 
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -118,6 +138,27 @@
             .facts_question {
                 font-size: 36px;
             }
+        }
+    }
+    .trade {
+        .calculator_container {
+            min-height: 400px;
+            width: 550px;
+            .calculator_in {
+                display: flex;
+                flex-direction: column;
+                .right_input {
+                    width: 27%;
+                    img {
+                        left: 80px;
+                    }
+                }
+                button {
+                    position: relative;
+                    left: 60%;
+                    bottom: 150px;
+                }
+            } 
         }
     }
 }
@@ -184,6 +225,19 @@
             }
         }
     }
+    .trade {
+        .calculator_container {
+            width: 650px;
+            .calculator_in {
+                .right_input {
+                    img {
+                        left: 65px;
+                    }
+    
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 991px) and (max-width: 1150px) {
@@ -203,7 +257,6 @@
         }
         .facts_info {
             margin-top: 100px;
-
             img {
                 margin-top: 100px;
                 height: 300px;
@@ -216,12 +269,17 @@
             }
         }
     }
-}
-
-@media (min-width: 1440px) {
     .trade {
-        .calculator {
-            width: 1005px;
+        .calculator_container {
+            width: 650px;
+            .calculator_in {
+                .right_input {
+                    img {
+                        left: 60px;
+                    }
+    
+                }
+            }
         }
     }
 }
@@ -245,6 +303,19 @@
             }
             .facts_question {
                 font-size: 44px;
+            }
+        }
+    }
+    .trade {
+        .calculator_container {
+            width: 850px;
+            .calculator_in {
+                .right_input {
+                    img {
+                        left: 110px;
+                    }
+    
+                }
             }
         }
     }
