@@ -47,7 +47,7 @@
             display: grid;
             height: 100%;
             grid-template-columns: 1fr 1fr 1.2fr 0.8fr;
-            grid-template-rows: 1.8fr 0.6fr 1.6fr;
+            grid-template-rows: 1.8fr 0.4fr 1.8fr;
             .input_text {
                 position: absolute;
                 transition: 0.5s;
@@ -98,26 +98,46 @@
                     margin-bottom: 15px;
                 }
             }
-            #result {
+            .result {
                 display: grid;
-                grid-column: 1 / 3;
+                grid-column: 1 / 5;
                 grid-row: 3 / 4;
-                width: 80%;
-                margin: 0 10%;
-                line-height: 1.8fr;
-                // border-bottom-style: none;
+                .hour_revenue {
+                    color: $button__color;
+                    font-weight: 500;
+                    margin-left: 5%;
+                    font-size: 16px;
+                }
+                #result {
+                    width: 42%;
+                    margin: 2% 5% 2% 5%;
+                    font-size: 32px;
+                }
+                .mining_difficulty {
+                    opacity: 0.5;
+                    font-size: 16px;
+                    margin-left: 5%;
+                    margin-bottom: 5%;
+
+                }
             }
         }
         select {
             display: none;
         }
     }
+    .secondary_header {
+    justify-content: center;
+    p {
+        color: black;
+    }
+}
     .products {
         color: black;
         display: flex;
         margin: 0 auto;
         justify-content: space-evenly;
-        padding: 10% 0 0 0;
+        padding: 5% 0 0 0;
         .crypto_box {
             display: flex;
             text-align: center;
@@ -126,12 +146,14 @@
             align-items: center;
             background-color: #fff;
             border-radius: 20px;
-            height: 430px;
             width: 28%;
+            max-width: 370px;
+            max-height: 430px;
             .crypto_icons {
                 position: relative;
                 bottom: 20px;
                 padding: 10px;
+                margin-top: 50px;
             }
             .crypto_shortcut {
                 font-size: 30px;
@@ -147,6 +169,9 @@
                 padding-bottom: 30px;
                 line-height: 30px;
             }
+            .crypto_arrows {
+                margin-bottom: 50px;
+            }
         }
         .bitcoin {
             background-color: #2b076e;
@@ -158,6 +183,7 @@
                 width: 200px;
                 border: none;
                 color: $primary;
+                margin-bottom: 50px;
                 img {
                     // position: relative;
                     // left: 20px;
@@ -176,42 +202,3 @@
 
 
 
-.secondary_header {
-    justify-content: center;
-    p {
-        color: black;
-    }
-}
-            // .calculator_in {
-            //     display: flex;
-            //     flex-direction: row;
-            //     padding-top: 30px;
-            //     font-size: 20px;
-            //     .input_text {
-            //         position: relative;
-            //         bottom: 60px;
-            //         margin: 0 10%;
-            //         transition: 0.5s;
-            //     }
-            //     .left_input {
-            //         width: 50%;
-            //         .text_in {
-            //             width: 90%;
-            //         }
-            //     }
-            //     .right_input {
-            //         width: 30%;
-            //         .type_of_currency {
-            //             width: 85%;
-            //             margin-left: 15%;
-            //         }
-            //         .ths {
-            //             margin-left: 15%;
-            //         }
-            //         img {
-            //             position: relative;
-            //             bottom: 60px;
-            //             left: 150px;
-            //             cursor: pointer;
-            //         }
-            //     }
