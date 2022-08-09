@@ -407,13 +407,18 @@ header nav ul li .register p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  position: relative;
 }
 .trade .calculator_container .container .right_input .type_of_currency {
   margin-left: 10%;
   width: 80%;
 }
+.trade .calculator_container .container .right_input img {
+  position: absolute;
+  right: 10%;
+}
 .trade .calculator_container .container .right_input .ths {
-  margin-left: 3%;
+  margin-left: 10%;
 }
 .trade .calculator_container .container .button_container {
   display: grid;
@@ -443,6 +448,78 @@ header nav ul li .register p {
 }
 .trade .calculator_container select {
   display: none;
+}
+.trade .products {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10% 0 0 0;
+}
+.trade .products .crypto_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 430px;
+  width: 28%;
+}
+.trade .products .crypto_box .crypto_icons {
+  position: relative;
+  bottom: 20px;
+  padding: 10px;
+}
+.trade .products .crypto_box .crypto_shortcut {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.trade .products .crypto_box .crypto_shortcut span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.trade .products .crypto_box .crypto_text {
+  opacity: 0.6;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+.trade .products .bitcoin {
+  background-color: #2b076e;
+  color: #fff;
+}
+.trade .products .bitcoin button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  border: none;
+  color: #E0E0E0;
+}
+.trade .products .bitcoin button img {
+  height: 32px;
+  padding-left: 25px;
 }
 
 .secondary_header {

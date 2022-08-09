@@ -71,12 +71,17 @@
                 grid-row: 1 / 2;
                 align-items: center;
                 width: 100%;
+                position: relative;
                 .type_of_currency {
                     margin-left: 10%;
                     width: 80%;
                 }
+                img {
+                    position: absolute;
+                    right: 10%;
+                }
                 .ths {
-                    margin-left: 3%;
+                    margin-left: 10%;
                 }
             }
             .button_container {
@@ -105,6 +110,61 @@
         }
         select {
             display: none;
+        }
+    }
+    .products {
+        color: black;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        padding: 10% 0 0 0;
+        .crypto_box {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 20px;
+            height: 430px;
+            width: 28%;
+            .crypto_icons {
+                position: relative;
+                bottom: 20px;
+                padding: 10px;
+            }
+            .crypto_shortcut {
+                font-size: 30px;
+                font-weight: 600;
+                padding: 20px 0;
+                span {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+            .crypto_text {
+                opacity: 0.6;
+                padding-bottom: 30px;
+                line-height: 30px;
+            }
+        }
+        .bitcoin {
+            background-color: #2b076e;
+            color: #fff;
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                border: none;
+                color: $primary;
+                img {
+                    // position: relative;
+                    // left: 20px;
+                    height: 32px;
+                    padding-left: 25px;
+                }
+            }
         }
     }
 }
