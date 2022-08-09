@@ -54,7 +54,6 @@
     </header>
 
     <section class="hero">
-        <!-- <img src="./img/background/bgc-hero-XL.jpg" alt=""> -->
         <div class="content">
             <div class="content_primary hero_content">
                 <p><span>75% save</span> For the Black Friday weekend</p>
@@ -114,22 +113,29 @@
             <!-- I know, this span is not header -->
         </div>
         <div class="calculator_container">
-            <div class="calculator_in">
+            <div class="container">
                 <div class="left_input">
-                    <input class="text_in" type="text" required="required">
-                    <span class="input_text">Enter your hash rate</span>
+                    <input  class="amount_of_currency" type="text" id="n1" required="required">
+                    <span class=" value input_text">Enter your hash rate</span>
                 </div>
                 <div class="right_input">
-                    <input class="type_of_currency" type="text" required="required">
-                    <span class="ths input_text">TH/s</span>
                     <img src="./svg/signs/calculatorArrow.svg" alt="small calculator arrow">
+                    <input class="type_of_currency" type="text" id="n2" required="required">
+                    <span class="ths input_text">TH/s</span>
                 </div>
-                <button class="btn">Calculate</button>
+                <div class="button_container">
+                    <button class="btn" onclick="calc();">Calculate</button>
+                </div>
+                <input type="text" id="result">
             </div>
-            <!-- <div class="calculator_out">
-
-            </div> -->
+            <select id="operators">
+                <option value="X">X</option>
+            </select>
         </div>
+
+
+
+
         <div class="secondary_header trade_header">
             <p>Trade securely and market the high <br> growth cryptocurrencies.</p>
         </div>
@@ -145,4 +151,7 @@
             </div>
         </div>
     </section>
+    <script src="./JS/script.js"></script>
 </body>
+
+</html>

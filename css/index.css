@@ -355,77 +355,102 @@ header nav ul li .register p {
   bottom: 140px;
   margin: 0 auto;
   height: 350px;
-  width: 1005px;
+  width: 70%;
+  font-size: 20px;
   background-color: #fff;
   color: #303030;
   border-radius: 20px;
 }
-.trade .calculator_container .calculator_in {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-top: 30px;
-  font-size: 20px;
-}
-.trade .calculator_container .calculator_in input {
-  margin: 30px 10%;
+.trade .calculator_container input {
   height: 2rem;
-  font-size: 18px;
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
   outline: none;
+  font-size: 20px;
 }
-.trade .calculator_container .calculator_in input:valid ~ .input_text,
-.trade .calculator_container .calculator_in input:focus ~ .input_text {
+.trade .calculator_container input:valid ~ .input_text,
+.trade .calculator_container input:focus ~ .input_text {
   opacity: 0;
 }
-.trade .calculator_container .calculator_in .input_text {
-  position: relative;
-  bottom: 60px;
-  margin: 0 10%;
+.trade .calculator_container .container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1.2fr 0.8fr;
+  grid-template-rows: 1.8fr 0.6fr 1.6fr;
+}
+.trade .calculator_container .container .input_text {
+  position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.trade .calculator_container .calculator_in .left_input {
-  width: 50%;
+.trade .calculator_container .container .left_input {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.trade .calculator_container .calculator_in .left_input .text_in {
-  width: 90%;
-}
-.trade .calculator_container .calculator_in .right_input {
-  width: 30%;
-}
-.trade .calculator_container .calculator_in .right_input .type_of_currency {
+.trade .calculator_container .container .left_input .amount_of_currency {
+  margin: 0 5% 0 10%;
   width: 85%;
-  margin-left: 15%;
 }
-.trade .calculator_container .calculator_in .right_input .ths {
-  margin-left: 15%;
+.trade .calculator_container .container .left_input .value {
+  left: 5%;
 }
-.trade .calculator_container .calculator_in .right_input img {
-  position: relative;
-  bottom: 60px;
-  left: 150px;
-  cursor: pointer;
+.trade .calculator_container .container .right_input {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
-.trade .calculator_container .calculator_in button {
-  margin: 5px 5% 5px 5%;
-  border: none;
-  color: #E0E0E0;
-  width: 140px;
-  cursor: pointer;
+.trade .calculator_container .container .right_input .type_of_currency {
+  margin-left: 10%;
+  width: 80%;
 }
-.trade .secondary_header {
+.trade .calculator_container .container .right_input .ths {
+  margin-left: 3%;
+}
+.trade .calculator_container .container .button_container {
+  display: grid;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.trade .secondary_header p {
+.trade .calculator_container .container .button_container button {
+  border: none;
+  color: #E0E0E0;
+  width: 140px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.trade .calculator_container .container #result {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  width: 80%;
+  margin: 0 10%;
+  line-height: 1.8fr;
+}
+.trade .calculator_container select {
+  display: none;
+}
+
+.secondary_header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.secondary_header p {
   color: black;
 }
 
@@ -497,27 +522,6 @@ header nav ul li .register p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .trade .calculator_container {
-    min-height: 400px;
-    width: 350px;
-  }
-  .trade .calculator_container .calculator_in {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .trade .calculator_container .calculator_in button {
-    position: relative;
-    left: 60%;
-    bottom: 150px;
-  }
-  .trade .calculator_container .calculator_in .right_input img {
-    left: 55px;
-  }
 }
 @media (max-width: 767px) {
   .hero .content {
@@ -577,30 +581,6 @@ header nav ul li .register p {
   .facts .facts_info .facts_question {
     font-size: 36px;
   }
-  .trade .calculator_container {
-    min-height: 400px;
-    width: 550px;
-  }
-  .trade .calculator_container .calculator_in {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .trade .calculator_container .calculator_in .right_input {
-    width: 27%;
-  }
-  .trade .calculator_container .calculator_in .right_input img {
-    left: 80px;
-  }
-  .trade .calculator_container .calculator_in button {
-    position: relative;
-    left: 60%;
-    bottom: 150px;
-  }
 }
 @media (max-width: 991px) {
   header .hamburger {
@@ -656,12 +636,6 @@ header nav ul li .register p {
   .facts .facts_info .facts_question {
     font-size: 36px;
   }
-  .trade .calculator_container {
-    width: 650px;
-  }
-  .trade .calculator_container .calculator_in .right_input img {
-    left: 65px;
-  }
 }
 @media (min-width: 991px) and (max-width: 1150px) {
   .hero .content .content_secondary {
@@ -686,12 +660,6 @@ header nav ul li .register p {
   .facts .facts_info .facts_question {
     font-size: 44px;
   }
-  .trade .calculator_container {
-    width: 650px;
-  }
-  .trade .calculator_container .calculator_in .right_input img {
-    left: 60px;
-  }
 }
 @media (min-width: 1150px) and (max-width: 1440px) {
   .hero .content .content_secondary {
@@ -705,11 +673,5 @@ header nav ul li .register p {
   }
   .facts .facts_info .facts_question {
     font-size: 44px;
-  }
-  .trade .calculator_container {
-    width: 850px;
-  }
-  .trade .calculator_container .calculator_in .right_input img {
-    left: 110px;
   }
 }

@@ -69,26 +69,26 @@
             }
         }
     }
-    .trade {
-        .calculator_container {
-            min-height: 400px;
-            width: 350px;
-            .calculator_in {
-                display: flex;
-                flex-direction: column;
-                button {
-                    position: relative;
-                    left: 60%;
-                    bottom: 150px;
-                }
-                .right_input {
-                    img {
-                        left: 55px;
-                    }
-                }
-            } 
-        }
-    }
+    // .trade {
+    //     .calculator_container {
+    //         min-height: 400px;
+    //         width: 350px;
+    //         .calculator_in {
+    //             display: flex;
+    //             flex-direction: column;
+    //             button {
+    //                 position: relative;
+    //                 left: 60%;
+    //                 bottom: 150px;
+    //             }
+    //             .right_input {
+    //                 img {
+    //                     left: 55px;
+    //                 }
+    //             }
+    //         } 
+    //     }
+    // }
 }
 
 @media (max-width: 767px) {
@@ -140,27 +140,27 @@
             }
         }
     }
-    .trade {
-        .calculator_container {
-            min-height: 400px;
-            width: 550px;
-            .calculator_in {
-                display: flex;
-                flex-direction: column;
-                .right_input {
-                    width: 27%;
-                    img {
-                        left: 80px;
-                    }
-                }
-                button {
-                    position: relative;
-                    left: 60%;
-                    bottom: 150px;
-                }
-            } 
-        }
-    }
+    // .trade {
+    //     .calculator_container {
+    //         min-height: 400px;
+    //         width: 550px;
+    //         .calculator_in {
+    //             display: flex;
+    //             flex-direction: column;
+    //             .right_input {
+    //                 width: 27%;
+    //                 img {
+    //                     left: 80px;
+    //                 }
+    //             }
+    //             button {
+    //                 position: relative;
+    //                 left: 60%;
+    //                 bottom: 150px;
+    //             }
+    //         } 
+    //     }
+    // }
 }
 
 @media (max-width: 991px) {
@@ -225,19 +225,19 @@
             }
         }
     }
-    .trade {
-        .calculator_container {
-            width: 650px;
-            .calculator_in {
-                .right_input {
-                    img {
-                        left: 65px;
-                    }
+    // .trade {
+    //     .calculator_container {
+    //         width: 650px;
+    //         .calculator_in {
+    //             .right_input {
+    //                 img {
+    //                     left: 65px;
+    //                 }
     
-                }
-            }
-        }
-    }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @media (min-width: 991px) and (max-width: 1150px) {
@@ -269,19 +269,19 @@
             }
         }
     }
-    .trade {
-        .calculator_container {
-            width: 650px;
-            .calculator_in {
-                .right_input {
-                    img {
-                        left: 60px;
-                    }
+    // .trade {
+    //     .calculator_container {
+    //         width: 650px;
+    //         .calculator_in {
+    //             .right_input {
+    //                 img {
+    //                     left: 60px;
+    //                 }
     
-                }
-            }
-        }
-    }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 
@@ -306,19 +306,19 @@
             }
         }
     }
-    .trade {
-        .calculator_container {
-            width: 850px;
-            .calculator_in {
-                .right_input {
-                    img {
-                        left: 110px;
-                    }
+    // .trade {
+    //     .calculator_container {
+    //         width: 850px;
+    //         .calculator_in {
+    //             .right_input {
+    //                 img {
+    //                     left: 110px;
+    //                 }
     
-                }
-            }
-        }
-    }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 
