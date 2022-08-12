@@ -63,6 +63,7 @@ header {
         flex: 95%;
         align-items: end;
         margin-right: 5%;
+        z-index: 10 !important;
         ul {
             display: flex;
             align-items: center;
