@@ -1,6 +1,6 @@
 .trade {
     background-color: rgb(245, 245, 245);
-    height: 1480px;
+    min-height: 1480px;
     color: $primary;
     .trade_header {
         display: flex;;
@@ -89,8 +89,6 @@
             }
             .button_container {
                 display: grid;
-                grid-column: 4 / 5;
-                grid-row: 1 / 2;
                 align-items: center;
                 justify-content: center;
                 button {

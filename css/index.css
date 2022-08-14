@@ -127,7 +127,6 @@ header nav {
       -ms-flex-align: end;
           align-items: end;
   margin-right: 5%;
-  z-index: 10 !important;
 }
 header nav ul {
   display: -webkit-box;
@@ -325,7 +324,7 @@ header nav ul li .register p {
 
 .trade {
   background-color: rgb(245, 245, 245);
-  height: 1480px;
+  min-height: 1480px;
   color: #E0E0E0;
 }
 .trade .trade_header {
@@ -425,8 +424,6 @@ header nav ul li .register p {
 }
 .trade .calculator_container .container .button_container {
   display: grid;
-  grid-column: 4/5;
-  grid-row: 1/2;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -558,6 +555,7 @@ header nav ul li .register p {
     background-color: #111;
     position: fixed;
     min-height: 90px;
+    z-index: 1;
   }
   header .menu .hamburger {
     top: -10px;
@@ -621,21 +619,40 @@ header nav ul li .register p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .trade .calculator_container .container {
-    grid-template-rows: 1fr 1fr 1fr 1fr !important;
-  }
   .trade .calculator_container .container .left_input {
-    grid-column: 1/5;
+    grid-column: 1/4;
+  }
+  .trade .calculator_container .container .left_input .value {
+    font-size: 16px;
   }
   .trade .calculator_container .container .right_input {
-    grid-column: 1/5;
+    grid-column: 1/4;
   }
-  .trade .calculator_container .container .button_container {
-    grid-row: 3/4;
+  .trade .calculator_container .container .right_input .ths {
+    font-size: 16px;
+    margin-left: 10%;
+  }
+  .trade .calculator_container .container .button_container button {
+    width: 100px;
+  }
+  .trade .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .trade .products .crypto_box {
     grid-column: 1/3;
+    margin: 5% auto;
+    width: 60% !important;
   }
-  .trade .calculator_container .container .result {
-    grid-row: 4/5;
+  .trade .products .bitcoin {
+    grid-row: 1/2;
+  }
+  .trade .products .ether {
+    grid-row: 2/3;
+  }
+  .trade .products .litecoin {
+    grid-row: 3/4;
   }
 }
 @media (max-width: 767px) {
@@ -705,6 +722,9 @@ header nav ul li .register p {
   .trade .calculator_container .container .left_input {
     grid-column: 1/4;
   }
+  .trade .calculator_container .container .left_input .value {
+    left: 6%;
+  }
   .trade .calculator_container .container .right_input {
     grid-column: 1/4 !important;
   }
@@ -714,6 +734,20 @@ header nav ul li .register p {
   }
   .trade .calculator_container .result {
     grid-column: 1/4;
+  }
+  .trade .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .trade .products .crypto_box {
+    margin: 10% auto;
+  }
+  .trade .products .bitcoin button img {
+    margin: 15px 0;
+  }
+  .trade .products .litecoin {
+    grid-column: 1/3;
   }
 }
 @media (max-width: 991px) {
@@ -781,6 +815,18 @@ header nav ul li .register p {
     grid-row: 1/3;
     grid-column: 3/5;
     margin-top: 40px;
+  }
+  .trade .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .trade .products .crypto_box {
+    margin: 5% auto;
+    width: 70%;
+  }
+  .trade .products .litecoin {
+    grid-column: 1/3;
   }
 }
 @media (min-width: 991px) and (max-width: 1150px) {
