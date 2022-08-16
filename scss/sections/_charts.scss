@@ -1,0 +1,19 @@
+.charts {
+    background-image: url('../../img/background/section-chart_XL.png');
+    min-height: 650px;
+    color: $primary;
+    .chart_header {
+        display: flex;
+        font-size: 40px;
+        font-weight: 600;
+        padding: 100px 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .first_chart {
+        .first_chart_title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+}
