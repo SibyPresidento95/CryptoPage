@@ -552,7 +552,7 @@ header nav ul li .register p {
 
 .charts {
   background-image: url("../../img/background/section-chart_XL.png");
-  min-height: 650px;
+  min-height: 450px;
   color: #E0E0E0;
 }
 .charts .chart_header {
@@ -567,9 +567,89 @@ header nav ul li .register p {
           justify-content: center;
   text-align: center;
 }
+.charts .chart_text {
+  position: relative;
+  opacity: 0.6;
+}
+.charts button {
+  width: 160px;
+  color: #fff;
+}
+.charts .first_chart {
+  display: grid;
+  margin: 0 13% 0 5%;
+  padding-bottom: 8%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 .charts .first_chart .first_chart_title {
+  position: relative;
+  top: 60%;
+  grid-area: 1/1/2/2;
   font-size: 32px;
   font-weight: 600;
+}
+.charts .first_chart .first_chart_text {
+  top: 10%;
+  grid-area: 2/1/3/2;
+  line-height: 30px;
+}
+.charts .first_chart .first_chart_button {
+  grid-area: 3/1/4/2;
+}
+.charts .first_chart img {
+  grid-column: 2/3;
+  grid-row: 1/5;
+}
+.charts .second_chart {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 15% 0 0;
+  padding-bottom: 10%;
+}
+.charts .second_chart img {
+  grid-area: 1/1/6/2;
+}
+.charts .second_chart .second_chart_title {
+  position: relative;
+  top: 30%;
+  font-size: 32px;
+  font-weight: 600;
+  grid-area: 2/3/3/4;
+}
+.charts .second_chart .second_chart_text {
+  top: 10%;
+  line-height: 25px;
+  grid-area: 3/3/4/4;
+}
+.charts .second_chart .second_chart_button {
+  grid-area: 4/3/5/4;
+  position: relative;
+  top: 30%;
+}
+.charts .third_chart {
+  display: grid;
+  padding-bottom: 8%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.charts .third_chart .third_chart_title {
+  font-size: 32px;
+  font-weight: 600;
+  grid-area: 1/1/2/2;
+}
+.charts .third_chart .third_chart_text {
+  grid-area: 2/1/3/2;
+}
+.charts .third_chart .third_chard_button {
+  grid-area: 3/1/4/2;
+}
+.charts .third_chart img {
+  background-color: #35068C;
+  border-radius: 15px;
+  grid-area: 1/2/4/4;
+  padding-right: 10%;
 }
 
 @media (max-width: 600px) {
