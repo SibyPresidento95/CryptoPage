@@ -31,4 +31,12 @@ body {
         border: none;
     }
 
+    a.nav_menu_link {
+        align-items: center;
+        color: $primary;
+        text-decoration: none;
+        margin: 0 20px 0 10px;
+        font-weight: 500;
+    }
+
 }
