@@ -5,12 +5,6 @@
   padding: 0;
 }
 
-html {
-  background-image: url(../img/abstraction-3527172_1920.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 body {
   width: 100%;
   height: 100%;
@@ -577,7 +571,7 @@ header nav ul li .register p {
 }
 .charts .first_chart {
   display: grid;
-  margin: 0 10% 0 7%;
+  margin: 0 0 0 7%;
   padding-bottom: 8%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -633,7 +627,7 @@ header nav ul li .register p {
   padding-bottom: 8%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  margin: 0 5% 0 5%;
+  margin: 0 7% 0 7%;
 }
 .charts .third_chart .third_chart_title {
   position: relative;
@@ -649,10 +643,86 @@ header nav ul li .register p {
 .charts .third_chart .third_chard_button {
   grid-area: 3/1/4/2;
 }
-.charts .third_chart img {
+.charts .third_chart .img_bg {
+  position: relative;
+  left: 20%;
+  grid-area: 1/2/4/3;
   background-color: #35068C;
   border-radius: 20px;
+  width: 80%;
+}
+.charts .third_chart .img_bg img {
+  position: relative;
+  right: 25%;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../../img/background/section-subscribe-XL.png");
+  min-height: 40vh;
+  width: 100%;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.subscribe .subscribe_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-image: url("../../img/background/sub-area.png");
+  background-size: cover;
+  height: 215px;
+  width: 79%;
+  border-radius: 20px;
+}
+.subscribe .subscribe_container span {
+  position: relative;
+  grid-area: 1/1/2/2;
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 10%;
+  top: 50%;
+}
+.subscribe .subscribe_container p {
+  grid-area: 2/1/3/2;
+  opacity: 0.6;
+  margin-left: 10%;
+  line-height: 30px;
+}
+.subscribe .subscribe_container input {
+  position: relative;
   grid-area: 1/2/4/3;
+  height: 30px;
+  background-color: #3671E9;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  width: 55%;
+  top: 40%;
+  font-size: 22px;
+  color: white;
+}
+.subscribe .subscribe_container button {
+  position: relative;
+  top: 35%;
+  left: 65%;
+  grid-area: 1/2/4/3;
+  color: black;
+  background-color: #fff;
+  width: 150px;
+  height: 55px;
+}
+
+footer {
+  color: #E0E0E0;
 }
 
 @media (max-width: 600px) {
