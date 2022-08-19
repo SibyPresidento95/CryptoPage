@@ -643,17 +643,8 @@ header nav ul li .register p {
 .charts .third_chart .third_chard_button {
   grid-area: 3/1/4/2;
 }
-.charts .third_chart .img_bg {
-  position: relative;
-  left: 20%;
+.charts .third_chart img {
   grid-area: 1/2/4/3;
-  background-color: #35068C;
-  border-radius: 20px;
-  width: 80%;
-}
-.charts .third_chart .img_bg img {
-  position: relative;
-  right: 25%;
 }
 
 .subscribe {
@@ -1004,22 +995,6 @@ footer .rights_reserved img {
   .trade .products .litecoin {
     grid-column: 1/3;
   }
-  .charts .chart_header {
-    font-size: 24px;
-  }
-  .charts .first_chart img {
-    margin: 0 auto;
-    grid-area: 3/1/5/3;
-    height: 400px;
-  }
-  .charts .second_chart {
-    margin: 0 5%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-  .charts .second_chart img {
-    width: 80%;
-  }
 }
 @media (max-width: 991px) {
   header .hamburger {
@@ -1099,51 +1074,6 @@ footer .rights_reserved img {
   .trade .products .litecoin {
     grid-column: 1/3;
   }
-  .charts .chart_header {
-    font-size: 28px;
-    padding-bottom: 30px;
-  }
-  .charts .first_chart {
-    margin: 5%;
-  }
-  .charts .first_chart .first_chart_title {
-    grid-area: 1/1/2/3;
-    top: 40%;
-  }
-  .charts .first_chart .first_chart_text {
-    top: 40%;
-    grid-area: 1/1/3/3;
-  }
-  .charts .first_chart .first_chart_button {
-    top: 35%;
-    grid-area: 2/1/3/3;
-  }
-  .charts .first_chart img {
-    margin: 0 auto;
-    grid-area: 3/1/5/3;
-  }
-  .charts .second_chart {
-    margin: 0 5%;
-    grid-template-rows: 1fr 1fr 0.3fr 1fr 1fr 1fr;
-  }
-  .charts .second_chart img {
-    grid-area: 4/1/7/4;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .charts .second_chart .second_chart_title {
-    grid-area: 1/1/2/4;
-    top: -5%;
-  }
-  .charts .second_chart .second_chart_text {
-    grid-area: 1/1/2/4;
-    top: 50%;
-    text-align: center;
-  }
-  .charts .second_chart .second_chart_button {
-    grid-area: 2/1/3/4;
-    top: 45%;
-  }
 }
 @media (max-width: 1150px) {
   .hero .content .content_secondary {
@@ -1168,49 +1098,6 @@ footer .rights_reserved img {
   .facts .facts_info .facts_question {
     font-size: 44px;
   }
-  .charts .chart_properties {
-    position: relative;
-    margin: 0 auto !important;
-    text-align: center;
-  }
-  .charts .first_chart_button {
-    position: relative;
-    top: 20%;
-  }
-  .charts .second_chart {
-    margin: 0 0 3% 0;
-  }
-  .charts .second_chart img {
-    grid-area: 1/1/6/3;
-    width: 100%;
-  }
-  .charts .second_chart .second_chart_title {
-    grid-area: 1/3/2/3;
-    top: 80%;
-  }
-  .charts .second_chart .second_chart_text {
-    grid-area: 2/3/3/4;
-  }
-  .charts .second_chart .second_chart_button {
-    grid-area: 4/3/5/4;
-  }
-  .charts .third_chart {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-  .charts .third_chart .third_chart_title {
-    grid-area: 1/1/2/3;
-  }
-  .charts .third_chart .third_chart_text {
-    grid-area: 2/1/3/3;
-    top: -30%;
-  }
-  .charts .third_chart .third_chart_button {
-    grid-area: 2/1/3/3;
-    top: 30%;
-  }
-  .charts .third_chart .img_bg {
-    grid-area: 3/1/5/3;
-  }
 }
 @media (max-width: 1440px) {
   .hero .content .content_secondary {
@@ -1224,47 +1111,5 @@ footer .rights_reserved img {
   }
   .facts .facts_info .facts_question {
     font-size: 44px;
-  }
-  .charts {
-    padding-right: 5%;
-  }
-  .charts .col-xxl {
-    position: relative;
-    margin: 0 auto !important;
-    text-align: center;
-  }
-  .charts .first_chart_text {
-    margin-right: 10%;
-  }
-  .charts .first_chart_button {
-    position: relative;
-    top: 20%;
-  }
-  .charts .second_chart img {
-    grid-area: 1/1/6/3;
-    width: 100%;
-  }
-  .charts .second_chart p,
-.charts .second_chart span,
-.charts .second_chart button {
-    margin-left: 5%;
-  }
-  .charts .third_chart {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-  .charts .third_chart .third_chart_title {
-    grid-area: 1/1/2/3;
-  }
-  .charts .third_chart .third_chart_text {
-    grid-area: 2/1/3/3;
-    top: -30%;
-  }
-  .charts .third_chart .third_chart_button {
-    grid-area: 2/1/3/3;
-    top: 30%;
-  }
-  .charts .third_chart .img_bg {
-    grid-area: 3/1/5/3;
-    max-width: 615px;
   }
 }

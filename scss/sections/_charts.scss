@@ -92,17 +92,9 @@
         .third_chard_button {
             grid-area: 3 / 1 / 4 / 2;
         }
-        .img_bg {
-            position: relative;
-            left: 20%;
+        img {
             grid-area: 1 / 2 / 4 / 3;
-            background-color: #35068C;
-            border-radius: 20px;
-            width: 80%;
-            img {
-                position: relative;
-                right: 25%;
-            }
         }
+        
     }
 }
