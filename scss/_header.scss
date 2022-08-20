@@ -6,16 +6,9 @@ header {
         display: flex;
         width: 100%;
         align-items: center;
-        a.nav_menu_link {
-            align-items: center;
-            color: $primary;
-            text-decoration: none;
-            margin: 0 20px 0 10px;
-            font-weight: 500;
-        }
+        
         .logo {
             display: flex;
-            // flex-basis: 15%;
             padding-left: 5%;
             .crappo {
                 display: flex;

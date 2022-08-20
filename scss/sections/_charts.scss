@@ -1,0 +1,34 @@
+.charts {
+    background-image: url('../../img/background/section-chart_XL.png');
+    min-height: 450px;
+    color: $primary;
+    .chart_header {
+        display: flex;
+        font-size: 40px;
+        font-weight: 600;
+        padding: 100px 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .chart_text {
+        position: relative;
+        opacity: 0.6;
+
+    }
+    button {
+        width: 160px;
+        color: #fff;
+    }
+    .chart_properties {
+        position: relative;
+    }
+    .first_chart {
+        display: grid;
+    }
+    .second_chart {
+        display: grid;
+    }
+    .third_chart {
+        display: grid;
+    }
+}

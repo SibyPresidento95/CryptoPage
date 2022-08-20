@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Rubik:wght@400;900&display=swap"
-        rel="stylesheet">
+    <link <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/720e800d71.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -18,7 +16,7 @@
         <div class="menu">
             <div class="logo">
                 <a class="nav_menu_link crappo" href="#crappo"></i>
-                    <img class="crappo_icon" src="./svg/icons/crapo.svg" alt="">
+                    <img class="crappo_icon" src="./svg/icons/crapo.svg" alt="logo icon">
                     <span>crappo</span>
             </div>
             <div class="hamburger">
@@ -54,7 +52,6 @@
     </header>
 
     <section class="hero">
-        <!-- <img src="./img/background/bgc-hero-XL.jpg" alt=""> -->
         <div class="content">
             <div class="content_primary hero_content">
                 <p><span>75% save</span> For the Black Friday weekend</p>
@@ -65,17 +62,188 @@
             <div class="content_third hero_content">
                 <p>Buy and sell cryptocurrencies, trusted by 10M wallets <br> with over $30 billion in transactions.</p>
             </div>
-    
+
             <div class="btn content_button hero_content">
                 <div class="btn_container">
                     <a href="">
                         <p>Try for <span>free</span></p>
                     </a>
-                    <div class="btn__container--icon"><img src="./svg/signs/circleArrow.svg" alt=""></div>
+                    <div class="btn_container_icon"><img src="./svg/signs/circleArrow.svg" alt=""></div>
                 </div>
             </div>
-            <img class="crypto_icon" src="./svg/big icons/crypto.svg" alt="">
+            <img class="crypto_icon" src="./svg/big icons/crypto.svg" alt="Big modern crypto icon">
         </div>
     </section>
-    <section class="experience"></section>
+    <section class="facts">
+        <div class="experience">
+            <div class="data chart col-lg-3 col-md-6 col-sm-12">
+                <img src="./svg/icons/chart.svg" alt="chart icon">
+                <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
+            </div>
+            <div class="data investors col-lg-3 col-md-6 col-sm-12">
+                <img src="./svg/icons/person.svg" alt="person icon">
+                <p><span>10M+</span><br><br>Trusted Wallets Investors</p>
+            </div>
+            <div class="data countries col-lg-3 col-md-6 col-sm-12">
+                <img src="./svg/icons/world.svg" alt="world icon">
+                <p><span>195</span><br><br>Countries Supported</p>
+            </div>
+        </div>
+        <div class="facts_info">
+            <img src="./svg/big icons/crypto_procesor.svg" alt="crypto proceson svg img">
+            <div class="facts_question spanch_bob">
+                <p>Why you should choose CRAPPO</p>
+            </div>
+            <div class="facts_text spanch_bob">
+                <p>Experience the next generation cryptocurrency <br> platform. No financial borders, extra fees, and
+                    fake <br> reviews.</p>
+            </div>
+            <button class="facts_learn spanch_bob">
+                <p>Learn More</p>
+            </button>
+        </div>
+    </section>
+    <section class="trade">
+        <div class="primary_header trade_header">
+            <p>Check how much you can earn</p>
+            <span>Let's check hash rate to see how much you will earn today, <br> Exercitation veniam consequat sunt
+                nostrud amet</span>
+        </div>
+        <div class="calculator_container">
+            <div class="container">
+                <div class="left_input">
+                    <input  class="amount_of_currency" type="text" id="n1" required="required">
+                    <span class=" value input_text">Enter your hash rate</span>
+                </div>
+                <div class="right_input">
+                    <input class="type_of_currency" type="text" id="n2" required="required">
+                    <img src="./svg/signs/calculatorArrow.svg" alt="small calculator arrow">
+                    <span class="ths input_text">TH/s</span>
+                </div>
+                <div class="button_container">
+                    <button class="btn" onclick="calc();">Calculate</button>
+                </div>
+                <div class="result">
+                    <p class="hour_revenue">ESTIMATED 24 HOUR REVENUE:</p>
+                    <input type="text" id="result">
+                    <p class="mining_difficulty">Revenue will change based on mining difficulty and Ethereum price.</p>
+                </div>
+            </div>
+            <select id="operators">
+                <option value="X">X</option>
+            </select>
+        </div>
+        <div class="secondary_header trade_header">
+            <p>Trade securely and market the high <br> growth cryptocurrencies.</p>
+        </div>
+        <div class="products">
+            <div class="bitcoin crypto_box">
+                <img class="crypto_icons" src="./svg/icons/bitcoin.svg" alt="bitcoin logo">
+                <p class="crypto_shortcut">Bitcoin <span>BTC</span></p>
+                <p class="crypto_text">Digital currency in which a record of <br> transactions is maintained.</p>
+                <button class="btn">Start mining <img src="./svg/signs/circleArrow.svg" alt="arrow"></button>
+            </div>
+            <div class="ether crypto_box">
+                <img class="crypto_icons" src="./svg/icons/ethereum.svg" alt="ethereum logo">
+                <p class="crypto_shortcut">Ethereum <span>ETH</span></p>
+                <p class=" crypto_text crypto_text_secondary">Blockchain technology to create and run <br> decentralized
+                    digital
+                    applications.
+                </p>
+                <img class="crypto_arrows" src="./svg/signs/tradeArrow.svg" alt="bigest arrow">
+            </div>
+            <div class="litecoin crypto_box">
+                <img class="crypto_icons" src="./svg/icons/litecoin.svg" alt="ethereum logo">
+                <p class="crypto_shortcut">Litecoin <span>LTC</span></p>
+                <p class=" crypto_text">Cryptocurrency that enables instant <br> payments to anyone in the world.
+                </p>
+                <img class="crypto_arrows" src="./svg/signs/tradeArrow.svg" alt="bigest arrow">
+            </div>
+        </div>
+    </section>
+    <section class="charts">
+        <span class="chart_header">Market sentiments, portfolio, and run <br> the infrastructure of your choice</span>
+        <div class="first_chart col-xsm col-mdlg">
+            <p class="first_chart_title chart_properties">Invest Smart</p>
+            <span class="first_chart_text chart_text chart_properties">Get full statistic information about the behaviour of <br> buyers and sellers will help you to make the decision.</span>
+            <button class="btn first_chart_button chart_properties">Learn More</button>
+            <img class="first_chart_img" src="./svg/charts/primary_chart.svg" alt="chart">
+        </div>
+        <div class="second_chart col-xsm col-mdlg">
+            <img class="second_chart_img" src="./svg/charts/secondary_chart.svg" alt="chart">
+            <p class="second_chart_title chart_properties">Detailed Statistics</p>
+            <span class="second_chart_text chart_text chart_properties">
+                View all mining related information in realtime, at any <br> point at any location and decide which polls you
+                want <br> to mine in.
+            </span>
+            <button class="btn second_chart_button chart_properties">Learn More</button>
+        </div>
+        <div class="third_chart col-xsm col-mdlg">
+            <p class="third_chart_title chart_properties col-xxl">Grow your profit and track <br> your investments</p>
+            <span class="third_chart_text chart_text chart_properties col-xxl">
+                Use advanced analytical tools. Clear TradingView <br> charts let you track current and historical profit <br>
+                investments.
+            </span>
+            <button class="btn third_chart_button chart_properties col-xxl">Learn More</button>
+            <img class="third_chart_img" src="./svg/charts/third_chart.svg" alt="">
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="subscribe_container">
+            <span>Start mining now</span>
+            <p>Join now with CRAPPO to get the latest news <br> and start mining now</p>
+            <input type="text">
+            <button class="btn">Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <a class="nav_menu_link footer_crappo" href="#crappo"></i>
+                <img class="crappo_icon" src="./svg/icons/crapo.svg" alt="logo icon">
+                <span>crappo</span>
+            </a>
+        </div>
+        <div class="quick_link">
+            <ul>
+                <li>Quick Link</li>
+                <li>Home</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Features</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="resources">
+            <ul>
+                <li>Resources</li>
+                <li>Download Whitepapper</li>
+                <li>Smart Token</li>
+                <li>Blockchain Explorer</li>
+                <li>Crypto API</li>
+                <li>Interest</li>
+            </ul>
+        </div>
+        <h1>We accept following <br> payment systems</h1>
+        <div class="payment_system">
+            <div class="visa payment">
+                <img src="./svg/icons/visa.svg" alt="">
+            </div>
+            <div class="mastercard payment">
+                <img src="./svg/icons/mastercard.svg" alt="">
+            </div>
+            <div class="btc_currency payment">
+                <img src="./svg/icons/btc-currency.svg" alt="">
+            </div>
+        </div>
+        <div class="rights_reserved">
+            <p>&copy;2021 CRAPPO. All rights reserved</p>
+            <img src="./svg/icons/media.svg"
+                alt="facebook, instagram, youtube, twitter, linkedin. All media where you can find us.">
+        </div>
+
+    </footer>
+    <script src="./JS/script.js"></script>
 </body>
+
+</html>

@@ -2,7 +2,13 @@
 @import "./_main.scss";
 @import "./_header.scss";
 
-@import "./_sections.scss";
+@import "./sections/hero";
+@import "./sections/facts";
+@import "./sections/trade";
+@import "./sections/charts";
+@import "./sections/subscribe";
+
+@import "./sections/footer";
 
 @import "./_responsive";
 
