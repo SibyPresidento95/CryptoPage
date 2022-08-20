@@ -206,6 +206,40 @@
             }
         }
     }
+    .charts {
+        .col-xsm {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            text-align: center;
+            padding: 10% 0;
+            .chart_properties {
+                box-sizing: border-box;
+                padding: 15px 0;
+            }
+            .first_chart_title,
+            .second_chart_title,
+            .third_chart_title {
+                grid-area: 1 / 1 / 2 / 2;
+                font-size: 26px;
+            }
+            .first_chart_text,
+            .second_chart_text,
+            .third_chart_text {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+            .first_chart_button,
+            .second_chart_button,
+            .third_chart_button {
+                grid-area: 3 / 1 / 4 / 2;
+                margin: 0 auto;
+            }
+            .first_chart_img,
+            .second_chart_img,
+            .third_chart_img {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -329,6 +363,46 @@
             }
         }
     }
+    .charts {
+        .col-mdlg {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+            padding: 10% 0;
+            .chart_properties {
+                box-sizing: border-box;
+                padding: 15px 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .first_chart_title,
+            .second_chart_title,
+            .third_chart_title {
+                grid-area: 1 / 1 / 2 / 2;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            .first_chart_text,
+            .second_chart_text,
+            .third_chart_text {
+                grid-area: 2 / 1 / 3 / 2;
+                margin-bottom: 30px;
+            }
+            .first_chart_button,
+            .second_chart_button,
+            .third_chart_button {
+                grid-area: 4 / 1 / 5 / 2;
+                position: relative;
+                // top: 50%;
+            }
+            .first_chart_img,
+            .second_chart_img,
+            .third_chart_img {
+                grid-area: 3 / 1 / 4 / 2;
+                width: 750px;
+                margin: 30px auto;
+            }
+        }
+    }
 }
 
 
@@ -353,4 +427,59 @@
             }
         }
     }
+}
+
+@media (min-width: 1440px) {
+    .charts {
+    background-image: url('../../img/background/section-chart_XL.png');
+    min-height: 450px;
+    color: $primary;
+    .chart_header {
+        display: flex;
+        font-size: 40px;
+        font-weight: 600;
+        padding: 100px 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .chart_text {
+        position: relative;
+        opacity: 0.6;
+
+    }
+    button {
+        width: 160px;
+        color: #fff;
+    }
+    .chart_properties {
+        position: relative;
+    }
+    .first_chart {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 0 10% 0 5%;
+        .first_chart_title {
+            grid-area: 1 / 1 / 2 / 2;
+            font-size: 36px;
+            font-weight: 600;
+            top: 60%;
+        }
+        .first_chart_text {
+            grid-area: 2 / 1 / 3 / 2;
+            top: 30%;
+        }
+        .first_chart_button {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+        .first_chart_img {
+            grid-area: 1 / 2 / 5 / 3;
+        }
+    }
+    .second_chart {
+        display: grid;
+    }
+    .third_chart {
+        display: grid;
+    }
+}
 }
