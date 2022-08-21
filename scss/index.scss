@@ -1,8 +1,14 @@
 @import "./_variable.scss";
+@import "./grid";
 @import "./_main.scss";
 @import "./_header.scss";
 
-@import "./sections/hero";
+//-------------sections---------------
+
+//Hero
+@import "./sections/hero/index";
+@import "./sections/hero/mobile";
+
 @import "./sections/facts";
 @import "./sections/trade";
 @import "./sections/charts";
