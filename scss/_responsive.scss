@@ -19,20 +19,20 @@
         }
         
     }
-    .hero {
-        .content {
-            .content_primary {
-                p {
-                    display: block;
-                    min-width: 200px;
-                    line-height: 28px;
-                }
-            }
-            .content_secondary {
-                font-size: 34px !important;
-            }
-        }
-    }
+    // .hero {
+    //     .content {
+    //         .content_primary {
+    //             p {
+    //                 display: block;
+    //                 min-width: 200px;
+    //                 line-height: 28px;
+    //             }
+    //         }
+    //         .content_secondary {
+    //             font-size: 34px !important;
+    //         }
+    //     }
+    // }
     .facts { 
         .experience {
             display: grid;
@@ -113,23 +113,23 @@
 
 @media (max-width: 767px) {
     
-    .hero {
-        .content {
-            text-align: center;
-            .content_primary {
-                max-width: 370px;
+    // .hero {
+    //     .content {
+    //         text-align: center;
+    //         .content_primary {
+    //             max-width: 370px;
                 
-            }
-            .hero_content {
-                margin-right: auto;
-                margin-left: auto;
-                grid-column: 1 / 3;
-            }
-            .crypto_icon {
-                display: none;
-            }   
-        }
-    }
+    //         }
+    //         .hero_content {
+    //             margin-right: auto;
+    //             margin-left: auto;
+    //             grid-column: 1 / 3;
+    //         }
+    //         .crypto_icon {
+    //             display: none;
+    //         }   
+    //     }
+    // }
     .facts { 
         .experience {
             display: grid;
@@ -335,16 +335,16 @@
 }
 
 @media (max-width: 1150px) {
-    .hero {
-        .content {
-            .content_secondary {
-                font-size: 44px;
-            }
-        }
-        .crypto_icon {
-            height: 430px;
-        }
-    }
+    // .hero {
+    //     .content {
+    //         .content_secondary {
+    //             font-size: 44px;
+    //         }
+    //     }
+    //     .crypto_icon {
+    //         height: 430px;
+    //     }
+    // }
     .facts {        
         .experience {
             margin-left: 5%;
