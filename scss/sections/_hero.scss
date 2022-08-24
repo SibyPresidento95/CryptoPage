@@ -3,7 +3,7 @@
     background-size: 100%;
     
     .row {
-        display: grid;
+        
         padding-bottom: 10%;
         .content_info_banner {
             padding: 20px 0;
@@ -96,50 +96,48 @@
 }
 
 @media (min-width: 601px) {
-    .hero {
-        .row {
-            text-align: center;
-            .hero_content {
-                z-index: 1;
+    .hero {   
+        text-align: center;
+        .hero_content {
+            z-index: 1;
+            p {
+                display: block;
+                min-width: 200px;
+                line-height: 28px;
+            }
+            .content_info_banner {
+                margin: 0 auto;
+                max-width: 370px;
+            }
+            .content_title {
+                font-size: 46px;
                 p {
-                    display: block;
-                    min-width: 200px;
-                    line-height: 28px;
-                }
-                .content_info_banner {
-                    margin: 0 auto;
-                    max-width: 370px;
-                }
-                .content_title {
-                    font-size: 46px;
-                    p {
-                        line-height: 48px;
-                    }
-                }
-                .content_button {
-                    margin: 0 auto;
-                    .btn_container {
-                        .btn_container_icon {
-                            position: relative;
-                            right: 30%;
-                        }
-                    }
+                    line-height: 48px;
                 }
             }
-            .hero_image {
+            .content_button {
                 margin: 0 auto;
-                .bitcoin_hub_image {
-                    height: 450px;
-                    opacity: 0.4;
+                .btn_container {
+                    .btn_container_icon {
+                        position: relative;
+                        right: 30%;
+                    }
                 }
             }
         }
+        .hero_image {
+            margin: 0 auto;
+            .bitcoin_hub_image {
+                height: 450px;
+                opacity: 0.4;
+            }
+        }     
     }
 }
 
 @media (min-width: 768px) {
     .hero {
-        .row {
+
             .hero_content {
                 .content_title {
                     font-size: 54px;
@@ -150,7 +148,7 @@
                     height: 600px;
                 }
             }
-        }
+        
     }
 }
 
