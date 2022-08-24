@@ -4,8 +4,7 @@
     
     .row {
         display: grid;
-        margin: 50px 5%;
-        padding-bottom: 300px;
+        padding-bottom: 10%;
         .content_info_banner {
             padding: 20px 0;
             p {
@@ -63,7 +62,7 @@
         }
         .hero_image {
             position: absolute;
-            right: 5%;
+            right: 1%;
         }
     }
 }
@@ -148,7 +147,7 @@
             }
             .hero_image {
                 .bitcoin_hub_image {
-                    height: 530px;
+                    height: 600px;
                 }
             }
         }
@@ -158,7 +157,7 @@
 @media (min-width: 992px) {
     .hero {
         .row {
-            margin: 0 5%;
+            margin: 5%;
             .hero_content {
                 .content_info_banner,
                 .content_title,
@@ -179,6 +178,19 @@
             .hero_image {
                 .bitcoin_hub_image {
                     opacity: 1;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        .row {
+            .hero_image {
+                .bitcoin_hub_image {
+                    height: 600px;
                 }
             }
         }
