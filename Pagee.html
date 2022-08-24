@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <div class="menu">
             <div class="logo">
                 <a class="nav_menu_link crappo" href="#crappo"></i>
@@ -49,33 +49,41 @@
                 </ul>
             </nav>
         </div>
-    </header> -->
+    </header>
 
     <section class="hero">
-        <div class="content">
-            <div class="content_primary hero_content">
-                <p><span>75% save</span> For the Black Friday weekend</p>
-            </div>
-            <div class="content_secondary hero_content">
-                <p>Fasters & secure <br> platform to invest <br> in crypto</p>
-            </div>
-            <div class="content_third hero_content">
-                <p>Buy and sell cryptocurrencies, trusted by 10M wallets <br> with over $30 billion in transactions.</p>
-            </div>
+        <div class="row">
+            <div class="hero_content col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="content_info_banner">
+                    <p><span>75% save</span> For the Black Friday weekend</p>
+                </div>
+                <div class="content_title">
+                    <p>Fasters & secure <br> platform to invest <br> in crypto</p>
+                </div>
+                <div class="content_description">
+                    <p>Buy and sell cryptocurrencies, trusted by 10M wallets <br> with over $30 billion in transactions.
+                    </p>
+                </div>
 
-            <div class="btn content_button hero_content">
-                <div class="btn_container">
-                    <a href="">
-                        <p>Try for <span>free</span></p>
-                    </a>
-                    <div class="btn_container_icon"><img src="./svg/signs/circleArrow.svg" alt=""></div>
+                <div class="btn content_button">
+                    <div class="btn_container">
+                        <a href="">
+                            <p>Try for <span>free</span></p>
+                        </a>
+                        <div class="btn_container_icon">
+                            <img src="./svg/signs/circleArrow.svg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <img class="crypto_icon" src="./svg/big icons/crypto.svg" alt="Big modern crypto icon">
+            <div class="hero_image col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <img class="bitcoin_hub_image" src="./svg/big icons/crypto.svg" alt="Big modern crypto icon">
+            </div>
         </div>
     </section>
+
     <!-- <section class="facts">
-        <div class="experience">
+        <div class="experience row">
             <div class="data chart col-lg-3 col-md-6 col-sm-12">
                 <img src="./svg/icons/chart.svg" alt="chart icon">
                 <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
@@ -112,7 +120,7 @@
         <div class="calculator_container">
             <div class="container">
                 <div class="left_input">
-                    <input  class="amount_of_currency" type="text" id="n1" required="required">
+                    <input class="amount_of_currency" type="text" id="n1" required="required">
                     <span class=" value input_text">Enter your hash rate</span>
                 </div>
                 <div class="right_input">
@@ -163,29 +171,33 @@
     </section>
     <section class="charts">
         <span class="chart_header">Market sentiments, portfolio, and run <br> the infrastructure of your choice</span>
-        <div class="first_chart col-xsm col-mdlg">
-            <p class="first_chart_title chart_properties">Invest Smart</p>
-            <span class="first_chart_text chart_text chart_properties">Get full statistic information about the behaviour of <br> buyers and sellers will help you to make the decision.</span>
-            <button class="btn first_chart_button chart_properties">Learn More</button>
-            <img class="first_chart_img" src="./svg/charts/primary_chart.svg" alt="chart">
+        <div class="first_chart">
+            <p class="first_chart_title  col-xs-12">Invest Smart</p>
+            <span class="first_chart_text chart_text chart_properties col-xs-12">Get full statistic information about
+                the behaviour of <br> buyers and sellers will help you to make the decision.</span>
+            <button class="btn first_chart_button chart_properties col-xs-12">Learn More</button>
+            <img src="./svg/charts/primary_chart.svg" alt="chart">
         </div>
-        <div class="second_chart col-xsm col-mdlg">
-            <img class="second_chart_img" src="./svg/charts/secondary_chart.svg" alt="chart">
-            <p class="second_chart_title chart_properties">Detailed Statistics</p>
-            <span class="second_chart_text chart_text chart_properties">
-                View all mining related information in realtime, at any <br> point at any location and decide which polls you
+        <div class="second_chart">
+            <img src="./svg/charts/secondary_chart.svg" alt="chart">
+            <p class="second_chart_title chart_properties col-xs-12">Detailed Statistics</p>
+            <span class="second_chart_text chart_text chart_properties col-xs-12">
+                View all mining related information in realtime, at any <br> point at any location and decide which
+                polls you
                 want <br> to mine in.
             </span>
-            <button class="btn second_chart_button chart_properties">Learn More</button>
+            <button class="btn second_chart_button chart_properties col-xs-12">Learn More</button>
         </div>
-        <div class="third_chart col-xsm col-mdlg">
-            <p class="third_chart_title chart_properties col-xxl">Grow your profit and track <br> your investments</p>
-            <span class="third_chart_text chart_text chart_properties col-xxl">
-                Use advanced analytical tools. Clear TradingView <br> charts let you track current and historical profit <br>
+        <div class="third_chart">
+            <p class="third_chart_title chart_properties col-xs-12 col-xxl">Grow your profit and track <br> your
+                investments</p>
+            <span class="third_chart_text chart_text chart_properties col-xs-12 col-xxl">
+                Use advanced analytical tools. Clear TradingView <br> charts let you track current and historical profit
+                <br>
                 investments.
             </span>
-            <button class="btn third_chart_button chart_properties col-xxl">Learn More</button>
-            <img class="third_chart_img" src="./svg/charts/third_chart.svg" alt="">
+            <button class="btn third_chart_button chart_properties col-xs-12 col-xxl">Learn More</button>
+            <img src="./svg/charts/third_chart.svg" alt="">
         </div>
     </section>
     <section class="subscribe">

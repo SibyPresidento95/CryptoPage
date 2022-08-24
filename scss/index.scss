@@ -1,6 +1,9 @@
 @import "./_variable.scss";
 @import "./_main.scss";
+
 @import "./_header.scss";
+
+// ----------setions----------
 
 @import "./sections/hero";
 @import "./sections/facts";
@@ -10,8 +13,17 @@
 
 @import "./sections/footer";
 
-@import "./_responsive";
+@import "./grid";
 
+
+
+
+
+
+
+// ---------- I still need it ----------
+
+// @import "./_responsive";
 
 
 
