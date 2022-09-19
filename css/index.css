@@ -196,14 +196,16 @@ header nav ul li .register p {
 .hero {
   background-image: url("../img/background/bgc-hero-XL.jpg");
   background-size: 100%;
-}
-.hero .row {
   padding-bottom: 10%;
 }
-.hero .row .content_info_banner {
+.hero .hero_content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.hero .hero_content .content_info_banner {
   padding: 20px 0;
 }
-.hero .row .content_info_banner p {
+.hero .hero_content .content_info_banner p {
   display: inline;
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.8);
@@ -211,7 +213,7 @@ header nav ul li .register p {
   border-radius: 20px;
   z-index: -1;
 }
-.hero .row .content_info_banner p span {
+.hero .hero_content .content_info_banner p span {
   background-color: rgba(255, 255, 255, 0.9);
   color: rgb(56, 56, 56);
   text-transform: uppercase;
@@ -220,22 +222,22 @@ header nav ul li .register p {
   border-radius: 20px;
   margin-right: 15px;
 }
-.hero .row .content_title {
+.hero .hero_content .content_title {
   font-weight: 700;
   color: #fff;
 }
-.hero .row .content_description {
+.hero .hero_content .content_description {
   padding: 30px 0;
   color: rgba(224, 224, 224, 0.8);
   letter-spacing: 0.01rem;
   line-height: 28px;
 }
-.hero .row .content_button {
+.hero .hero_content .content_button {
   width: 150px;
   height: 30px;
   padding: 15px 20px 20px 25px;
 }
-.hero .row .content_button .btn_container {
+.hero .hero_content .content_button .btn_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,7 +245,7 @@ header nav ul li .register p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.hero .row .content_button .btn_container a {
+.hero .hero_content .content_button .btn_container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,15 +255,14 @@ header nav ul li .register p {
   text-decoration: none;
   color: #fff;
 }
-.hero .row .content_button .btn_container a p {
+.hero .hero_content .content_button .btn_container a p {
   padding-right: 10px;
 }
-.hero .row .content_button .btn_container a p span {
+.hero .hero_content .content_button .btn_container a p span {
   text-transform: uppercase;
 }
-.hero .row .hero_image {
+.hero .hero_image {
   position: absolute;
-  right: 1%;
 }
 
 @media (max-width: 600px) {
@@ -270,14 +271,13 @@ header nav ul li .register p {
   }
   .hero .hero_content {
     z-index: 1;
+    margin: 0 auto;
+    padding-top: 10%;
   }
   .hero .hero_content .content_info_banner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
   .hero .hero_content .content_title {
     font-size: 34px;
@@ -288,8 +288,13 @@ header nav ul li .register p {
   .hero .hero_content .content_button {
     margin: 0 auto;
   }
+  .hero .hero_image {
+    width: 100%;
+    bottom: 30%;
+  }
   .hero .hero_image .bitcoin_hub_image {
-    height: 350px;
+    width: 80vw;
+    min-width: 380px;
     opacity: 0.4;
   }
 }
@@ -297,7 +302,16 @@ header nav ul li .register p {
   .hero {
     text-align: center;
   }
+  .hero div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
   .hero .hero_content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     z-index: 1;
   }
   .hero .hero_content p {
@@ -306,7 +320,6 @@ header nav ul li .register p {
     line-height: 28px;
   }
   .hero .hero_content .content_info_banner {
-    margin: 0 auto;
     max-width: 370px;
   }
   .hero .hero_content .content_title {
@@ -315,18 +328,17 @@ header nav ul li .register p {
   .hero .hero_content .content_title p {
     line-height: 48px;
   }
-  .hero .hero_content .content_button {
-    margin: 0 auto;
-  }
   .hero .hero_content .content_button .btn_container .btn_container_icon {
     position: relative;
     right: 30%;
   }
   .hero .hero_image {
-    margin: 0 auto;
+    width: 100%;
+    bottom: 20%;
   }
   .hero .hero_image .bitcoin_hub_image {
-    height: 450px;
+    width: 80vw;
+    min-width: 380px;
     opacity: 0.4;
   }
 }
@@ -339,32 +351,31 @@ header nav ul li .register p {
   }
 }
 @media (min-width: 992px) {
-  .hero .row {
-    margin: 5%;
-  }
-  .hero .row .hero_content .content_info_banner,
-.hero .row .hero_content .content_title,
-.hero .row .hero_content .content_description {
-    text-align: left;
-  }
-  .hero .row .hero_content .content_title {
+  .hero .hero_content .content_title {
     font-size: 64px;
   }
-  .hero .row .hero_content .content_title p {
+  .hero .hero_content .content_title p {
     line-height: 74px;
-  }
-  .hero .row .hero_content .content_info_banner,
-.hero .row .hero_content .content_button {
-    margin: 0;
-  }
-  .hero .row .hero_image .bitcoin_hub_image {
-    opacity: 1;
-    height: 500px;
   }
 }
 @media (min-width: 1200px) {
-  .hero .row .hero_image .bitcoin_hub_image {
-    height: 600px;
+  .hero .hero_content {
+    margin-left: 10%;
+  }
+  .hero .hero_content .content_title,
+.hero .hero_content .content_description {
+    text-align: left;
+  }
+  .hero .hero_content .content_info_banner,
+.hero .hero_content .content_button {
+    margin-left: 0;
+  }
+  .hero .hero_image {
+    max-width: 40vw;
+  }
+  .hero .hero_image .bitcoin_hub_image {
+    max-width: 40vw;
+    opacity: 1;
   }
 }
 .facts {
@@ -858,6 +869,9 @@ footer .rights_reserved img {
 }
 
 [class*=col-] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
