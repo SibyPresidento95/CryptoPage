@@ -5,6 +5,7 @@
     .experience {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         .data {
             display: flex;
             p {
@@ -18,10 +19,9 @@
             }
         }
     }
+
+
     .facts_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.8fr 0.8fr 1.4fr;
         margin: 100px 8%;
         img {
             grid-column: 1 / 2;
@@ -52,6 +52,23 @@
                 font-size: 18px;
                 color: $primary;
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .facts {
+        padding-top: 10%;
+        .experience {
+            .data {
+                align-items: center;
+                justify-content: center;
+                padding: 5% 0;
+                transition: 0.5s;
+            }
+            .data:hover {
+                transform: scale(1.09);
             }
         }
     }

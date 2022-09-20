@@ -1,37 +1,4 @@
 @media (max-width: 600px) {
-    .facts { 
-        .experience {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            .data {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                grid-column: 1 / 3;
-                margin: 20px 0;
-            }
-        }       
-        .facts_info {
-            img {
-                display: none;
-            }
-            .spanch_bob {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                grid-column: 1 / 3;
-            }
-            .facts_question {
-                font-size: 36px;
-            }
-            button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-    }
     .trade {
         .calculator_container {
             .container {
@@ -78,54 +45,6 @@
 }
 
 @media (max-width: 767px) {
-    
-    .hero {
-        .content {
-            text-align: center;
-            .content_primary {
-                max-width: 370px;
-                
-            }
-            .hero_content {
-                margin-right: auto;
-                margin-left: auto;
-                grid-column: 1 / 3;
-            }
-            .crypto_icon {
-                display: none;
-            }   
-        }
-    }
-    .facts { 
-        .experience {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            .data {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                grid-column: 1 / 3;
-                margin: 20px 0;
-            }
-        }       
-        .facts_info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            img {
-                display: none;
-            }
-            .spanch_bob {
-                text-align: center;
-                grid-column: 1 / 3;
-            }
-            .facts_question {
-                font-size: 36px;
-            }
-        }
-    }
     .trade {
         .primary_header {
             p {
@@ -209,53 +128,6 @@
 }
 
 @media (max-width: 991px) {
-
-    .hero {
-        .content {
-            .content_primary {
-                p {
-                    display: block;
-                    min-width: 200px;
-                    line-height: 28px;
-                }
-            }
-            .content_secondary {
-                font-size: 40px;
-            }
-        }
-        .crypto_icon {
-            height: 330px;
-        }
-    }
-    .facts {    
-        .experience {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            .data {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }  
-            .countries {
-                grid-column: 1 / 3;
-                margin-top: 20px;
-            }
-        }    
-        .facts_info {
-            margin-top: 100px;
-            img {
-                margin-top: 100px;
-                height: 250px;
-            }
-            .spanch_bob {
-                margin: 15px 0;
-            }
-            .facts_question {
-                font-size: 36px;
-            }
-        }
-    }
     .trade {
         .calculator_container {
             .container {
@@ -287,34 +159,6 @@
 }
 
 @media (max-width: 1150px) {
-    .hero {
-        .content {
-            .content_secondary {
-                font-size: 44px;
-            }
-        }
-        .crypto_icon {
-            height: 430px;
-        }
-    }
-    .facts {        
-        .experience {
-            margin-left: 5%;
-        }
-        .facts_info {
-            margin-top: 100px;
-            img {
-                margin-top: 100px;
-                height: 300px;
-            }
-            .spanch_bob {
-                margin: 15px 0;
-            }
-            .facts_question {
-                font-size: 44px;
-            }
-        }
-    }
     .charts {
         .col-mdlg {
             grid-template-columns: 1fr;
@@ -359,26 +203,6 @@
 
 
 @media (max-width: 1440px) {
-    .hero {
-        .content {
-            .content_secondary {
-                font-size: 52px;
-            }
-        }
-        .crypto_icon {
-            height: 550px;
-        }
-    }
-    .facts {        
-        .facts_info {
-            img {
-                height: 400px;
-            }
-            .facts_question {
-                font-size: 44px;
-            }
-        }
-    }
 }
 
 @media (min-width: 1440px) {

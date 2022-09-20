@@ -172,7 +172,7 @@ header nav ul li .register p {
     background-color: #111;
     position: fixed;
     min-height: 90px;
-    z-index: 1;
+    z-index: 2;
   }
   header .menu .hamburger {
     top: -10px;
@@ -389,6 +389,8 @@ header nav ul li .register p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .facts .experience .data {
   display: -webkit-box;
@@ -405,9 +407,6 @@ header nav ul li .register p {
   font-weight: 600;
 }
 .facts .facts_info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.8fr 0.8fr 1.4fr;
   margin: 100px 8%;
 }
 .facts .facts_info img {
@@ -446,6 +445,26 @@ header nav ul li .register p {
   font-weight: 500;
 }
 
+@media (max-width: 600px) {
+  .facts {
+    padding-top: 10%;
+  }
+  .facts .experience .data {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5% 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .facts .experience .data:hover {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+}
 .trade {
   background-color: rgb(245, 245, 245);
   min-height: 1480px;
