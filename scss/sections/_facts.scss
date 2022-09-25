@@ -62,23 +62,22 @@
                 transition: 0.5s;
             }
         }
-        .facts_info {
-            z-index: 1;
-            text-align: center;
-            .spanch_bob {
-                justify-content: center;
-                margin: 5% auto;
+        .facts_sec {
+            .facts_info {
+                z-index: 1;
+                text-align: center;
+                .spanch_bob {
+                    justify-content: center;
+                    margin: 5% auto;
+                }
             }
-        }
-        .crypto_procesor {
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-            bottom: 50%;
-            img {
-                width: 90vw;
-                opacity: 0.4;
-                z-index: -1;
+            .crypto_procesor {
+                position: relative;
+                bottom: 130%;
+                img {
+                    width: 100vw;
+                    opacity: 0.4;
+                }
             }
         }
     }

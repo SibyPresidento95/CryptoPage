@@ -454,26 +454,23 @@ header nav ul li .register p {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  .facts .facts_info {
+  .facts .facts_sec .facts_info {
     z-index: 1;
     text-align: center;
   }
-  .facts .facts_info .spanch_bob {
+  .facts .facts_sec .facts_info .spanch_bob {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 5% auto;
   }
-  .facts .crypto_procesor {
+  .facts .facts_sec .crypto_procesor {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 50%;
+    bottom: 130%;
   }
-  .facts .crypto_procesor img {
-    width: 90vw;
+  .facts .facts_sec .crypto_procesor img {
+    width: 100vw;
     opacity: 0.4;
-    z-index: -1;
   }
 }
 @media (min-width: 601px) {
