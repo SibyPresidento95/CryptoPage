@@ -53,7 +53,7 @@
 
 @media (max-width: 600px) {
     .facts {
-        padding-top: 10%;
+        padding-top: 30%;
         .experience {
             .data {
                 align-items: center;
@@ -63,6 +63,7 @@
             }
         }
         .facts_sec {
+            padding-bottom: -50%;
             .facts_info {
                 z-index: 1;
                 text-align: center;

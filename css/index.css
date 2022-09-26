@@ -441,7 +441,7 @@ header nav ul li .register p {
 
 @media (max-width: 600px) {
   .facts {
-    padding-top: 10%;
+    padding-top: 30%;
   }
   .facts .experience .data {
     -webkit-box-align: center;
@@ -453,6 +453,9 @@ header nav ul li .register p {
     padding: 5% 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+  }
+  .facts .facts_sec {
+    padding-bottom: -50%;
   }
   .facts .facts_sec .facts_info {
     z-index: 1;
