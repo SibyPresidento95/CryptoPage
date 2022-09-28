@@ -21,32 +21,37 @@
     }
 
 
-    .facts_info {
-        margin: 20% 8%;
-        img {
-            position: relative;
-            top: -100px;
-        }
-        .facts_question {
-            font-size: 50px;
-            font-weight: 600;
-        }
-        .facts_text {
-            display: flex;
-            align-items: center;
-            color: rgba($color: #e0e0e0, $alpha: .8);
-        }
-        .facts_learn {
-            width: 140px;
-            height: 60px;
-            background-color: $button__color;
-            border: none;
-            border-radius: 30px;
-            p {
-                font-size: 18px;
-                color: $primary;
-                font-weight: 500;
+    .facts_sec {
+        .facts_info {
+            margin: 20% 8%;
+            img {
+                position: relative;
+                top: -100px;
             }
+            .facts_question {
+                font-size: 50px;
+                font-weight: 600;
+            }
+            .facts_text {
+                display: flex;
+                align-items: center;
+                color: rgba($color: #e0e0e0, $alpha: .8);
+            }
+            .facts_learn {
+                width: 140px;
+                height: 60px;
+                background-color: $button__color;
+                border: none;
+                border-radius: 30px;
+                p {
+                    font-size: 18px;
+                    color: $primary;
+                    font-weight: 500;
+                }
+            }
+        }
+        .crypto_procesor {
+            position: absolute;
         }
     }
 }
@@ -63,6 +68,7 @@
             }
         }
         .facts_sec {
+            flex-wrap: wrap;
             padding-bottom: -50%;
             .facts_info {
                 z-index: 1;
@@ -73,8 +79,7 @@
                 }
             }
             .crypto_procesor {
-                position: relative;
-                bottom: 130%;
+                top: 150%;
                 img {
                     width: 100vw;
                     opacity: 0.4;

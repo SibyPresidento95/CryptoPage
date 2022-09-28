@@ -406,18 +406,18 @@ header nav ul li .register p {
   font-size: 40px;
   font-weight: 600;
 }
-.facts .facts_info {
+.facts .facts_sec .facts_info {
   margin: 20% 8%;
 }
-.facts .facts_info img {
+.facts .facts_sec .facts_info img {
   position: relative;
   top: -100px;
 }
-.facts .facts_info .facts_question {
+.facts .facts_sec .facts_info .facts_question {
   font-size: 50px;
   font-weight: 600;
 }
-.facts .facts_info .facts_text {
+.facts .facts_sec .facts_info .facts_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,17 +426,20 @@ header nav ul li .register p {
           align-items: center;
   color: rgba(224, 224, 224, 0.8);
 }
-.facts .facts_info .facts_learn {
+.facts .facts_sec .facts_info .facts_learn {
   width: 140px;
   height: 60px;
   background-color: #3671e9;
   border: none;
   border-radius: 30px;
 }
-.facts .facts_info .facts_learn p {
+.facts .facts_sec .facts_info .facts_learn p {
   font-size: 18px;
   color: #E0E0E0;
   font-weight: 500;
+}
+.facts .facts_sec .crypto_procesor {
+  position: absolute;
 }
 
 @media (max-width: 600px) {
@@ -455,6 +458,8 @@ header nav ul li .register p {
     transition: 0.5s;
   }
   .facts .facts_sec {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-bottom: -50%;
   }
   .facts .facts_sec .facts_info {
@@ -468,8 +473,7 @@ header nav ul li .register p {
     margin: 5% auto;
   }
   .facts .facts_sec .crypto_procesor {
-    position: relative;
-    bottom: 130%;
+    top: 150%;
   }
   .facts .facts_sec .crypto_procesor img {
     width: 100vw;
