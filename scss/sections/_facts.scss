@@ -22,6 +22,7 @@
 
 
     .facts_sec {
+        position: relative;
         .facts_info {
             margin: 20% 8%;
             img {
@@ -34,7 +35,6 @@
             }
             .facts_text {
                 display: flex;
-                align-items: center;
                 color: rgba($color: #e0e0e0, $alpha: .8);
             }
             .facts_learn {
@@ -69,7 +69,6 @@
         }
         .facts_sec {
             flex-wrap: wrap;
-            padding-bottom: -50%;
             .facts_info {
                 z-index: 1;
                 text-align: center;
@@ -79,7 +78,8 @@
                 }
             }
             .crypto_procesor {
-                top: 150%;
+                margin: 0 auto;
+                bottom: 30%;
                 img {
                     width: 100vw;
                     opacity: 0.4;
@@ -91,19 +91,28 @@
 
 @media (min-width: 601px) {
     .facts {
-        padding-top: 10%;
+        padding-top: 15%;
+        div {
+            justify-content: center;
+            margin: 0 auto;
+        }
         .experience {
             .data {
-                align-items: center;
-                justify-content: center;
                 padding: 5% 0;
                 transition: 0.5s;
             }
         }
         .facts_info {
+            z-index: 1;
             text-align: center;
+            .crypto_procesor {
+                bottom: 30%;
+                img {
+                    width: 80vw;
+                    opacity: 0.4;
+                }
+            }
             .spanch_bob {
-                justify-content: center;
                 margin: 5% auto;
             }
         }
@@ -112,13 +121,35 @@
 
 @media (min-width: 1200px) {
     .facts {
+        padding-top: 0;
         .experience {
             .data:hover {
                 transform: scale(1.05);
             }
         }
-        .spanch_bob {
-            margin-left: 15%;
+        .facts_sec {
+            .crypto_procesor {
+                max-width: 45%;
+                margin-left: 5%;
+                img {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+            .facts_info {
+                div {
+                    justify-content: start;
+                }
+                .facts_question {
+                    text-align: left;
+                }
+                .facts_text {
+                    text-align: left;
+                }
+                .facts_learn {
+                    
+                }
+            }
         }
     }
 }

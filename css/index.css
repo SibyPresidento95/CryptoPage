@@ -371,10 +371,10 @@ header nav ul li .register p {
     margin-left: 0;
   }
   .hero .hero_image {
-    max-width: 40vw;
+    max-width: 45vw;
   }
   .hero .hero_image .bitcoin_hub_image {
-    max-width: 40vw;
+    max-width: 100%;
     opacity: 1;
   }
 }
@@ -406,6 +406,9 @@ header nav ul li .register p {
   font-size: 40px;
   font-weight: 600;
 }
+.facts .facts_sec {
+  position: relative;
+}
 .facts .facts_sec .facts_info {
   margin: 20% 8%;
 }
@@ -421,9 +424,6 @@ header nav ul li .register p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: rgba(224, 224, 224, 0.8);
 }
 .facts .facts_sec .facts_info .facts_learn {
@@ -460,7 +460,6 @@ header nav ul li .register p {
   .facts .facts_sec {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-bottom: -50%;
   }
   .facts .facts_sec .facts_info {
     z-index: 1;
@@ -473,7 +472,8 @@ header nav ul li .register p {
     margin: 5% auto;
   }
   .facts .facts_sec .crypto_procesor {
-    top: 150%;
+    margin: 0 auto;
+    bottom: 30%;
   }
   .facts .facts_sec .crypto_procesor img {
     width: 100vw;
@@ -482,36 +482,60 @@ header nav ul li .register p {
 }
 @media (min-width: 601px) {
   .facts {
-    padding-top: 10%;
+    padding-top: 15%;
   }
-  .facts .experience .data {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .facts div {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0 auto;
+  }
+  .facts .experience .data {
     padding: 5% 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   .facts .facts_info {
+    z-index: 1;
     text-align: center;
   }
+  .facts .facts_info .crypto_procesor {
+    bottom: 30%;
+  }
+  .facts .facts_info .crypto_procesor img {
+    width: 80vw;
+    opacity: 0.4;
+  }
   .facts .facts_info .spanch_bob {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin: 5% auto;
   }
 }
 @media (min-width: 1200px) {
+  .facts {
+    padding-top: 0;
+  }
   .facts .experience .data:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
-  .facts .spanch_bob {
-    margin-left: 15%;
+  .facts .facts_sec .crypto_procesor {
+    max-width: 45%;
+    margin-left: 5%;
+  }
+  .facts .facts_sec .crypto_procesor img {
+    width: 100%;
+    opacity: 1;
+  }
+  .facts .facts_sec .facts_info div {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .facts .facts_sec .facts_info .facts_question {
+    text-align: left;
+  }
+  .facts .facts_sec .facts_info .facts_text {
+    text-align: left;
   }
 }
 .trade {
