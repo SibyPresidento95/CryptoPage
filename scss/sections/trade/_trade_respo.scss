@@ -94,3 +94,22 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .trade {
+        .trade_header {
+            p {
+                font-size: 44px;
+            }
+        }
+        .calculator_container {
+            .container {
+                .left_input {
+                    .amount_of_currency {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}
