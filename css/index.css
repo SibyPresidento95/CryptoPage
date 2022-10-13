@@ -799,6 +799,47 @@ header nav ul li .register p {
     margin: 0 5%;
   }
 }
+@media (min-width: 600px) {
+  .trade .trade_header p {
+    font-size: 34px;
+  }
+  .trade .calculator_container .container {
+    height: 100%;
+  }
+  .trade .calculator_container .container .left_input {
+    width: 80%;
+    top: 10%;
+  }
+  .trade .calculator_container .container .left_input .amount_of_currency {
+    left: 5%;
+    position: absolute;
+  }
+  .trade .calculator_container .container .left_input .amount_of_currency .value {
+    position: relative;
+    left: 5%;
+  }
+  .trade .calculator_container .container .right_input {
+    height: 20%;
+  }
+  .trade .calculator_container .container .right_input .type_of_currency {
+    margin-left: 5%;
+    width: 85%;
+  }
+  .trade .calculator_container .container .button_container {
+    position: relative;
+    bottom: 30%;
+  }
+  .trade .calculator_container .result {
+    position: relative;
+    bottom: 30%;
+  }
+  .trade .calculator_container .result #result {
+    width: 85%;
+  }
+  .trade .calculator_container .result p {
+    margin: 0 5%;
+  }
+}
 .charts {
   background-image: url("../../img/background/section-chart_XL.png");
   min-height: 450px;
