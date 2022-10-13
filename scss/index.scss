@@ -1,11 +1,21 @@
 @import "./_variable.scss";
+@import "./grid";
 @import "./_main.scss";
 
 @import "./_header.scss";
 
+<<<<<<< HEAD
 // ----------sections----------
 
 @import "./sections/hero";
+=======
+//-------------sections---------------
+
+//Hero
+@import "./sections/hero/index";
+@import "./sections/hero/mobile";
+
+>>>>>>> 57317f1b75f18607c35eb680b39882598b61ff24
 @import "./sections/facts";
 @import "./sections/trade/trade";
 @import "./sections/trade/trade_respo";
