@@ -102,16 +102,16 @@
                 transition: 0.5s;
             }
         }
+        .crypto_procesor {
+            bottom: 30%;
+            img {
+                width: 80vw;
+                opacity: 0.4;
+            }
+        }
         .facts_info {
             z-index: 1;
             text-align: center;
-            .crypto_procesor {
-                bottom: 30%;
-                img {
-                    width: 80vw;
-                    opacity: 0.4;
-                }
-            }
             .spanch_bob {
                 margin: 5% auto;
             }
@@ -147,7 +147,7 @@
                     text-align: left;
                 }
                 .facts_learn {
-                    
+                    float: left;
                 }
             }
         }

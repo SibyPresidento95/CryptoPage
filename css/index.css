@@ -495,16 +495,16 @@ header nav ul li .register p {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+  .facts .crypto_procesor {
+    bottom: 30%;
+  }
+  .facts .crypto_procesor img {
+    width: 80vw;
+    opacity: 0.4;
+  }
   .facts .facts_info {
     z-index: 1;
     text-align: center;
-  }
-  .facts .facts_info .crypto_procesor {
-    bottom: 30%;
-  }
-  .facts .facts_info .crypto_procesor img {
-    width: 80vw;
-    opacity: 0.4;
   }
   .facts .facts_info .spanch_bob {
     margin: 5% auto;
@@ -536,6 +536,9 @@ header nav ul li .register p {
   }
   .facts .facts_sec .facts_info .facts_text {
     text-align: left;
+  }
+  .facts .facts_sec .facts_info .facts_learn {
+    float: left;
   }
 }
 .trade {
@@ -570,7 +573,7 @@ header nav ul li .register p {
   position: relative;
   bottom: 140px;
   margin: 0 auto;
-  max-height: 450px;
+  height: 450px;
   width: 70%;
   font-size: 20px;
   background-color: #fff;
@@ -591,10 +594,12 @@ header nav ul li .register p {
   display: none;
 }
 .trade .calculator_container .container {
-  display: grid;
-  height: 100%;
-  grid-template-columns: 1fr 1fr 1.2fr 0.8fr;
-  grid-template-rows: 1.8fr 0.4fr 1.8fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 30%;
 }
 .trade .calculator_container .container .input_text {
   position: absolute;
@@ -603,32 +608,22 @@ header nav ul li .register p {
 }
 .trade .calculator_container .container .left_input {
   display: grid;
-  grid-column: 1/3;
-  grid-row: 1/2;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .trade .calculator_container .container .left_input .amount_of_currency {
-  margin: 0 5% 0 10%;
   width: 85%;
 }
 .trade .calculator_container .container .left_input .value {
   left: 5%;
 }
 .trade .calculator_container .container .right_input {
-  display: grid;
-  grid-column: 3/4;
-  grid-row: 1/2;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   position: relative;
-}
-.trade .calculator_container .container .right_input .type_of_currency {
-  margin-left: 10%;
-  width: 80%;
 }
 .trade .calculator_container .container .right_input img {
   position: absolute;
@@ -636,7 +631,7 @@ header nav ul li .register p {
   cursor: pointer;
 }
 .trade .calculator_container .container .right_input .ths {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 .trade .calculator_container .container .button_container {
   display: grid;
@@ -653,23 +648,21 @@ header nav ul li .register p {
   cursor: pointer;
   margin-bottom: 15px;
 }
-.trade .calculator_container .container .result {
-  display: grid;
-  grid-column: 1/5;
-  grid-row: 3/4;
+.trade .calculator_container .result {
+  height: 60%;
 }
-.trade .calculator_container .container .result .hour_revenue {
+.trade .calculator_container .result .hour_revenue {
   color: #3671e9;
   font-weight: 500;
   margin-left: 5%;
   font-size: 16px;
 }
-.trade .calculator_container .container .result #result {
+.trade .calculator_container .result #result {
   width: 42%;
   margin: 2% 5% 2% 5%;
   font-size: 32px;
 }
-.trade .calculator_container .container .result .mining_difficulty {
+.trade .calculator_container .result .mining_difficulty {
   opacity: 0.5;
   font-size: 16px;
   margin-left: 5%;
@@ -765,6 +758,47 @@ header nav ul li .register p {
   padding-left: 25px;
 }
 
+@media (max-width: 600px) {
+  .trade .trade_header p {
+    font-size: 34px;
+  }
+  .trade .calculator_container .container {
+    height: 100%;
+  }
+  .trade .calculator_container .container .left_input {
+    width: 80%;
+    top: 10%;
+  }
+  .trade .calculator_container .container .left_input .amount_of_currency {
+    left: 5%;
+    position: absolute;
+  }
+  .trade .calculator_container .container .left_input .amount_of_currency .value {
+    position: relative;
+    left: 5%;
+  }
+  .trade .calculator_container .container .right_input {
+    height: 20%;
+  }
+  .trade .calculator_container .container .right_input .type_of_currency {
+    margin-left: 5%;
+    width: 85%;
+  }
+  .trade .calculator_container .container .button_container {
+    position: relative;
+    bottom: 30%;
+  }
+  .trade .calculator_container .result {
+    position: relative;
+    bottom: 30%;
+  }
+  .trade .calculator_container .result #result {
+    width: 85%;
+  }
+  .trade .calculator_container .result p {
+    margin: 0 5%;
+  }
+}
 .charts {
   background-image: url("../../img/background/section-chart_XL.png");
   min-height: 450px;
