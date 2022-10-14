@@ -4,7 +4,6 @@
 }
 
 [class*="col-"] {
-<<<<<<< HEAD
     display: inline-flex;
     box-sizing: border-box;
 }
@@ -50,48 +49,3 @@
         }
     }
 }
-=======
-  display: inline-flex;
-  box-sizing: border-box;
-}
-
-// mobile
-@media(max-width: 767px) {  
-    @for $i from 1 through 12 {
-    .col-sm-#{$i} {
-        width: calc(8.333333% * #{$i});
-        flex-basis: calc(8.333333% * #{$i});
-      }
-    }
-}
-
-// tablets
-@media(min-width: 768px) {
-  @for $i from 1 through 12 {
-    .col-md-#{$i} {
-        width: calc(8.333333% * #{$i});
-        flex-basis: calc(8.333333% * #{$i});
-      }
-}
-}
-
-//laptops
-@media(min-width: 992px) {
-  @for $i from 1 through 12 {
-    .col-lg-#{$i} {
-        width: calc(8.333333% * #{$i});
-        flex-basis: calc(8.333333% * #{$i});
-      }
-    }
-}
-
-//desktop
-@media(min-width: 1200px) {
-  @for $i from 1 through 12 {
-    .col-xl-#{$i} {
-        width: calc(8.333333% * #{$i});
-        flex-basis: calc(8.333333% * #{$i});
-      }
-    }
-}
->>>>>>> 57317f1b75f18607c35eb680b39882598b61ff24
