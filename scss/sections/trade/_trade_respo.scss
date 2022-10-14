@@ -9,15 +9,17 @@
             .container {
                 height: 100%;
                 .left_input {
+                    position: absolute;
                     width:80%;
                     top: 10%;
                     .amount_of_currency {
                         left: 5%;
-                        position: absolute;
-                        .value {
-                            position: relative;
-                            left: 5%;
-                        }
+                        top: 10%;
+                        position: relative;
+                    }
+                    .value {
+                        position: relative;
+                        left: 5%;
                     }
                 }
                 .right_input {
@@ -106,7 +108,17 @@
             .container {
                 .left_input {
                     .amount_of_currency {
-                        width: 40%;
+                        width: 40%; 
+                        top: 15%;
+                    }
+                    .value {
+                        left: 5%;
+                        top: 15%;
+                    }
+                }
+                .right_input {
+                    .ths {
+                        bottom: 0;
                     }
                 }
             }

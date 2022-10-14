@@ -54,27 +54,31 @@
             .left_input {
                 align-items: center;
                 .amount_of_currency {
-                    // margin: 0 5% 0 10%;
                     width: 85%;
                 }
                 .value {
-                    left: 5%;
+                    
                 }
+                
             }
             .right_input {
                 align-items: center;
                 width: 100%;
                 position: relative;
-                // .type_of_currency {
-                //     margin-left: 5%;
-                //     width: 85%;
-                // }
+                .type_of_currency {
+                    position: absolute;
+                    top: 75%;
+                    margin-left: 5%;
+                    width: 85%;
+                }
                 img {
                     position: absolute;
                     right: 10%;
+                    bottom: 5%;
                     cursor: pointer;
                 }
                 .ths {
+                    bottom: 5%;
                     margin-left: 5%;
                 }
             }
