@@ -1,398 +1,459 @@
-<<<<<<< HEAD
-@media (max-width: 767px) {
-    
-=======
-@media (max-width: 600px) {
-    header {
-        .menu {
-            background-color: #111;
-            position: fixed;
-            min-height: 90px;
-            z-index: 1;
-            .hamburger {
-                top: -10px;
-                z-index: 2;
-            }
-            .logo {
-                .crappo {
-                    span {
-                        display: none;
-                    }
-                }
-            }
-        }
-        
-    }
-    // .hero {
-    //     .content {
-    //         .content_primary {
-    //             p {
-    //                 display: block;
-    //                 min-width: 200px;
-    //                 line-height: 28px;
-    //             }
-    //         }
-    //         .content_secondary {
-    //             font-size: 34px !important;
-    //         }
-    //     }
-    // }
-    .facts { 
-        .experience {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            .data {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                grid-column: 1 / 3;
-                margin: 20px 0;
-            }
-        }       
-        .facts_info {
-            img {
-                display: none;
-            }
-            .spanch_bob {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                grid-column: 1 / 3;
-            }
-            .facts_question {
-                font-size: 36px;
-            }
-            button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-    }
-    .trade {
-        .calculator_container {
-            .container {
-                .left_input {
-                    grid-column: 1 / 4;
-                    .value {
-                        font-size: 16px;
-                    }
-                }
-                .right_input {
-                    grid-column: 1 / 4;
-                    .ths {
-                        font-size: 16px;
-                        margin-left: 10%;
-                    }
-                }
-                .button_container {
-                    button {
-                        width: 100px;
-                    }
-                }
-            }
-        }
-        .products {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            .crypto_box {
-                grid-column: 1 / 3;
-                margin: 5% auto;
-                width: 60% !important;
-            }
-            .bitcoin {
-                grid-row: 1 / 2;
-            }
-            .ether {
-                grid-row: 2 / 3;
-            }
-            .litecoin {
-                grid-row: 3 / 4;
-            }
-        }
-    }
-}
+// You have unresolved conflict here
+// remove commented code YAGNI rule
+// this whole file should exist instead you should  add media query rules in each section remove this file and move code to each dedicated scss section file
 
-@media (max-width: 767px) {
-    
-    // .hero {
-    //     .content {
-    //         text-align: center;
-    //         .content_primary {
-    //             max-width: 370px;
-                
-    //         }
-    //         .hero_content {
-    //             margin-right: auto;
-    //             margin-left: auto;
-    //             grid-column: 1 / 3;
-    //         }
-    //         .crypto_icon {
-    //             display: none;
-    //         }   
-    //     }
-    // }
-    .facts { 
-        .experience {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            .data {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                grid-column: 1 / 3;
-                margin: 20px 0;
-            }
-        }       
-        .facts_info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            img {
-                display: none;
-            }
-            .spanch_bob {
-                text-align: center;
-                grid-column: 1 / 3;
-            }
-            .facts_question {
-                font-size: 36px;
-            }
-        }
-    }
-    .trade {
-        .primary_header {
-            p {
-                font-size: 34px;
-            }
-        }
-        .calculator_container {
-            .container {
-                grid-template-columns: 1fr 1fr 0.8fr 1.6fr;
-                .left_input {
-                    grid-column: 1 / 4;
-                    .value {
-                        left: 6%;
+<<<<<<< HEAD @media (max-width: 767px) {
+
+    =======@media (max-width: 600px) {
+        header {
+            .menu {
+                background-color: #111;
+                position: fixed;
+                min-height: 90px;
+                z-index: 1;
+
+                .hamburger {
+                    top: -10px;
+                    z-index: 2;
+                }
+
+                .logo {
+                    .crappo {
+                        span {
+                            display: none;
+                        }
                     }
                 }
-                .right_input {
-                    grid-column: 1 / 4 !important;
+            }
+
+        }
+
+        // .hero {
+        //     .content {
+        //         .content_primary {
+        //             p {
+        //                 display: block;
+        //                 min-width: 200px;
+        //                 line-height: 28px;
+        //             }
+        //         }
+        //         .content_secondary {
+        //             font-size: 34px !important;
+        //         }
+        //     }
+        // }
+        .facts {
+            .experience {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+
+                .data {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    grid-column: 1 / 3;
+                    margin: 20px 0;
                 }
             }
-            .button_container {
-                grid-column: 4 / 5;
-                margin-left: 30%;
-            }
-            .result {
-                grid-column: 1 / 4;
-            }
-        }
-        .products {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            .crypto_box {
-                margin: 10% auto;
-            }
-            .bitcoin {
+
+            .facts_info {
+                img {
+                    display: none;
+                }
+
+                .spanch_bob {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    grid-column: 1 / 3;
+                }
+
+                .facts_question {
+                    font-size: 36px;
+                }
+
                 button {
-                    img {
-                        margin: 15px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .trade {
+            .calculator_container {
+                .container {
+                    .left_input {
+                        grid-column: 1 / 4;
+
+                        .value {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .right_input {
+                        grid-column: 1 / 4;
+
+                        .ths {
+                            font-size: 16px;
+                            margin-left: 10%;
+                        }
+                    }
+
+                    .button_container {
+                        button {
+                            width: 100px;
+                        }
                     }
                 }
             }
-            .litecoin {
-                grid-column: 1 / 3;
-            }
-        }
-    }
->>>>>>> 57317f1b75f18607c35eb680b39882598b61ff24
-    .charts {
-        .col-xsm {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            text-align: center;
-            padding: 10% 0;
-            .chart_properties {
-                box-sizing: border-box;
-                padding: 15px 0;
-            }
-            .first_chart_title,
-            .second_chart_title,
-            .third_chart_title {
-                grid-area: 1 / 1 / 2 / 2;
-                font-size: 26px;
-            }
-            .first_chart_text,
-            .second_chart_text,
-            .third_chart_text {
-                grid-area: 2 / 1 / 3 / 2;
-            }
-            .first_chart_button,
-            .second_chart_button,
-            .third_chart_button {
-                grid-area: 3 / 1 / 4 / 2;
-                margin: 0 auto;
-            }
-            .first_chart_img,
-            .second_chart_img,
-            .third_chart_img {
-                display: none;
-            }
-        }
-    }
-}
 
-@media (max-width: 991px) {
+            .products {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+
+                .crypto_box {
+                    grid-column: 1 / 3;
+                    margin: 5% auto;
+                    width: 60% !important;
+                }
+
+                .bitcoin {
+                    grid-row: 1 / 2;
+                }
+
+                .ether {
+                    grid-row: 2 / 3;
+                }
+
+                .litecoin {
+                    grid-row: 3 / 4;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        // .hero {
+        //     .content {
+        //         text-align: center;
+        //         .content_primary {
+        //             max-width: 370px;
+
+        //         }
+        //         .hero_content {
+        //             margin-right: auto;
+        //             margin-left: auto;
+        //             grid-column: 1 / 3;
+        //         }
+        //         .crypto_icon {
+        //             display: none;
+        //         }   
+        //     }
+        // }
+        .facts {
+            .experience {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+
+                .data {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    grid-column: 1 / 3;
+                    margin: 20px 0;
+                }
+            }
+
+            .facts_info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                img {
+                    display: none;
+                }
+
+                .spanch_bob {
+                    text-align: center;
+                    grid-column: 1 / 3;
+                }
+
+                .facts_question {
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .trade {
+            .primary_header {
+                p {
+                    font-size: 34px;
+                }
+            }
+
+            .calculator_container {
+                .container {
+                    grid-template-columns: 1fr 1fr 0.8fr 1.6fr;
+
+                    .left_input {
+                        grid-column: 1 / 4;
+
+                        .value {
+                            left: 6%;
+                        }
+                    }
+
+                    .right_input {
+                        grid-column: 1 / 4 !important;
+                    }
+                }
+
+                .button_container {
+                    grid-column: 4 / 5;
+                    margin-left: 30%;
+                }
+
+                .result {
+                    grid-column: 1 / 4;
+                }
+            }
+
+            .products {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                .crypto_box {
+                    margin: 10% auto;
+                }
+
+                .bitcoin {
+                    button {
+                        img {
+                            margin: 15px 0;
+                        }
+                    }
+                }
+
+                .litecoin {
+                    grid-column: 1 / 3;
+                }
+            }
+        }
+
+        >>>>>>>57317f1b75f18607c35eb680b39882598b61ff24 .charts {
+            .col-xsm {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                text-align: center;
+                padding: 10% 0;
+
+                .chart_properties {
+                    box-sizing: border-box;
+                    padding: 15px 0;
+                }
+
+                .first_chart_title,
+                .second_chart_title,
+                .third_chart_title {
+                    grid-area: 1 / 1 / 2 / 2;
+                    font-size: 26px;
+                }
+
+                .first_chart_text,
+                .second_chart_text,
+                .third_chart_text {
+                    grid-area: 2 / 1 / 3 / 2;
+                }
+
+                .first_chart_button,
+                .second_chart_button,
+                .third_chart_button {
+                    grid-area: 3 / 1 / 4 / 2;
+                    margin: 0 auto;
+                }
+
+                .first_chart_img,
+                .second_chart_img,
+                .third_chart_img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
 
         .products {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+
             .crypto_box {
                 margin: 5% auto;
                 width: 70%;
             }
+
             .litecoin {
                 grid-column: 1 / 3;
             }
         }
-    
-}
 
-@media (max-width: 1150px) {
-<<<<<<< HEAD
-=======
-    // .hero {
-    //     .content {
-    //         .content_secondary {
-    //             font-size: 44px;
-    //         }
-    //     }
-    //     .crypto_icon {
-    //         height: 430px;
-    //     }
-    // }
-    .facts {        
-        .experience {
-            margin-left: 5%;
-        }
-        .facts_info {
-            margin-top: 100px;
-            img {
+    }
+
+    @media (max-width: 1150px) {
+        <<<<<<< HEAD======= // .hero {
+
+        //     .content {
+        //         .content_secondary {
+        //             font-size: 44px;
+        //         }
+        //     }
+        //     .crypto_icon {
+        //         height: 430px;
+        //     }
+        // }
+        .facts {
+            .experience {
+                margin-left: 5%;
+            }
+
+            .facts_info {
                 margin-top: 100px;
-                height: 300px;
+
+                img {
+                    margin-top: 100px;
+                    height: 300px;
+                }
+
+                .spanch_bob {
+                    margin: 15px 0;
+                }
+
+                .facts_question {
+                    font-size: 44px;
+                }
             }
-            .spanch_bob {
-                margin: 15px 0;
-            }
-            .facts_question {
-                font-size: 44px;
+        }
+
+        >>>>>>>57317f1b75f18607c35eb680b39882598b61ff24 .charts {
+            .col-mdlg {
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+                padding: 10% 0;
+
+                .chart_properties {
+                    box-sizing: border-box;
+                    padding: 15px 0;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                .first_chart_title,
+                .second_chart_title,
+                .third_chart_title {
+                    grid-area: 1 / 1 / 2 / 2;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                .first_chart_text,
+                .second_chart_text,
+                .third_chart_text {
+                    grid-area: 2 / 1 / 3 / 2;
+                    margin-bottom: 30px;
+                }
+
+                .first_chart_button,
+                .second_chart_button,
+                .third_chart_button {
+                    grid-area: 4 / 1 / 5 / 2;
+                    position: relative;
+                    // top: 50%;
+                }
+
+                .first_chart_img,
+                .second_chart_img,
+                .third_chart_img {
+                    grid-area: 3 / 1 / 4 / 2;
+                    width: 750px;
+                    margin: 30px auto;
+                }
             }
         }
     }
->>>>>>> 57317f1b75f18607c35eb680b39882598b61ff24
-    .charts {
-        .col-mdlg {
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
-            padding: 10% 0;
-            .chart_properties {
-                box-sizing: border-box;
-                padding: 15px 0;
-                margin: 0 auto;
+
+
+    @media (max-width: 1440px) {}
+
+    @media (min-width: 1440px) {
+        .charts {
+            background-image: url('../../img/background/section-chart_XL.png');
+            min-height: 450px;
+            color: $primary;
+
+            .chart_header {
+                display: flex;
+                font-size: 40px;
+                font-weight: 600;
+                padding: 100px 0;
+                justify-content: center;
                 text-align: center;
             }
-            .first_chart_title,
-            .second_chart_title,
-            .third_chart_title {
-                grid-area: 1 / 1 / 2 / 2;
-                font-size: 30px;
-                font-weight: 600;
-            }
-            .first_chart_text,
-            .second_chart_text,
-            .third_chart_text {
-                grid-area: 2 / 1 / 3 / 2;
-                margin-bottom: 30px;
-            }
-            .first_chart_button,
-            .second_chart_button,
-            .third_chart_button {
-                grid-area: 4 / 1 / 5 / 2;
+
+            .chart_text {
                 position: relative;
-                // top: 50%;
+                opacity: 0.6;
+
             }
-            .first_chart_img,
-            .second_chart_img,
-            .third_chart_img {
-                grid-area: 3 / 1 / 4 / 2;
-                width: 750px;
-                margin: 30px auto;
+
+            button {
+                width: 160px;
+                color: #fff;
+            }
+
+            .chart_properties {
+                position: relative;
+            }
+
+            .first_chart {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                margin: 0 10% 0 5%;
+
+                .first_chart_title {
+                    grid-area: 1 / 1 / 2 / 2;
+                    font-size: 36px;
+                    font-weight: 600;
+                    top: 60%;
+                }
+
+                .first_chart_text {
+                    grid-area: 2 / 1 / 3 / 2;
+                    top: 30%;
+                }
+
+                .first_chart_button {
+                    grid-area: 3 / 1 / 4 / 2;
+                }
+
+                .first_chart_img {
+                    grid-area: 1 / 2 / 5 / 3;
+                }
+            }
+
+            .second_chart {
+                display: grid;
+            }
+
+            .third_chart {
+                display: grid;
             }
         }
     }
-}
-
-
-@media (max-width: 1440px) {
-}
-
-@media (min-width: 1440px) {
-    .charts {
-    background-image: url('../../img/background/section-chart_XL.png');
-    min-height: 450px;
-    color: $primary;
-    .chart_header {
-        display: flex;
-        font-size: 40px;
-        font-weight: 600;
-        padding: 100px 0;
-        justify-content: center;
-        text-align: center;
-    }
-    .chart_text {
-        position: relative;
-        opacity: 0.6;
-
-    }
-    button {
-        width: 160px;
-        color: #fff;
-    }
-    .chart_properties {
-        position: relative;
-    }
-    .first_chart {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        margin: 0 10% 0 5%;
-        .first_chart_title {
-            grid-area: 1 / 1 / 2 / 2;
-            font-size: 36px;
-            font-weight: 600;
-            top: 60%;
-        }
-        .first_chart_text {
-            grid-area: 2 / 1 / 3 / 2;
-            top: 30%;
-        }
-        .first_chart_button {
-            grid-area: 3 / 1 / 4 / 2;
-        }
-        .first_chart_img {
-            grid-area: 1 / 2 / 5 / 3;
-        }
-    }
-    .second_chart {
-        display: grid;
-    }
-    .third_chart {
-        display: grid;
-    }
-}
-}

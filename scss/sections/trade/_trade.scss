@@ -2,69 +2,85 @@
     background-color: rgb(245, 245, 245);
     min-height: 1480px;
     color: $primary;
+
     .trade_header {
-        display: flex;;
+        display: flex;
+        ;
         text-align: center;
+
         p {
-            font-size: 40px;
+            font-size: 40px; // never fixed value use rem instead!
             font-weight: 600;
         }
     }
+
     .primary_header {
         flex-direction: column;
         background-image: url('../../img/background/section-trade-XL.png');
-        height: 50vh;
-        margin: 100px 0 0 0;
+        height: 50vh; // why not %?
+        margin: 100px 0 0 0; // magic margin?
+
         span {
-            margin-top: 30px;
+            margin-top: 30px; // ;/
             color: $greycolor;
         }
     }
+
     .calculator_container {
         position: relative;
         bottom: 140px;
         margin: 0 auto;
-        height: 450px;
+        height: 450px; // not scalable avoid fixed px use min-height max-height instead!
         width: 70%;
         font-size: 20px;
         background-color: #fff;
         color: #303030;
         border-radius: 20px;
         z-index: 0;
+
         input {
-            height: 2rem;
+            height: 2rem; // wtf? never use rem and em for elements only to fonts!
             border-top-style: none;
             border-left-style: none;
             border-right-style: none;
             outline: none;
             font-size: 20px;
         }
-        input:valid ~ .input_text,
-        input:focus ~ .input_text {
+
+        input:valid~.input_text,
+        input:focus~.input_text {
             display: none;
         }
+
         .container {
             display: flex;
             flex-wrap: wrap;
             height: 30%;
+
             .input_text {
                 position: absolute;
                 transition: 0.5s;
             }
+
             .left_input {
                 align-items: center;
+
                 .amount_of_currency {
                     // margin: 0 5% 0 10%;
                     width: 85%;
                 }
+
                 .value {
                     left: 5%;
                 }
             }
+
             .right_input {
                 align-items: center;
                 width: 100%;
                 position: relative;
+
+                // remove it
                 // .type_of_currency {
                 //     margin-left: 5%;
                 //     width: 85%;
@@ -74,14 +90,17 @@
                     right: 10%;
                     cursor: pointer;
                 }
+
                 .ths {
                     margin-left: 5%;
                 }
             }
+
             .button_container {
                 display: grid;
                 align-items: center;
                 justify-content: center;
+
                 button {
                     color: $primary;
                     width: 140px;
@@ -90,8 +109,10 @@
                 }
             }
         }
+
         .result {
             height: 60%;
+
             // margin-top: 10%;
             .hour_revenue {
                 color: $button__color;
@@ -99,11 +120,13 @@
                 margin-left: 5%;
                 font-size: 16px;
             }
+
             #result {
                 width: 42%;
                 margin: 2% 5% 2% 5%;
                 font-size: 32px;
             }
+
             .mining_difficulty {
                 opacity: 0.5;
                 font-size: 16px;
@@ -111,22 +134,27 @@
                 margin-bottom: 5%;
             }
         }
+
         select {
             display: none;
         }
     }
+
     .secondary_header {
-    justify-content: center;
-    p {
-        color: black;
+        justify-content: center;
+
+        p {
+            color: black;
+        }
     }
-}
+
     .products {
         color: black;
         display: flex;
         margin: 0 auto;
         justify-content: space-evenly;
         padding: 5% 0 5% 0;
+
         .crypto_box {
             display: flex;
             text-align: center;
@@ -138,33 +166,40 @@
             width: 28%;
             max-width: 370px;
             max-height: 430px;
+
             .crypto_icons {
                 position: relative;
                 bottom: 20px;
                 padding: 10px;
                 margin-top: 50px;
             }
+
             .crypto_shortcut {
                 font-size: 30px;
                 font-weight: 600;
                 padding: 20px 0;
+
                 span {
                     font-size: 20px;
                     font-weight: 500;
                 }
             }
+
             .crypto_text {
                 opacity: 0.6;
                 padding-bottom: 30px;
                 line-height: 30px;
             }
+
             .crypto_arrows {
                 margin-bottom: 50px;
             }
         }
+
         .bitcoin {
             background-color: #2b076e;
             color: #fff;
+
             button {
                 display: flex;
                 align-items: center;
@@ -173,6 +208,7 @@
                 border: none;
                 color: $primary;
                 margin-bottom: 50px;
+
                 img {
                     height: 32px;
                     padding-left: 25px;
@@ -181,4 +217,3 @@
         }
     }
 }
-

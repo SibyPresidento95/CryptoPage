@@ -52,6 +52,13 @@
     </header>
 
     <section class="hero">
+        <!-- good work remeber 
+            1. section/article some big wrapper container element 
+            2. container element if it is need it 
+            3. .row 
+            4. col 
+            5. content 
+        and after this you always have ability to make it responsive and scalable -->
         <div class="row">
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="hero_content">
@@ -90,6 +97,17 @@
 
     <section class="facts">
         <div class="experience">
+
+            <!-- 
+                1. experience here is container
+            2. no row here columns always should be in row
+            3. img is not closed in div
+            4. <div class="data chart col-lg-3 col-md-6 col-sm-12">
+                why you named colums as data and chart please remove it only additional name which is accepted here should be with column prefix
+                5. close 
+                <img src="./svg/icons/chart.svg" alt="chart icon">
+                <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
+                in content container f.ex chart_content or sth like you named columns  -->
             <div class="data chart col-lg-3 col-md-6 col-sm-12">
                 <img src="./svg/icons/chart.svg" alt="chart icon">
                 <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
@@ -103,6 +121,7 @@
                 <p><span>195</span><br><br>Countries Supported</p>
             </div>
         </div>
+        <!-- facts above is section element here is div keep consistancy -->
         <div class="facts_sec">
             <div class="row">
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
@@ -125,11 +144,12 @@
                         </button>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <section class="trade">
+        <!-- so if you name this div header why is not header? next question about syles if does trade header is different form other headers in section? maybe would be better stay with primary_header only remove this trade_header class -->
         <div class="primary_header trade_header">
             <p>Check how much you can earn</p>
             <span>Let's check hash rate to see how much you will earn today, <br> Exercitation veniam consequat sunt
@@ -137,6 +157,7 @@
         </div>
         <div class="calculator_container">
             <div class="container">
+                <!-- what the hell is going on here?? columns are input container no rows here there is div named just container no content wrapper wtf? whole section to rewrite! -->
                 <div class="left_input col-xl-6 col-lg-12 col-md-12 col-sm-12">
                     <input class="amount_of_currency" type="text" id="n1" required="required">
                     <span class=" value input_text">Enter your hash rate</span>
@@ -159,6 +180,7 @@
                 <option value="X">X</option>
             </select>
         </div>
+        <!-- if it's a header why you use here div and p -> paragraph? instead h1 h2 h3 header element? -->
         <div class="secondary_header trade_header">
             <p>Trade securely and market the high <br> growth cryptocurrencies.</p>
         </div>
@@ -187,7 +209,9 @@
             </div>
         </div>
     </section>
+
     <section class="charts">
+        <!-- no proper responsive structure here added, no rows, column names are mixed or added to elements like span/button/p which is a content element whole section needs to be rewrite-->
         <span class="chart_header">Market sentiments, portfolio, and run <br> the infrastructure of your choice</span>
         <div class="first_chart">
             <p class="first_chart_title  col-xs-12">Invest Smart</p>
@@ -228,6 +252,7 @@
     </section>
 
     <footer>
+        <!-- no responsive structure here added -->
         <div class="logo">
             <a class="nav_menu_link footer_crappo" href="#crappo"></i>
                 <img class="crappo_icon" src="./svg/icons/crapo.svg" alt="logo icon">

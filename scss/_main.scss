@@ -1,11 +1,12 @@
-*, 
-*::before, 
+*,
+*::before,
 *::after {
     // box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+// REMOVE IT 
 // html {
 //     background-image: url(../img/abstraction-3527172_1920.jpg);
 //     background-attachment: fixed;
@@ -19,6 +20,10 @@ body {
     margin-left: auto;
     background-color: #0d0d2b;
     font-family: 'Rubik', sans-serif;
+
+    // stop using shortcuts! .btn ?
+    // renemae this button f ex. button_trade
+    // button is reusable component at page please move this code to directory components/buttons.scss
 
     .btn {
         display: block;

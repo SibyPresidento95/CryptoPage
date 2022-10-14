@@ -1,3 +1,5 @@
+// exactly like this nice! move whole code form responsive.scss to file such like this
+
 @media (max-width: 600px) {
     .trade {
         .trade_header {
@@ -5,39 +7,49 @@
                 font-size: 34px;
             }
         }
+
         .calculator_container {
             .container {
                 height: 100%;
+
                 .left_input {
-                    width:80%;
+                    width: 80%;
                     top: 10%;
+
                     .amount_of_currency {
                         left: 5%;
                         position: absolute;
+
                         .value {
                             position: relative;
                             left: 5%;
                         }
                     }
                 }
+
                 .right_input {
                     height: 20%;
+
                     .type_of_currency {
                         margin-left: 5%;
                         width: 85%;
                     }
                 }
+
                 .button_container {
                     position: relative;
                     bottom: 30%;
                 }
             }
+
             .result {
                 position: relative;
                 bottom: 30%;
+
                 #result {
                     width: 85%;
                 }
+
                 p {
                     margin: 0 5%;
                 }
@@ -54,39 +66,49 @@
                 font-size: 34px;
             }
         }
+
         .calculator_container {
             .container {
                 height: 100%;
+
                 .left_input {
-                    width:80%;
+                    width: 80%;
                     top: 10%;
+
                     .amount_of_currency {
                         left: 5%;
                         position: absolute;
+
                         .value {
                             position: relative;
                             left: 5%;
                         }
                     }
                 }
+
                 .right_input {
                     height: 20%;
+
                     .type_of_currency {
                         margin-left: 5%;
                         width: 85%;
                     }
                 }
+
                 .button_container {
                     position: relative;
                     bottom: 30%;
                 }
             }
+
             .result {
                 position: relative;
                 bottom: 30%;
+
                 #result {
                     width: 85%;
                 }
+
                 p {
                     margin: 0 5%;
                 }
@@ -102,6 +124,7 @@
                 font-size: 44px;
             }
         }
+
         .calculator_container {
             .container {
                 .left_input {
