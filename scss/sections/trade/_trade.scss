@@ -51,21 +51,12 @@
                 position: absolute;
                 transition: 0.5s;
             }
-            .left_input {
-                align-items: center;
-                .amount_of_currency {
-                    width: 85%;
-                }
-            }
             .right_input {
                 align-items: center;
-                width: 100%;
                 position: relative;
                 .type_of_currency {
                     position: absolute;
                     top: 75%;
-                    margin-left: 5%;
-                    width: 85%;
                 }
                 img {
                     position: absolute;
@@ -181,4 +172,3 @@
         }
     }
 }
-
