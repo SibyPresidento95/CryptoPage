@@ -718,17 +718,19 @@ header nav ul li .register p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.facts .experience .data {
+.facts .experience .achievements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.facts .experience .data p {
+.facts .experience .achievements p {
   min-width: 210px;
   padding-left: 25px;
   color: #c2c2c2;
 }
-.facts .experience .data p span {
+.facts .experience .achievements p span {
   font-size: 40px;
   font-weight: 600;
 }
@@ -772,7 +774,7 @@ header nav ul li .register p {
   .facts {
     padding-top: 30%;
   }
-  .facts .experience .data {
+  .facts .experience .achievements {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -816,7 +818,7 @@ header nav ul li .register p {
             justify-content: center;
     margin: 0 auto;
   }
-  .facts .experience .data {
+  .facts .experience .achievements {
     padding: 5% 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -840,7 +842,7 @@ header nav ul li .register p {
   .facts {
     padding-top: 0;
   }
-  .facts .experience .data:hover {
+  .facts .experience .achievements:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }

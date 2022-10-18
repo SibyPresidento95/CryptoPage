@@ -6,8 +6,9 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        .data {
+        .achievements {
             display: flex;
+            transition: 0.3s;
             p {
                 min-width: 210px;
                 padding-left: 25px;
@@ -60,7 +61,7 @@
     .facts {
         padding-top: 30%;
         .experience {
-            .data {
+            .achievements {
                 align-items: center;
                 justify-content: center;
                 padding: 5% 0;
@@ -97,7 +98,7 @@
             margin: 0 auto;
         }
         .experience {
-            .data {
+            .achievements {
                 padding: 5% 0;
                 transition: 0.5s;
             }
@@ -123,7 +124,7 @@
     .facts {
         padding-top: 0;
         .experience {
-            .data:hover {
+            .achievements:hover {
                 transform: scale(1.05);
             }
         }
