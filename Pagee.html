@@ -90,15 +90,15 @@
 
     <section class="facts">
         <div class="experience">
-            <div class="data chart col-lg-3 col-md-6 col-sm-12">
+            <div class="achievements chart col-lg-3 col-md-6 col-sm-12">
                 <img src="./svg/icons/chart.svg" alt="chart icon">
                 <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
             </div>
-            <div class="data investors col-lg-3 col-md-6 col-sm-12">
+            <div class="achievements investors col-lg-3 col-md-6 col-sm-12">
                 <img src="./svg/icons/person.svg" alt="person icon">
                 <p><span>10M+</span><br><br>Trusted Wallets Investors</p>
             </div>
-            <div class="data countries col-lg-3 col-md-6 col-sm-12">
+            <div class="achievements countries col-lg-3 col-md-6 col-sm-12">
                 <img src="./svg/icons/world.svg" alt="world icon">
                 <p><span>195</span><br><br>Countries Supported</p>
             </div>
@@ -130,24 +130,32 @@
         </div>
     </section>
     <section class="trade">
-        <div class="primary_header trade_header">
+        <div class="trade_header primary_header">
             <p>Check how much you can earn</p>
             <span>Let's check hash rate to see how much you will earn today, <br> Exercitation veniam consequat sunt
                 nostrud amet</span>
         </div>
         <div class="calculator_container">
             <div class="container">
-                <div class="left_input col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                    <input class="amount_of_currency" type="text" id="n1" required="required">
-                    <span class=" value input_text">Enter your hash rate</span>
-                </div>
-                <div class="right_input col-xl-3 col-lg-12 col-md-12 col-sm-12">
-                    <input class="type_of_currency" type="text" id="n2" required="required">
-                    <img src="./svg/signs/calculatorArrow.svg" alt="small calculator arrow">
-                    <span class="ths input_text">TH/s</span>
-                </div>
-                <div class="button_container col-xl-2 col-lg-12 col-md-12 col-sm-12">
-                    <button class="btn" onclick="calc();">Calculate</button>
+                <div class="row">
+                    <div class="first_item_container col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="left_input">
+                            <input class="amount_of_currency" type="text" id="n1" required="required">
+                            <span class=" value input_text">Enter your hash rate</span>
+                        </div>
+                    </div>
+                    <div class="second_item_container col-xl-3 col-lg-12 col-md-12 col-sm-12">
+                        <div class="right_input">
+                            <input class="type_of_currency" type="text" id="n2" required="required">
+                            <img src="./svg/signs/calculatorArrow.svg" alt="small calculator arrow">
+                            <span class="ths input_text">TH/s</span>
+                        </div>
+                    </div>
+                    <div class="third_item_container col-xl-2 col-lg-12 col-md-12 col-sm-12">
+                        <div class="button_container">
+                            <button class="btn" onclick="calc();">Calculate</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="result">
@@ -187,7 +195,7 @@
             </div>
         </div>
     </section>
-    <section class="charts">
+    <!-- <section class="charts">
         <span class="chart_header">Market sentiments, portfolio, and run <br> the infrastructure of your choice</span>
         <div class="first_chart">
             <p class="first_chart_title  col-xs-12">Invest Smart</p>
@@ -272,7 +280,7 @@
                 alt="facebook, instagram, youtube, twitter, linkedin. All media where you can find us.">
         </div>
 
-    </footer>
+    </footer> -->
     <script src="./JS/script.js"></script>
 </body>
 

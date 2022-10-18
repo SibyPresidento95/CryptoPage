@@ -1116,8 +1116,8 @@ header nav ul li .register p {
     top: 5%;
   }
   .trade .calculator_container .container .button_container {
-    left: 100%;
-    position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
   .trade .calculator_container .result {
     position: relative;
@@ -1168,8 +1168,8 @@ header nav ul li .register p {
     top: 5%;
   }
   .trade .calculator_container .container .button_container {
-    left: 100%;
-    position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
   .trade .calculator_container .result {
     position: relative;
@@ -1186,6 +1186,12 @@ header nav ul li .register p {
 @media (min-width: 1200px) {
   .trade .trade_header p {
     font-size: 44px;
+  }
+  .trade .calculator_container .container .left_input {
+    width: 40%;
+  }
+  .trade .calculator_container .container .right_input {
+    width: 35%;
   }
   .trade .calculator_container .result {
     height: 20%;

@@ -38,9 +38,8 @@
                     }
                 }
                 .button_container {
-                    left: 100%;
-                    position: relative;
-                    // bottom: 5/%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
             .result {
@@ -99,9 +98,8 @@
                     }
                 }
                 .button_container {
-                    left: 100%;
-                    position: relative;
-                    // bottom: 5/%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
             .result {
@@ -127,11 +125,14 @@
             }
         }
         .calculator_container {
-            // .container {
-            //     .left_input {
-                    
-            //     }
-            // }
+            .container {
+                .left_input {
+                   width: 40%; 
+                }
+                .right_input {
+                    width: 35%;
+                }
+            }
             .result {
                 height: 20%;
             }
