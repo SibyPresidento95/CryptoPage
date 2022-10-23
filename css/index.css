@@ -718,19 +718,19 @@ header nav ul li .register p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.facts .experience .achievements {
+.facts .experience .facts_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.facts .experience .achievements p {
+.facts .experience .facts_content p {
   min-width: 210px;
   padding-left: 25px;
   color: #c2c2c2;
 }
-.facts .experience .achievements p span {
+.facts .experience .facts_content p span {
   font-size: 40px;
   font-weight: 600;
 }
@@ -774,7 +774,7 @@ header nav ul li .register p {
   .facts {
     padding-top: 30%;
   }
-  .facts .experience .achievements {
+  .facts .experience .facts_content {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -818,7 +818,7 @@ header nav ul li .register p {
             justify-content: center;
     margin: 0 auto;
   }
-  .facts .experience .achievements {
+  .facts .experience .facts_content {
     padding: 5% 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -842,7 +842,10 @@ header nav ul li .register p {
   .facts {
     padding-top: 0;
   }
-  .facts .experience .achievements:hover {
+  .facts .experience .facts_content {
+    margin-left: 5%;
+  }
+  .facts .experience .facts_content:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
@@ -925,8 +928,8 @@ header nav ul li .register p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   height: 30%;
 }
 .trade .calculator_container .container .input_text {
@@ -934,40 +937,22 @@ header nav ul li .register p {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.trade .calculator_container .container .right_input {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
 .trade .calculator_container .container .right_input .type_of_currency {
   position: absolute;
-  top: 75%;
 }
 .trade .calculator_container .container .right_input img {
   position: absolute;
   right: 10%;
-  bottom: 5%;
   cursor: pointer;
 }
 .trade .calculator_container .container .right_input .ths {
   bottom: 5%;
   margin-left: 5%;
 }
-.trade .calculator_container .container .button_container {
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 .trade .calculator_container .container .button_container button {
   color: #E0E0E0;
   width: 140px;
   cursor: pointer;
-  margin-bottom: 15px;
 }
 .trade .calculator_container .result {
   height: 60%;
@@ -1116,8 +1101,12 @@ header nav ul li .register p {
     top: 5%;
   }
   .trade .calculator_container .container .button_container {
-    margin-left: auto;
-    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .trade .calculator_container .result {
     position: relative;

@@ -90,17 +90,31 @@
 
     <section class="facts">
         <div class="experience">
-            <div class="achievements chart col-lg-3 col-md-6 col-sm-12">
-                <img src="./svg/icons/chart.svg" alt="chart icon">
-                <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
-            </div>
-            <div class="achievements investors col-lg-3 col-md-6 col-sm-12">
-                <img src="./svg/icons/person.svg" alt="person icon">
-                <p><span>10M+</span><br><br>Trusted Wallets Investors</p>
-            </div>
-            <div class="achievements countries col-lg-3 col-md-6 col-sm-12">
-                <img src="./svg/icons/world.svg" alt="world icon">
-                <p><span>195</span><br><br>Countries Supported</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="facts_content">
+                        <div class="facts_content_img">
+                            <img src="./svg/icons/chart.svg" alt="chart icon">
+                        </div>
+                        <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="facts_content">
+                        <div class="facts_content_img">
+                            <img src="./svg/icons/person.svg" alt="person icon">
+                        </div>
+                        <p><span>10M+</span><br><br>Trusted Wallets Investors</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="facts_content">
+                        <div class="facts_content_img">
+                            <img src="./svg/icons/world.svg" alt="world icon">
+                        </div>
+                        <p><span>195</span><br><br>Countries Supported</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="facts_sec">
@@ -138,22 +152,28 @@
         <div class="calculator_container">
             <div class="container">
                 <div class="row">
-                    <div class="first_item_container col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                        <div class="left_input">
-                            <input class="amount_of_currency" type="text" id="n1" required="required">
-                            <span class=" value input_text">Enter your hash rate</span>
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="first_item_container">
+                            <div class="left_input">
+                                <input class="amount_of_currency" type="text" id="n1" required="required">
+                                <span class=" value input_text">Enter your hash rate</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="second_item_container col-xl-3 col-lg-12 col-md-12 col-sm-12">
-                        <div class="right_input">
-                            <input class="type_of_currency" type="text" id="n2" required="required">
-                            <img src="./svg/signs/calculatorArrow.svg" alt="small calculator arrow">
-                            <span class="ths input_text">TH/s</span>
+                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                        <div class="second_item_container">
+                            <div class="right_input">
+                                <input class="type_of_currency" type="text" id="n2" required="required">
+                                <img src="./svg/signs/calculatorArrow.svg" alt="small calculator arrow">
+                                <span class="ths input_text">TH/s</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="third_item_container col-xl-2 col-lg-12 col-md-12 col-sm-12">
-                        <div class="button_container">
-                            <button class="btn" onclick="calc();">Calculate</button>
+                    <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12">
+                        <div class="third_item_container">
+                            <div class="button_container">
+                                <button class="btn" onclick="calc();">Calculate</button>
+                            </div>
                         </div>
                     </div>
                 </div>

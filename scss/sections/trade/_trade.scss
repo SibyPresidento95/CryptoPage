@@ -45,23 +45,19 @@
         }
         .container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             height: 30%;
             .input_text {
                 position: absolute;
                 transition: 0.5s;
             }
             .right_input {
-                align-items: center;
-                position: relative;
                 .type_of_currency {
                     position: absolute;
-                    top: 75%;
                 }
                 img {
                     position: absolute;
                     right: 10%;
-                    bottom: 5%;
                     cursor: pointer;
                 }
                 .ths {
@@ -70,20 +66,15 @@
                 }
             }
             .button_container {
-                display: grid;
-                align-items: center;
-                justify-content: center;
                 button {
                     color: $primary;
                     width: 140px;
                     cursor: pointer;
-                    margin-bottom: 15px;
                 }
             }
         }
         .result {
             height: 60%;
-            // margin-top: 10%;
             .hour_revenue {
                 color: $button__color;
                 font-weight: 500;

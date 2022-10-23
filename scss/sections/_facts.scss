@@ -6,7 +6,7 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        .achievements {
+        .facts_content {
             display: flex;
             transition: 0.3s;
             p {
@@ -61,7 +61,7 @@
     .facts {
         padding-top: 30%;
         .experience {
-            .achievements {
+            .facts_content {
                 align-items: center;
                 justify-content: center;
                 padding: 5% 0;
@@ -98,7 +98,7 @@
             margin: 0 auto;
         }
         .experience {
-            .achievements {
+            .facts_content {
                 padding: 5% 0;
                 transition: 0.5s;
             }
@@ -124,7 +124,10 @@
     .facts {
         padding-top: 0;
         .experience {
-            .achievements:hover {
+            .facts_content {
+                margin-left: 5%;
+            }
+            .facts_content:hover {
                 transform: scale(1.05);
             }
         }
