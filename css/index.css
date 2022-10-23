@@ -842,9 +842,6 @@ header nav ul li .register p {
   .facts {
     padding-top: 0;
   }
-  .facts .experience .facts_content {
-    margin-left: 5%;
-  }
   .facts .experience .facts_content:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
