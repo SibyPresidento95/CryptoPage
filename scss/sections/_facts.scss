@@ -62,7 +62,7 @@
         padding-top: 30%;
         .experience {
             .facts_content {
-                align-items: center;
+                margin: 0 auto;
                 justify-content: center;
                 padding: 5% 0;
                 transition: 0.5s;
@@ -94,8 +94,8 @@
     .facts {
         padding-top: 15%;
         div {
-            justify-content: center;
             margin: 0 auto;
+            justify-content: center;
         }
         .experience {
             .facts_content {
@@ -124,6 +124,9 @@
     .facts {
         padding-top: 0;
         .experience {
+            .facts_content {
+                justify-content: center;
+            }
             .facts_content:hover {
                 transform: scale(1.05);
             }
