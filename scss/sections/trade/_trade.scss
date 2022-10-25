@@ -2,21 +2,20 @@
     background-color: rgb(245, 245, 245);
     min-height: 1480px;
     color: $primary;
-    .trade_header {
+    .navyblue_section {
         display: flex;;
         text-align: center;
-        p {
-            font-size: 40px;
-            font-weight: 600;
-        }
-    }
-    .primary_header {
         flex-direction: column;
         background-image: url('../../img/background/section-trade-XL.png');
         height: 50vh;
         margin: 100px 0 0 0;
-        span {
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        h4 {
             margin-top: 30px;
+            font-weight: normal;
             color: $greycolor;
         }
     }
@@ -91,18 +90,23 @@
                 font-size: 16px;
                 margin-left: 5%;
                 margin-bottom: 5%;
+                font-weight: 400;
             }
         }
         select {
             display: none;
         }
     }
-    .secondary_header {
-    justify-content: center;
-    p {
-        color: black;
+    .white_section {
+        display: flex;;
+        text-align: center;
+        justify-content: center;
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+            color: black;
+        }
     }
-}
     .products {
         color: black;
         display: flex;

@@ -1,6 +1,11 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.specrow {
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
