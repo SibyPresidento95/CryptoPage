@@ -38,18 +38,6 @@
                 display: flex;
                 color: rgba($color: #e0e0e0, $alpha: .8);
             }
-            .facts_learn {
-                width: 140px;
-                height: 60px;
-                background-color: $button__color;
-                border: none;
-                border-radius: 30px;
-                p {
-                    font-size: 18px;
-                    color: $primary;
-                    font-weight: 500;
-                }
-            }
         }
         .crypto_procesor {
             position: absolute;
@@ -74,6 +62,7 @@
                 z-index: 1;
                 text-align: center;
                 .spanch_bob {
+                    display: flex;
                     justify-content: center;
                     margin: 5% auto;
                 }
@@ -116,6 +105,7 @@
             text-align: center;
             .spanch_bob {
                 margin: 5% 0 5% 0;
+                display: flex;
                 justify-content: center;
             }
         }

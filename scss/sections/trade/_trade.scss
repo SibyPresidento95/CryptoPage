@@ -42,7 +42,7 @@
         input:focus ~ .input_text {
             display: none;
         }
-        .container {
+        .top_calculator_part {
             display: flex;
             flex-wrap: nowrap;
             height: 30%;
@@ -50,7 +50,7 @@
                 position: absolute;
                 transition: 0.5s;
             }
-            .right_input {
+            .right_text_area {
                 .type_of_currency {
                     position: absolute;
                 }
@@ -63,16 +63,9 @@
                     bottom: 5%;
                     margin-left: 5%;
                 }
-            }
-            .button_container {
-                button {
-                    color: $primary;
-                    width: 140px;
-                    cursor: pointer;
-                }
-            }
+            }   
         }
-        .result {
+        .bottom_calculator_part {
             height: 60%;
             .hour_revenue {
                 color: $button__color;

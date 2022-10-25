@@ -7,9 +7,9 @@
             }
         }
         .calculator_container {
-            .container {
+            .top_calculator_part {
                 height: 100%;
-                .left_input {
+                .left_text_area {
                     position: absolute;
                     width:100%;
                     top: 10%;
@@ -23,7 +23,7 @@
                         left: 5%;
                     }
                 }
-                .right_input {
+                .right_text_area {
                     position: absolute;
                     width: 100%;
                     top: 25%;
@@ -43,7 +43,7 @@
                     align-items: center;
                 }
             }
-            .result {
+            .bottom_calculator_part {
                 position: relative;
                 bottom: 35%;
                 #result {
@@ -61,15 +61,15 @@
 
 @media (min-width: 600px) {
     .trade {
-        .trade_header {
+        .navyblue_section {
             p {
                 font-size: 34px;
             }
         }
         .calculator_container {
-            .container {
+            .top_calculator_part {
                 height: 100%;
-                .left_input {
+                .left_text_area {
                     position: absolute;
                     width:100%;
                     top: 10%;
@@ -83,7 +83,7 @@
                         left: 5%;
                     }
                 }
-                .right_input {
+                .right_text_area {
                     position: absolute;
                     width: 100%;
                     top: 25%;
@@ -103,10 +103,10 @@
                     margin-right: auto;
                 }
             }
-            .result {
+            .bottom_calculator_part {
                 position: relative;
                 bottom: 35%;
-                #result {
+                #bottom_calculator_part {
                     width: 85%;
                     margin-bottom: 5%;
                 }
@@ -120,21 +120,21 @@
 
 @media (min-width: 1200px) {
     .trade {
-        .trade_header {
+        .navyblue_section {
             p {
                 font-size: 44px;
             }
         }
         .calculator_container {
-            .container {
-                .left_input {
+            .top_calculator_part {
+                .left_text_area {
                    width: 40%; 
                 }
-                .right_input {
+                .right_text_area {
                     width: 35%;
                 }
             }
-            .result {
+            .bottom_calculator_part {
                 height: 20%;
             }
         }
