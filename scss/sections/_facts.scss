@@ -2,7 +2,7 @@
     min-height: 700px;
     background-image: url('../img/background/section-experience-XL.png');
     color: $primary;
-    .experience {
+    .experience_block {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -22,7 +22,7 @@
     }
 
 
-    .facts_sec {
+    .incentive_block {
         position: relative;
         .facts_info {
             margin: 20% 8%;
@@ -60,7 +60,7 @@
 @media (max-width: 600px) {
     .facts {
         padding-top: 30%;
-        .experience {
+        .experience_block {
             .facts_content {
                 margin: 0 auto;
                 justify-content: center;
@@ -68,7 +68,7 @@
                 transition: 0.5s;
             }
         }
-        .facts_sec {
+        .incentive_block {
             flex-wrap: wrap;
             .facts_info {
                 z-index: 1;
@@ -93,7 +93,7 @@
 @media (min-width: 601px) {
     .facts {
         padding-top: 15%;
-        .experience {
+        .experience_block {
             .facts_content {
                 margin: 0 auto;
                 padding: 5% 0;
@@ -125,7 +125,7 @@
 @media (min-width: 1200px) {
     .facts {
         padding-top: 0;
-        .experience {
+        .experience_block {
             .facts_content {
                 justify-content: center;
             }
@@ -133,7 +133,7 @@
                 transform: scale(1.05);
             }
         }
-        .facts_sec {
+        .incentive_block {
             .crypto_procesor {
                 max-width: 45%;
                 margin-left: 5%;
