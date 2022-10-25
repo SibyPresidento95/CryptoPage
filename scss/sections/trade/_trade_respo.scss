@@ -9,38 +9,47 @@
         .calculator_container {
             .top_calculator_part {
                 height: 100%;
-                .left_text_area {
-                    position: absolute;
-                    width:100%;
-                    top: 10%;
-                    .amount_of_currency {
-                        width: 85%;
-                        left: 5%;
+                .first_item_container {
+                    .left_text_area {
+                        position: absolute;
+                        width:100%;
                         top: 10%;
-                        position: relative;
-                    }
-                    .value {
-                        left: 5%;
+                        .amount_of_currency {
+                            width: 85%;
+                            left: 5%;
+                            top: 10%;
+                            position: relative;
+                        }
+                        .product_quantity {
+                            left: 5%;
+                        }
                     }
                 }
-                .right_text_area {
+                .second_item_container {
+                    .right_text_area {
+                        position: absolute;
+                        width: 100%;
+                        top: 25%;
+                        .type_of_currency {
+                            margin-left: 5%;
+                            width: 85%;
+                        }
+                        img {
+                            top: 5%;
+                        }
+                        .ths {
+                            top: 5%;
+                        }
+                    }
+                }
+                .third_item_container {
                     position: absolute;
                     width: 100%;
-                    top: 25%;
-                    .type_of_currency {
-                        margin-left: 5%;
-                        width: 85%;
+                    top: 40%;
+                    .button_container {
+                        display: flex;
+                        justify-content: center;
                     }
-                    img {
-                        top: 5%;
-                    }
-                    .ths {
-                        top: 5%;
-                    }
-                }
-                .button_container {
-                    display: flex;
-                    align-items: center;
                 }
             }
             .bottom_calculator_part {
@@ -79,7 +88,7 @@
                         top: 10%;
                         position: relative;
                     }
-                    .value {
+                    .product_quantity {
                         left: 5%;
                     }
                 }
@@ -98,9 +107,14 @@
                         top: 5%;
                     }
                 }
-                .button_container {
-                    margin-left: auto;
-                    margin-right: auto;
+                .third_item_container {
+                    position: absolute;
+                    width: 100%;
+                    top: 40%;
+                    .button_container {
+                        display: flex;
+                        justify-content: center;
+                    }
                 }
             }
             .bottom_calculator_part {
@@ -127,15 +141,35 @@
         }
         .calculator_container {
             .top_calculator_part {
-                .left_text_area {
-                   width: 40%; 
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                width: 100%;
+                height: 60%;
+                .first_item_container {
+                    // width: 40%;
+                    .left_text_area {
+                        width: 40%; 
+                    }
                 }
-                .right_text_area {
-                    width: 35%;
+                .second_item_container {
+                    // width: 35%;
+                    .right_text_area {
+                        width: 35%;
+                    }
+                }
+                .third_item_container {
+                    // width: 25%;
+                    .button_container {
+                        margin: 0 auto;
+                    }
                 }
             }
             .bottom_calculator_part {
-                height: 20%;
+                height: 40%;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
             }
         }
     }
