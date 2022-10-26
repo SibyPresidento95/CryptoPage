@@ -2,9 +2,12 @@
 @import "./grid";
 @import "./_main.scss";
 
-@import "./_header.scss";
+@import "./components/buttons";
+@import "./components/navLinks";
 
 
+
+@import "./sections/header";
 @import "./sections/hero";
 @import "./sections/facts";
 
@@ -16,17 +19,7 @@
 
 @import "./sections/footer";
 
-@import "./grid";
 
-
-
-
-
-
-
-// ---------- I still need it ----------
-
-// @import "./_responsive";
 
 
 

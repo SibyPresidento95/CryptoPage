@@ -87,23 +87,36 @@
             </div>
         </div>
     </section>
-
     <section class="facts">
-        <div class="experience">
-            <div class="data chart col-lg-3 col-md-6 col-sm-12">
-                <img src="./svg/icons/chart.svg" alt="chart icon">
-                <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
-            </div>
-            <div class="data investors col-lg-3 col-md-6 col-sm-12">
-                <img src="./svg/icons/person.svg" alt="person icon">
-                <p><span>10M+</span><br><br>Trusted Wallets Investors</p>
-            </div>
-            <div class="data countries col-lg-3 col-md-6 col-sm-12">
-                <img src="./svg/icons/world.svg" alt="world icon">
-                <p><span>195</span><br><br>Countries Supported</p>
+        <div class="experience_block">
+            <div class="row specrow">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="facts_content">
+                        <div class="facts_content_img">
+                            <img src="./svg/icons/chart.svg" alt="chart icon">
+                        </div>
+                        <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="facts_content">
+                        <div class="facts_content_img">
+                            <img src="./svg/icons/person.svg" alt="person icon">
+                        </div>
+                        <p><span>10M+</span><br><br>Trusted Wallets Investors</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="facts_content">
+                        <div class="facts_content_img">
+                            <img src="./svg/icons/world.svg" alt="world icon">
+                        </div>
+                        <p><span>195</span><br><br>Countries Supported</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="facts_sec">
+        <div class="incentive_block">
             <div class="row">
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                     <div class="crypto_procesor">
@@ -120,52 +133,63 @@
                                 fees, and
                                 fake <br> reviews.</p>
                         </div>
-                        <button class="facts_learn spanch_bob">
-                            <p>Learn More</p>
-                        </button>
+                        <div class="button_container spanch_bob">
+                            <button class="btn">Learn More</button>
+                        </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <section class="trade">
-        <div class="primary_header trade_header">
-            <p>Check how much you can earn</p>
-            <span>Let's check hash rate to see how much you will earn today, <br> Exercitation veniam consequat sunt
-                nostrud amet</span>
+        <div class="navyblue_section">
+            <h1>Check how much you can earn</h1>
+            <h4>Let's check hash rate to see how much you will earn today, <br> Exercitation veniam consequat sunt
+                nostrud amet</h4>
         </div>
         <div class="calculator_container">
-            <div class="container">
-                <div class="left_input col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                    <input class="amount_of_currency" type="text" id="n1" required="required">
-                    <span class=" value input_text">Enter your hash rate</span>
-                </div>
-
-                <div class="right_input col-xl-3 col-lg-12 col-md-12 col-sm-12">
-                    <input class="type_of_currency" type="text" id="n2" required="required">
-                    <img src="./svg/signs/calculatorArrow.svg" alt="small calculator arrow">
-                    <span class="ths input_text">TH/s</span>
-                </div>
-
-                <div class="button_container col-xl-2 col-lg-12 col-md-12 col-sm-12">
-                    <button class="btn" onclick="calc();">Calculate</button>
-                </div>
-                
+            <div class="top_calculator_part">
+                <!-- <div class="row"> -->
+                    <div class="first_item_container">
+                        <div class="left_text_area">
+                            <input class="amount_of_currency" type="text" id="n1" required="required">
+                            <span class="product_quantity text_area">Enter your hash rate</span>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    </div> -->
+                    <div class="second_item_container">
+                        <div class="right_text_area">
+                            <input class="type_of_currency" type="text" id="n2" required="required">
+                            <img src="./svg/signs/calculatorArrow.svg" alt="small calculator arrow">
+                            <span class="ths text_area">TH/s</span>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                    </div> -->
+                    <div class="third_item_container">
+                        <div class="button_container">
+                            <button class="btn" onclick="calc();">Calculate</button>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12">
+                    </div> -->
+                <!-- </div> -->
             </div>
-            <div class="result">
-                <p class="hour_revenue">ESTIMATED 24 HOUR REVENUE:</p>
+            <div class="bottom_calculator_part">
+                <h4 class="hour_revenue">ESTIMATED 24 HOUR REVENUE:</h4>
                 <input type="text" id="result">
-                <p class="mining_difficulty">Revenue will change based on mining difficulty and Ethereum price.</p>
+                <h5 class="mining_difficulty">Revenue will change based on mining difficulty and Ethereum price.</h5>
             </div>
             <select id="operators">
                 <option value="X">X</option>
             </select>
         </div>
-        <div class="secondary_header trade_header">
-            <p>Trade securely and market the high <br> growth cryptocurrencies.</p>
+        <div class="white_section">
+            <h1>Trade securely and market the high <br> growth cryptocurrencies.</h1>
         </div>
-        <div class="products">
+        <!-- <div class="products">
             <div class="bitcoin crypto_box">
                 <img class="crypto_icons" src="./svg/icons/bitcoin.svg" alt="bitcoin logo">
                 <p class="crypto_shortcut">Bitcoin <span>BTC</span></p>
@@ -188,9 +212,9 @@
                 </p>
                 <img class="crypto_arrows" src="./svg/signs/tradeArrow.svg" alt="bigest arrow">
             </div>
-        </div>
+        </div> -->
     </section>
-    <section class="charts">
+    <!-- <section class="charts">
         <span class="chart_header">Market sentiments, portfolio, and run <br> the infrastructure of your choice</span>
         <div class="first_chart">
             <p class="first_chart_title  col-xs-12">Invest Smart</p>
@@ -275,7 +299,7 @@
                 alt="facebook, instagram, youtube, twitter, linkedin. All media where you can find us.">
         </div>
 
-    </footer>
+    </footer> -->
     <script src="./JS/script.js"></script>
 </body>
 

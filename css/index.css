@@ -6,6 +6,16 @@
       flex-wrap: wrap;
 }
 
+.specrow {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
 [class*=col-] {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -339,7 +349,14 @@ body {
   background-color: #0d0d2b;
   font-family: "Rubik", sans-serif;
 }
-body .btn {
+
+.button_container button {
+  color: #E0E0E0;
+  width: 140px;
+  cursor: pointer;
+}
+
+.btn {
   display: block;
   font-style: normal;
   height: 65px;
@@ -349,7 +366,8 @@ body .btn {
   font-weight: 500;
   border: none;
 }
-body a.nav_menu_link {
+
+a.nav_menu_link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -709,7 +727,7 @@ header nav ul li .register p {
   background-image: url("../img/background/section-experience-XL.png");
   color: #E0E0E0;
 }
-.facts .experience {
+.facts .experience_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,53 +736,43 @@ header nav ul li .register p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.facts .experience .data {
+.facts .experience_block .facts_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.facts .experience .data p {
+.facts .experience_block .facts_content p {
   min-width: 210px;
   padding-left: 25px;
   color: #c2c2c2;
 }
-.facts .experience .data p span {
+.facts .experience_block .facts_content p span {
   font-size: 40px;
   font-weight: 600;
 }
-.facts .facts_sec {
+.facts .incentive_block {
   position: relative;
 }
-.facts .facts_sec .facts_info {
+.facts .incentive_block .facts_info {
   margin: 20% 8%;
 }
-.facts .facts_sec .facts_info img {
+.facts .incentive_block .facts_info img {
   position: relative;
   top: -100px;
 }
-.facts .facts_sec .facts_info .facts_question {
+.facts .incentive_block .facts_info .facts_question {
   font-size: 50px;
   font-weight: 600;
 }
-.facts .facts_sec .facts_info .facts_text {
+.facts .incentive_block .facts_info .facts_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: rgba(224, 224, 224, 0.8);
 }
-.facts .facts_sec .facts_info .facts_learn {
-  width: 140px;
-  height: 60px;
-  background-color: #3671e9;
-  border: none;
-  border-radius: 30px;
-}
-.facts .facts_sec .facts_info .facts_learn p {
-  font-size: 18px;
-  color: #E0E0E0;
-  font-weight: 500;
-}
-.facts .facts_sec .crypto_procesor {
+.facts .incentive_block .crypto_procesor {
   position: absolute;
 }
 
@@ -772,10 +780,8 @@ header nav ul li .register p {
   .facts {
     padding-top: 30%;
   }
-  .facts .experience .data {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .facts .experience_block .facts_content {
+    margin: 0 auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -783,25 +789,28 @@ header nav ul li .register p {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  .facts .facts_sec {
+  .facts .incentive_block {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .facts .facts_sec .facts_info {
+  .facts .incentive_block .facts_info {
     z-index: 1;
     text-align: center;
   }
-  .facts .facts_sec .facts_info .spanch_bob {
+  .facts .incentive_block .facts_info .spanch_bob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 5% auto;
   }
-  .facts .facts_sec .crypto_procesor {
+  .facts .incentive_block .crypto_procesor {
     margin: 0 auto;
     bottom: 30%;
   }
-  .facts .facts_sec .crypto_procesor img {
+  .facts .incentive_block .crypto_procesor img {
     width: 100vw;
     opacity: 0.4;
   }
@@ -810,61 +819,86 @@ header nav ul li .register p {
   .facts {
     padding-top: 15%;
   }
-  .facts div {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .facts .experience_block .facts_content {
     margin: 0 auto;
-  }
-  .facts .experience .data {
     padding: 5% 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   .facts .crypto_procesor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     bottom: 30%;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .facts .crypto_procesor img {
-    width: 80vw;
+    width: 80%;
     opacity: 0.4;
   }
   .facts .facts_info {
+    width: 100%;
     z-index: 1;
     text-align: center;
   }
   .facts .facts_info .spanch_bob {
-    margin: 5% auto;
+    margin: 5% 0 5% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (min-width: 1200px) {
   .facts {
     padding-top: 0;
   }
-  .facts .experience .data:hover {
+  .facts .experience_block .facts_content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .facts .experience_block .facts_content:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
-  .facts .facts_sec .crypto_procesor {
+  .facts .incentive_block .crypto_procesor {
     max-width: 45%;
     margin-left: 5%;
   }
-  .facts .facts_sec .crypto_procesor img {
+  .facts .incentive_block .crypto_procesor img {
     width: 100%;
     opacity: 1;
   }
-  .facts .facts_sec .facts_info div {
+  .facts .incentive_block .facts_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20% 8%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: start;
+            justify-content: flex-start;
   }
-  .facts .facts_sec .facts_info .facts_question {
+  .facts .incentive_block .facts_info .spanch_bob p {
+    width: 100%;
+  }
+  .facts .incentive_block .facts_info .facts_question {
     text-align: left;
+    width: 100%;
   }
-  .facts .facts_sec .facts_info .facts_text {
+  .facts .incentive_block .facts_info .facts_text {
     text-align: left;
+    width: 100%;
   }
-  .facts .facts_sec .facts_info .facts_learn {
-    float: left;
+  .facts .incentive_block .facts_info .facts_learn {
+    margin: 0;
   }
 }
 .trade {
@@ -872,17 +906,11 @@ header nav ul li .register p {
   min-height: 1480px;
   color: #E0E0E0;
 }
-.trade .trade_header {
+.trade .navyblue_section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-}
-.trade .trade_header p {
-  font-size: 40px;
-  font-weight: 600;
-}
-.trade .primary_header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -891,8 +919,13 @@ header nav ul li .register p {
   height: 50vh;
   margin: 100px 0 0 0;
 }
-.trade .primary_header span {
+.trade .navyblue_section h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.trade .navyblue_section h4 {
   margin-top: 30px;
+  font-weight: normal;
   color: #c2c2c2;
 }
 .trade .calculator_container {
@@ -915,98 +948,72 @@ header nav ul li .register p {
   outline: none;
   font-size: 20px;
 }
-.trade .calculator_container input:valid ~ .input_text,
-.trade .calculator_container input:focus ~ .input_text {
+.trade .calculator_container input:valid ~ .text_area,
+.trade .calculator_container input:focus ~ .text_area {
   display: none;
 }
-.trade .calculator_container .container {
+.trade .calculator_container .top_calculator_part {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   height: 30%;
 }
-.trade .calculator_container .container .input_text {
+.trade .calculator_container .top_calculator_part .text_area {
   position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.trade .calculator_container .container .left_input {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.trade .calculator_container .container .left_input .amount_of_currency {
-  width: 85%;
-}
-.trade .calculator_container .container .right_input {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  position: relative;
-}
-.trade .calculator_container .container .right_input .type_of_currency {
+.trade .calculator_container .top_calculator_part .right_text_area .type_of_currency {
   position: absolute;
-  top: 75%;
-  margin-left: 5%;
-  width: 85%;
 }
-.trade .calculator_container .container .right_input img {
+.trade .calculator_container .top_calculator_part .right_text_area img {
   position: absolute;
   right: 10%;
   bottom: 5%;
   cursor: pointer;
 }
-.trade .calculator_container .container .right_input .ths {
+.trade .calculator_container .top_calculator_part .right_text_area .ths {
   bottom: 5%;
   margin-left: 5%;
 }
-.trade .calculator_container .container .button_container {
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.trade .calculator_container .container .button_container button {
-  color: #E0E0E0;
-  width: 140px;
-  cursor: pointer;
-  margin-bottom: 15px;
-}
-.trade .calculator_container .result {
+.trade .calculator_container .bottom_calculator_part {
   height: 60%;
 }
-.trade .calculator_container .result .hour_revenue {
+.trade .calculator_container .bottom_calculator_part .hour_revenue {
   color: #3671e9;
   font-weight: 500;
   margin-left: 5%;
   font-size: 16px;
 }
-.trade .calculator_container .result #result {
+.trade .calculator_container .bottom_calculator_part #result {
   width: 42%;
   margin: 2% 5% 2% 5%;
   font-size: 32px;
 }
-.trade .calculator_container .result .mining_difficulty {
+.trade .calculator_container .bottom_calculator_part .mining_difficulty {
   opacity: 0.5;
   font-size: 16px;
   margin-left: 5%;
   margin-bottom: 5%;
+  font-weight: 400;
 }
 .trade .calculator_container select {
   display: none;
 }
-.trade .secondary_header {
+.trade .white_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.trade .secondary_header p {
+.trade .white_section h1 {
+  font-size: 40px;
+  font-weight: 600;
   color: black;
 }
 .trade .products {
@@ -1089,102 +1096,158 @@ header nav ul li .register p {
 }
 
 @media (max-width: 600px) {
-  .trade .trade_header p {
+  .trade .navyblue_section h1,
+.trade .white_section h1 {
     font-size: 34px;
   }
-  .trade .calculator_container .container {
+  .trade .calculator_container .top_calculator_part {
     height: 100%;
   }
-  .trade .calculator_container .container .left_input {
+  .trade .calculator_container .top_calculator_part .first_item_container .left_text_area {
     position: absolute;
-    width: 80%;
+    width: 100%;
     top: 10%;
   }
-  .trade .calculator_container .container .left_input .amount_of_currency {
+  .trade .calculator_container .top_calculator_part .first_item_container .left_text_area .amount_of_currency {
+    width: 85%;
     left: 5%;
     top: 10%;
     position: relative;
   }
-  .trade .calculator_container .container .left_input .value {
-    position: relative;
+  .trade .calculator_container .top_calculator_part .first_item_container .left_text_area .product_quantity {
     left: 5%;
   }
-  .trade .calculator_container .container .right_input {
-    height: 20%;
+  .trade .calculator_container .top_calculator_part .second_item_container .right_text_area {
+    position: absolute;
+    width: 100%;
+    top: 25%;
   }
-  .trade .calculator_container .container .right_input .type_of_currency {
+  .trade .calculator_container .top_calculator_part .second_item_container .right_text_area .type_of_currency {
     margin-left: 5%;
     width: 85%;
   }
-  .trade .calculator_container .container .button_container {
-    position: relative;
-    bottom: 30%;
+  .trade .calculator_container .top_calculator_part .second_item_container .right_text_area img {
+    top: 5%;
   }
-  .trade .calculator_container .result {
-    position: relative;
-    bottom: 30%;
+  .trade .calculator_container .top_calculator_part .second_item_container .right_text_area .ths {
+    top: 5%;
   }
-  .trade .calculator_container .result #result {
+  .trade .calculator_container .top_calculator_part .third_item_container {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+  }
+  .trade .calculator_container .top_calculator_part .third_item_container .button_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .trade .calculator_container .bottom_calculator_part {
+    position: relative;
+    bottom: 35%;
+  }
+  .trade .calculator_container .bottom_calculator_part #result {
     width: 85%;
+    margin-bottom: 5%;
   }
-  .trade .calculator_container .result p {
+  .trade .calculator_container .bottom_calculator_part p {
     margin: 0 5%;
   }
 }
 @media (min-width: 600px) {
-  .trade .trade_header p {
+  .trade .navyblue_section p {
     font-size: 34px;
   }
-  .trade .calculator_container .container {
+  .trade .calculator_container .top_calculator_part {
     height: 100%;
   }
-  .trade .calculator_container .container .left_input {
-    width: 80%;
+  .trade .calculator_container .top_calculator_part .left_text_area {
+    position: absolute;
+    width: 100%;
     top: 10%;
   }
-  .trade .calculator_container .container .left_input .amount_of_currency {
+  .trade .calculator_container .top_calculator_part .left_text_area .amount_of_currency {
+    width: 85%;
     left: 5%;
-    position: absolute;
-  }
-  .trade .calculator_container .container .left_input .amount_of_currency .value {
+    top: 10%;
     position: relative;
+  }
+  .trade .calculator_container .top_calculator_part .left_text_area .product_quantity {
     left: 5%;
   }
-  .trade .calculator_container .container .right_input {
-    height: 20%;
+  .trade .calculator_container .top_calculator_part .right_text_area {
+    position: absolute;
+    width: 100%;
+    top: 25%;
   }
-  .trade .calculator_container .container .right_input .type_of_currency {
+  .trade .calculator_container .top_calculator_part .right_text_area .type_of_currency {
     margin-left: 5%;
     width: 85%;
   }
-  .trade .calculator_container .container .button_container {
-    position: relative;
-    bottom: 30%;
+  .trade .calculator_container .top_calculator_part .right_text_area img {
+    top: 5%;
   }
-  .trade .calculator_container .result {
-    position: relative;
-    bottom: 30%;
+  .trade .calculator_container .top_calculator_part .right_text_area .ths {
+    top: 5%;
   }
-  .trade .calculator_container .result #result {
+  .trade .calculator_container .top_calculator_part .third_item_container {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+  }
+  .trade .calculator_container .top_calculator_part .third_item_container .button_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .trade .calculator_container .bottom_calculator_part {
+    position: relative;
+    bottom: 35%;
+  }
+  .trade .calculator_container .bottom_calculator_part #bottom_calculator_part {
     width: 85%;
+    margin-bottom: 5%;
   }
-  .trade .calculator_container .result p {
+  .trade .calculator_container .bottom_calculator_part p {
     margin: 0 5%;
   }
 }
 @media (min-width: 1200px) {
-  .trade .trade_header p {
+  .trade .navyblue_section p {
     font-size: 44px;
   }
-  .trade .calculator_container .container .left_input .amount_of_currency {
+  .trade .calculator_container .top_calculator_part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 60%;
+  }
+  .trade .calculator_container .top_calculator_part .first_item_container .left_text_area {
     width: 40%;
-    top: 15%;
   }
-  .trade .calculator_container .container .left_input .value {
-    left: 5%;
-    top: 15%;
+  .trade .calculator_container .top_calculator_part .second_item_container .right_text_area {
+    width: 35%;
   }
-  .trade .calculator_container .container .right_input .ths {
+  .trade .calculator_container .top_calculator_part .third_item_container .button_container {
+    margin: 0 auto;
+  }
+  .trade .calculator_container .bottom_calculator_part {
+    height: 40%;
+    width: 100%;
+    position: absolute;
     bottom: 0;
   }
 }
@@ -1373,331 +1436,4 @@ footer .rights_reserved img {
   display: flex;
   height: 25px;
   margin-right: 3%;
-}
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-[class*=col-] {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-@media (max-width: 600px) {
-  .col-sm-1 {
-    width: calc(8.333333% * 1);
-    -ms-flex-preferred-size: calc(8.333333% * 1);
-        flex-basis: calc(8.333333% * 1);
-  }
-  .col-sm-2 {
-    width: calc(8.333333% * 2);
-    -ms-flex-preferred-size: calc(8.333333% * 2);
-        flex-basis: calc(8.333333% * 2);
-  }
-  .col-sm-3 {
-    width: calc(8.333333% * 3);
-    -ms-flex-preferred-size: calc(8.333333% * 3);
-        flex-basis: calc(8.333333% * 3);
-  }
-  .col-sm-4 {
-    width: calc(8.333333% * 4);
-    -ms-flex-preferred-size: calc(8.333333% * 4);
-        flex-basis: calc(8.333333% * 4);
-  }
-  .col-sm-5 {
-    width: calc(8.333333% * 5);
-    -ms-flex-preferred-size: calc(8.333333% * 5);
-        flex-basis: calc(8.333333% * 5);
-  }
-  .col-sm-6 {
-    width: calc(8.333333% * 6);
-    -ms-flex-preferred-size: calc(8.333333% * 6);
-        flex-basis: calc(8.333333% * 6);
-  }
-  .col-sm-7 {
-    width: calc(8.333333% * 7);
-    -ms-flex-preferred-size: calc(8.333333% * 7);
-        flex-basis: calc(8.333333% * 7);
-  }
-  .col-sm-8 {
-    width: calc(8.333333% * 8);
-    -ms-flex-preferred-size: calc(8.333333% * 8);
-        flex-basis: calc(8.333333% * 8);
-  }
-  .col-sm-9 {
-    width: calc(8.333333% * 9);
-    -ms-flex-preferred-size: calc(8.333333% * 9);
-        flex-basis: calc(8.333333% * 9);
-  }
-  .col-sm-10 {
-    width: calc(8.333333% * 10);
-    -ms-flex-preferred-size: calc(8.333333% * 10);
-        flex-basis: calc(8.333333% * 10);
-  }
-  .col-sm-11 {
-    width: calc(8.333333% * 11);
-    -ms-flex-preferred-size: calc(8.333333% * 11);
-        flex-basis: calc(8.333333% * 11);
-  }
-  .col-sm-12 {
-    width: calc(8.333333% * 12);
-    -ms-flex-preferred-size: calc(8.333333% * 12);
-        flex-basis: calc(8.333333% * 12);
-  }
-}
-@media (max-width: 767px) {
-  .col-sm-1 {
-    width: calc(8.333333% * 1);
-    -ms-flex-preferred-size: calc(8.333333% * 1);
-        flex-basis: calc(8.333333% * 1);
-  }
-  .col-sm-2 {
-    width: calc(8.333333% * 2);
-    -ms-flex-preferred-size: calc(8.333333% * 2);
-        flex-basis: calc(8.333333% * 2);
-  }
-  .col-sm-3 {
-    width: calc(8.333333% * 3);
-    -ms-flex-preferred-size: calc(8.333333% * 3);
-        flex-basis: calc(8.333333% * 3);
-  }
-  .col-sm-4 {
-    width: calc(8.333333% * 4);
-    -ms-flex-preferred-size: calc(8.333333% * 4);
-        flex-basis: calc(8.333333% * 4);
-  }
-  .col-sm-5 {
-    width: calc(8.333333% * 5);
-    -ms-flex-preferred-size: calc(8.333333% * 5);
-        flex-basis: calc(8.333333% * 5);
-  }
-  .col-sm-6 {
-    width: calc(8.333333% * 6);
-    -ms-flex-preferred-size: calc(8.333333% * 6);
-        flex-basis: calc(8.333333% * 6);
-  }
-  .col-sm-7 {
-    width: calc(8.333333% * 7);
-    -ms-flex-preferred-size: calc(8.333333% * 7);
-        flex-basis: calc(8.333333% * 7);
-  }
-  .col-sm-8 {
-    width: calc(8.333333% * 8);
-    -ms-flex-preferred-size: calc(8.333333% * 8);
-        flex-basis: calc(8.333333% * 8);
-  }
-  .col-sm-9 {
-    width: calc(8.333333% * 9);
-    -ms-flex-preferred-size: calc(8.333333% * 9);
-        flex-basis: calc(8.333333% * 9);
-  }
-  .col-sm-10 {
-    width: calc(8.333333% * 10);
-    -ms-flex-preferred-size: calc(8.333333% * 10);
-        flex-basis: calc(8.333333% * 10);
-  }
-  .col-sm-11 {
-    width: calc(8.333333% * 11);
-    -ms-flex-preferred-size: calc(8.333333% * 11);
-        flex-basis: calc(8.333333% * 11);
-  }
-  .col-sm-12 {
-    width: calc(8.333333% * 12);
-    -ms-flex-preferred-size: calc(8.333333% * 12);
-        flex-basis: calc(8.333333% * 12);
-  }
-}
-@media (min-width: 768px) {
-  .col-md-1 {
-    width: calc(8.333333% * 1);
-    -ms-flex-preferred-size: calc(8.333333% * 1);
-        flex-basis: calc(8.333333% * 1);
-  }
-  .col-md-2 {
-    width: calc(8.333333% * 2);
-    -ms-flex-preferred-size: calc(8.333333% * 2);
-        flex-basis: calc(8.333333% * 2);
-  }
-  .col-md-3 {
-    width: calc(8.333333% * 3);
-    -ms-flex-preferred-size: calc(8.333333% * 3);
-        flex-basis: calc(8.333333% * 3);
-  }
-  .col-md-4 {
-    width: calc(8.333333% * 4);
-    -ms-flex-preferred-size: calc(8.333333% * 4);
-        flex-basis: calc(8.333333% * 4);
-  }
-  .col-md-5 {
-    width: calc(8.333333% * 5);
-    -ms-flex-preferred-size: calc(8.333333% * 5);
-        flex-basis: calc(8.333333% * 5);
-  }
-  .col-md-6 {
-    width: calc(8.333333% * 6);
-    -ms-flex-preferred-size: calc(8.333333% * 6);
-        flex-basis: calc(8.333333% * 6);
-  }
-  .col-md-7 {
-    width: calc(8.333333% * 7);
-    -ms-flex-preferred-size: calc(8.333333% * 7);
-        flex-basis: calc(8.333333% * 7);
-  }
-  .col-md-8 {
-    width: calc(8.333333% * 8);
-    -ms-flex-preferred-size: calc(8.333333% * 8);
-        flex-basis: calc(8.333333% * 8);
-  }
-  .col-md-9 {
-    width: calc(8.333333% * 9);
-    -ms-flex-preferred-size: calc(8.333333% * 9);
-        flex-basis: calc(8.333333% * 9);
-  }
-  .col-md-10 {
-    width: calc(8.333333% * 10);
-    -ms-flex-preferred-size: calc(8.333333% * 10);
-        flex-basis: calc(8.333333% * 10);
-  }
-  .col-md-11 {
-    width: calc(8.333333% * 11);
-    -ms-flex-preferred-size: calc(8.333333% * 11);
-        flex-basis: calc(8.333333% * 11);
-  }
-  .col-md-12 {
-    width: calc(8.333333% * 12);
-    -ms-flex-preferred-size: calc(8.333333% * 12);
-        flex-basis: calc(8.333333% * 12);
-  }
-}
-@media (min-width: 992px) {
-  .col-lg-1 {
-    width: calc(8.333333% * 1);
-    -ms-flex-preferred-size: calc(8.333333% * 1);
-        flex-basis: calc(8.333333% * 1);
-  }
-  .col-lg-2 {
-    width: calc(8.333333% * 2);
-    -ms-flex-preferred-size: calc(8.333333% * 2);
-        flex-basis: calc(8.333333% * 2);
-  }
-  .col-lg-3 {
-    width: calc(8.333333% * 3);
-    -ms-flex-preferred-size: calc(8.333333% * 3);
-        flex-basis: calc(8.333333% * 3);
-  }
-  .col-lg-4 {
-    width: calc(8.333333% * 4);
-    -ms-flex-preferred-size: calc(8.333333% * 4);
-        flex-basis: calc(8.333333% * 4);
-  }
-  .col-lg-5 {
-    width: calc(8.333333% * 5);
-    -ms-flex-preferred-size: calc(8.333333% * 5);
-        flex-basis: calc(8.333333% * 5);
-  }
-  .col-lg-6 {
-    width: calc(8.333333% * 6);
-    -ms-flex-preferred-size: calc(8.333333% * 6);
-        flex-basis: calc(8.333333% * 6);
-  }
-  .col-lg-7 {
-    width: calc(8.333333% * 7);
-    -ms-flex-preferred-size: calc(8.333333% * 7);
-        flex-basis: calc(8.333333% * 7);
-  }
-  .col-lg-8 {
-    width: calc(8.333333% * 8);
-    -ms-flex-preferred-size: calc(8.333333% * 8);
-        flex-basis: calc(8.333333% * 8);
-  }
-  .col-lg-9 {
-    width: calc(8.333333% * 9);
-    -ms-flex-preferred-size: calc(8.333333% * 9);
-        flex-basis: calc(8.333333% * 9);
-  }
-  .col-lg-10 {
-    width: calc(8.333333% * 10);
-    -ms-flex-preferred-size: calc(8.333333% * 10);
-        flex-basis: calc(8.333333% * 10);
-  }
-  .col-lg-11 {
-    width: calc(8.333333% * 11);
-    -ms-flex-preferred-size: calc(8.333333% * 11);
-        flex-basis: calc(8.333333% * 11);
-  }
-  .col-lg-12 {
-    width: calc(8.333333% * 12);
-    -ms-flex-preferred-size: calc(8.333333% * 12);
-        flex-basis: calc(8.333333% * 12);
-  }
-}
-@media (min-width: 1200px) {
-  .col-xl-1 {
-    width: calc(8.333333% * 1);
-    -ms-flex-preferred-size: calc(8.333333% * 1);
-        flex-basis: calc(8.333333% * 1);
-  }
-  .col-xl-2 {
-    width: calc(8.333333% * 2);
-    -ms-flex-preferred-size: calc(8.333333% * 2);
-        flex-basis: calc(8.333333% * 2);
-  }
-  .col-xl-3 {
-    width: calc(8.333333% * 3);
-    -ms-flex-preferred-size: calc(8.333333% * 3);
-        flex-basis: calc(8.333333% * 3);
-  }
-  .col-xl-4 {
-    width: calc(8.333333% * 4);
-    -ms-flex-preferred-size: calc(8.333333% * 4);
-        flex-basis: calc(8.333333% * 4);
-  }
-  .col-xl-5 {
-    width: calc(8.333333% * 5);
-    -ms-flex-preferred-size: calc(8.333333% * 5);
-        flex-basis: calc(8.333333% * 5);
-  }
-  .col-xl-6 {
-    width: calc(8.333333% * 6);
-    -ms-flex-preferred-size: calc(8.333333% * 6);
-        flex-basis: calc(8.333333% * 6);
-  }
-  .col-xl-7 {
-    width: calc(8.333333% * 7);
-    -ms-flex-preferred-size: calc(8.333333% * 7);
-        flex-basis: calc(8.333333% * 7);
-  }
-  .col-xl-8 {
-    width: calc(8.333333% * 8);
-    -ms-flex-preferred-size: calc(8.333333% * 8);
-        flex-basis: calc(8.333333% * 8);
-  }
-  .col-xl-9 {
-    width: calc(8.333333% * 9);
-    -ms-flex-preferred-size: calc(8.333333% * 9);
-        flex-basis: calc(8.333333% * 9);
-  }
-  .col-xl-10 {
-    width: calc(8.333333% * 10);
-    -ms-flex-preferred-size: calc(8.333333% * 10);
-        flex-basis: calc(8.333333% * 10);
-  }
-  .col-xl-11 {
-    width: calc(8.333333% * 11);
-    -ms-flex-preferred-size: calc(8.333333% * 11);
-        flex-basis: calc(8.333333% * 11);
-  }
-  .col-xl-12 {
-    width: calc(8.333333% * 12);
-    -ms-flex-preferred-size: calc(8.333333% * 12);
-        flex-basis: calc(8.333333% * 12);
-  }
 }

@@ -2,21 +2,20 @@
     background-color: rgb(245, 245, 245);
     min-height: 1480px;
     color: $primary;
-    .trade_header {
+    .navyblue_section {
         display: flex;;
         text-align: center;
-        p {
-            font-size: 40px;
-            font-weight: 600;
-        }
-    }
-    .primary_header {
         flex-direction: column;
         background-image: url('../../img/background/section-trade-XL.png');
         height: 50vh;
         margin: 100px 0 0 0;
-        span {
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        h4 {
             margin-top: 30px;
+            font-weight: normal;
             color: $greycolor;
         }
     }
@@ -39,37 +38,21 @@
             outline: none;
             font-size: 20px;
         }
-        input:valid ~ .input_text,
-        input:focus ~ .input_text {
+        input:valid ~ .text_area,
+        input:focus ~ .text_area {
             display: none;
         }
-        .container {
+        .top_calculator_part {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             height: 30%;
-            .input_text {
+            .text_area {
                 position: absolute;
                 transition: 0.5s;
             }
-            .left_input {
-                align-items: center;
-                .amount_of_currency {
-                    width: 85%;
-                }
-                .value {
-                    
-                }
-                
-            }
-            .right_input {
-                align-items: center;
-                width: 100%;
-                position: relative;
+            .right_text_area {
                 .type_of_currency {
                     position: absolute;
-                    top: 75%;
-                    margin-left: 5%;
-                    width: 85%;
                 }
                 img {
                     position: absolute;
@@ -81,22 +64,10 @@
                     bottom: 5%;
                     margin-left: 5%;
                 }
-            }
-            .button_container {
-                display: grid;
-                align-items: center;
-                justify-content: center;
-                button {
-                    color: $primary;
-                    width: 140px;
-                    cursor: pointer;
-                    margin-bottom: 15px;
-                }
-            }
+            }   
         }
-        .result {
+        .bottom_calculator_part {
             height: 60%;
-            // margin-top: 10%;
             .hour_revenue {
                 color: $button__color;
                 font-weight: 500;
@@ -113,18 +84,23 @@
                 font-size: 16px;
                 margin-left: 5%;
                 margin-bottom: 5%;
+                font-weight: 400;
             }
         }
         select {
             display: none;
         }
     }
-    .secondary_header {
-    justify-content: center;
-    p {
-        color: black;
+    .white_section {
+        display: flex;;
+        text-align: center;
+        justify-content: center;
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+            color: black;
+        }
     }
-}
     .products {
         color: black;
         display: flex;
@@ -185,4 +161,3 @@
         }
     }
 }
-
