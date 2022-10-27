@@ -38,15 +38,15 @@
             outline: none;
             font-size: 20px;
         }
-        input:valid ~ .text_area,
-        input:focus ~ .text_area {
+        input:valid ~ .hiden_text,
+        input:focus ~ .hiden_text {
             display: none;
         }
         .top_calculator_part {
             display: flex;
             flex-wrap: nowrap;
             height: 30%;
-            .text_area {
+            .hiden_text {
                 position: absolute;
                 transition: 0.5s;
             }
