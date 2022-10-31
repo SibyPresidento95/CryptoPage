@@ -23,7 +23,7 @@
         position: relative;
         bottom: 140px;
         margin: 0 auto;
-        height: 450px;
+        height: 400px;
         width: 70%;
         font-size: 20px;
         background-color: #fff;
@@ -44,16 +44,12 @@
         }
         .top_calculator_part {
             display: flex;
-            flex-wrap: nowrap;
             height: 30%;
             .hiden_text {
                 position: absolute;
                 transition: 0.5s;
             }
             .first_calc_text {
-                .type_of_currency {
-                    position: absolute;
-                }
                 img {
                     position: absolute;
                     right: 10%;
@@ -115,6 +111,7 @@
             background-color: #fff;
             border-radius: 20px;
             width: 28%;
+            min-width: 330px;
             max-width: 370px;
             max-height: 430px;
             .crypto_icons {
