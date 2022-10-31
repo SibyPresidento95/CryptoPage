@@ -42,7 +42,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav_menu_link register btn" href="#Register">
+                        <a class="nav_menu_link register cubby" href="#Register">
                             <p>Register</p>
                         </a>
                     </li>
@@ -67,12 +67,12 @@
                         </p>
                     </div>
 
-                    <div class="btn content_button">
-                        <div class="btn_container">
+                    <div class="cubby content_cubby">
+                        <div class="cubby_container">
                             <a href="">
                                 <p>Try for <span>free</span></p>
                             </a>
-                            <div class="btn_container_icon">
+                            <div class="cubby_container_icon">
                                 <img src="./svg/signs/circleArrow.svg" alt="">
                             </div>
                         </div>
@@ -87,23 +87,36 @@
             </div>
         </div>
     </section>
-
     <section class="facts">
-        <div class="experience">
-            <div class="data chart col-lg-3 col-md-6 col-sm-12">
-                <img src="./svg/icons/chart.svg" alt="chart icon">
-                <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
-            </div>
-            <div class="data investors col-lg-3 col-md-6 col-sm-12">
-                <img src="./svg/icons/person.svg" alt="person icon">
-                <p><span>10M+</span><br><br>Trusted Wallets Investors</p>
-            </div>
-            <div class="data countries col-lg-3 col-md-6 col-sm-12">
-                <img src="./svg/icons/world.svg" alt="world icon">
-                <p><span>195</span><br><br>Countries Supported</p>
+        <div class="experience_block">
+            <div class="row specrow">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="facts_content">
+                        <div class="facts_content_img">
+                            <img src="./svg/icons/chart.svg" alt="chart icon">
+                        </div>
+                        <p><span>$30B</span><br><br>Digital Currency Exchanged</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="facts_content">
+                        <div class="facts_content_img">
+                            <img src="./svg/icons/person.svg" alt="person icon">
+                        </div>
+                        <p><span>10M+</span><br><br>Trusted Wallets Investors</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="facts_content">
+                        <div class="facts_content_img">
+                            <img src="./svg/icons/world.svg" alt="world icon">
+                        </div>
+                        <p><span>195</span><br><br>Countries Supported</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="facts_sec">
+        <div class="incentive_block">
             <div class="row">
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                     <div class="crypto_procesor">
@@ -120,80 +133,95 @@
                                 fees, and
                                 fake <br> reviews.</p>
                         </div>
-                        <button class="facts_learn spanch_bob">
-                            <p>Learn More</p>
-                        </button>
+                        <div class="cubby_facts_container spanch_bob">
+                            <button class="cubby">Learn More</button>
+                        </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <section class="trade">
-        <div class="primary_header trade_header">
-            <p>Check how much you can earn</p>
-            <span>Let's check hash rate to see how much you will earn today, <br> Exercitation veniam consequat sunt
-                nostrud amet</span>
+        <div class="navyblue_section">
+            <h1>Check how much you can earn</h1>
+            <h4>Let's check hash rate to see how much you will earn today, <br> Exercitation veniam consequat sunt
+                nostrud amet</h4>
         </div>
-        <div class="calculator_container">
-            <div class="container">
-                <div class="left_input col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                    <input class="amount_of_currency" type="text" id="n1" required="required">
-                    <span class=" value input_text">Enter your hash rate</span>
-                </div>
-                <div class="right_input col-xl-3 col-lg-12 col-md-12 col-sm-12">
-                    <input class="type_of_currency" type="text" id="n2" required="required">
-                    <img src="./svg/signs/calculatorArrow.svg" alt="small calculator arrow">
-                    <span class="ths input_text">TH/s</span>
-                </div>
-                <div class="button_container col-xl-2 col-lg-12 col-md-12 col-sm-12">
-                    <button class="btn" onclick="calc();">Calculate</button>
-                </div>
+
+        <div class="third_calculator_container">
+            <div class="cubby_container">
+                <button class="cubby" onclick="calc();">Calculate</button>
             </div>
-            <div class="result">
-                <p class="hour_revenue">ESTIMATED 24 HOUR REVENUE:</p>
-                <input type="text" id="result">
-                <p class="mining_difficulty">Revenue will change based on mining difficulty and Ethereum price.</p>
-            </div>
-            <select id="operators">
-                <option value="X">X</option>
-            </select>
         </div>
-        <div class="secondary_header trade_header">
-            <p>Trade securely and market the high <br> growth cryptocurrencies.</p>
+
+        <div class="third_calculator_container">
+            <div class="cubby_container">
+                <button class="cubby" onclick="calc();">Calculate</button>
+            </div>
+        </div>
+
+        <div class="third_calculator_container">
+            <div class="cubby_container">
+                <button class="cubby" onclick="calc();">Calculate</button>
+            </div>
+        </div>
+        </div>
+        <div class="bottom_calculator_part">
+            <h4 class="hour_revenue">ESTIMATED 24 HOUR REVENUE:</h4>
+            <input type="text" id="result">
+            <h5 class="mining_difficulty">Revenue will change based on mining difficulty and Ethereum price.</h5>
+        </div>
+        <select id="operators">
+            <option value="X">X</option>
+        </select>
+        </div>
+        <div class="white_section">
+            <h1>Trade securely and market the high <br> growth cryptocurrencies.</h1>
         </div>
         <div class="products">
-            <div class="bitcoin crypto_box">
-                <img class="crypto_icons" src="./svg/icons/bitcoin.svg" alt="bitcoin logo">
-                <p class="crypto_shortcut">Bitcoin <span>BTC</span></p>
-                <p class="crypto_text">Digital currency in which a record of <br> transactions is maintained.</p>
-                <button class="btn">Start mining <img src="./svg/signs/circleArrow.svg" alt="arrow"></button>
-            </div>
-            <div class="ether crypto_box">
-                <img class="crypto_icons" src="./svg/icons/ethereum.svg" alt="ethereum logo">
-                <p class="crypto_shortcut">Ethereum <span>ETH</span></p>
-                <p class=" crypto_text crypto_text_secondary">Blockchain technology to create and run <br> decentralized
-                    digital
-                    applications.
-                </p>
-                <img class="crypto_arrows" src="./svg/signs/tradeArrow.svg" alt="bigest arrow">
-            </div>
-            <div class="litecoin crypto_box">
-                <img class="crypto_icons" src="./svg/icons/litecoin.svg" alt="ethereum logo">
-                <p class="crypto_shortcut">Litecoin <span>LTC</span></p>
-                <p class=" crypto_text">Cryptocurrency that enables instant <br> payments to anyone in the world.
-                </p>
-                <img class="crypto_arrows" src="./svg/signs/tradeArrow.svg" alt="bigest arrow">
+            <div class="row specrow">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="bitcoin crypto_box">
+                        <img class="crypto_icons" src="./svg/icons/bitcoin.svg" alt="bitcoin logo">
+                        <p class="crypto_shortcut">Bitcoin <span>BTC</span></p>
+                        <p class="crypto_text">Digital currency in which a record of <br> transactions is maintained.
+                        </p>
+                        <button class="cubby">Start mining <img src="./svg/signs/circleArrow.svg" alt="arrow"></button>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="ether crypto_box">
+                        <img class="crypto_icons" src="./svg/icons/ethereum.svg" alt="ethereum logo">
+                        <p class="crypto_shortcut">Ethereum <span>ETH</span></p>
+                        <p class=" crypto_text crypto_text_secondary">Blockchain technology to create and run <br>
+                            decentralized
+                            digital
+                            applications.
+                        </p>
+                        <img class="crypto_arrows" src="./svg/signs/tradeArrow.svg" alt="bigest arrow">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="litecoin crypto_box">
+                        <img class="crypto_icons" src="./svg/icons/litecoin.svg" alt="ethereum logo">
+                        <p class="crypto_shortcut">Litecoin <span>LTC</span></p>
+                        <p class=" crypto_text">Cryptocurrency that enables instant <br> payments to anyone in the
+                            world.
+                        </p>
+                        <img class="crypto_arrows" src="./svg/signs/tradeArrow.svg" alt="bigest arrow">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="charts">
+    <!-- <section class="charts">
         <span class="chart_header">Market sentiments, portfolio, and run <br> the infrastructure of your choice</span>
         <div class="first_chart">
             <p class="first_chart_title  col-xs-12">Invest Smart</p>
             <span class="first_chart_text chart_text chart_properties col-xs-12">Get full statistic information about
                 the behaviour of <br> buyers and sellers will help you to make the decision.</span>
-            <button class="btn first_chart_button chart_properties col-xs-12">Learn More</button>
+            <button class="cubby first_chart_button chart_properties col-xs-12">Learn More</button>
             <img src="./svg/charts/primary_chart.svg" alt="chart">
         </div>
         <div class="second_chart">
@@ -204,7 +232,7 @@
                 polls you
                 want <br> to mine in.
             </span>
-            <button class="btn second_chart_button chart_properties col-xs-12">Learn More</button>
+            <button class="cubby second_chart_button chart_properties col-xs-12">Learn More</button>
         </div>
         <div class="third_chart">
             <p class="third_chart_title chart_properties col-xs-12 col-xxl">Grow your profit and track <br> your
@@ -214,7 +242,7 @@
                 <br>
                 investments.
             </span>
-            <button class="btn third_chart_button chart_properties col-xs-12 col-xxl">Learn More</button>
+            <button class="cubby third_chart_button chart_properties col-xs-12 col-xxl">Learn More</button>
             <img src="./svg/charts/third_chart.svg" alt="">
         </div>
     </section>
@@ -223,7 +251,7 @@
             <span>Start mining now</span>
             <p>Join now with CRAPPO to get the latest news <br> and start mining now</p>
             <input type="text">
-            <button class="btn">Subscribe</button>
+            <button class="cubby">Subscribe</button>
         </div>
     </section>
 
@@ -272,7 +300,7 @@
                 alt="facebook, instagram, youtube, twitter, linkedin. All media where you can find us.">
         </div>
 
-    </footer>
+    </footer> -->
     <script src="./JS/script.js"></script>
 </body>
 
