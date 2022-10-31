@@ -38,6 +38,11 @@
                 display: flex;
                 color: rgba($color: #e0e0e0, $alpha: .8);
             }
+            .cubby_facts_container {
+                .cubby {
+                    width: 150px;
+                }
+            }
         }
         .crypto_procesor {
             position: absolute;
