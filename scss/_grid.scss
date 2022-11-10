@@ -3,6 +3,12 @@
     flex-wrap: wrap;
 }
 
+.specrow {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 [class*="col-"] {
     display: inline-flex;
     box-sizing: border-box;

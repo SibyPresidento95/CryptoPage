@@ -2,21 +2,21 @@
     background-color: rgb(245, 245, 245);
     min-height: 1480px;
     color: $primary;
-    .trade_header {
+    .navyblue_section {
         display: flex;;
         text-align: center;
-        p {
-            font-size: 40px;
-            font-weight: 600;
-        }
-    }
-    .primary_header {
         flex-direction: column;
         background-image: url('../../img/background/section-trade-XL.png');
         height: 50vh;
         margin: 100px 0 0 0;
-        span {
+        min-height: 300px;
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        h4 {
             margin-top: 30px;
+            font-weight: normal;
             color: $greycolor;
         }
     }
@@ -24,7 +24,7 @@
         position: relative;
         bottom: 140px;
         margin: 0 auto;
-        height: 450px;
+        height: 400px;
         width: 70%;
         font-size: 20px;
         background-color: #fff;
@@ -39,60 +39,24 @@
             outline: none;
             font-size: 20px;
         }
-        input:valid ~ .input_text,
-        input:focus ~ .input_text {
-            display: none;
-        }
-        .container {
+        .top_calculator_part {
             display: flex;
-            flex-wrap: wrap;
             height: 30%;
-            .input_text {
-                position: absolute;
-                transition: 0.5s;
-            }
-            .left_input {
-                align-items: center;
-                .amount_of_currency {
-                    // margin: 0 5% 0 10%;
-                    width: 85%;
-                }
-                .value {
-                    left: 5%;
-                }
-            }
-            .right_input {
-                align-items: center;
-                width: 100%;
-                position: relative;
-                // .type_of_currency {
-                //     margin-left: 5%;
-                //     width: 85%;
-                // }
+            .first_calc_text {
                 img {
                     position: absolute;
                     right: 10%;
                     cursor: pointer;
                 }
-                .ths {
-                    margin-left: 5%;
-                }
             }
-            .button_container {
-                display: grid;
-                align-items: center;
-                justify-content: center;
-                button {
-                    color: $primary;
-                    width: 140px;
-                    cursor: pointer;
-                    margin-bottom: 15px;
+            .third_calculator_container {
+                .cubby {
+                    width: 160px;
                 }
-            }
+            }   
         }
-        .result {
+        .bottom_calculator_part {
             height: 60%;
-            // margin-top: 10%;
             .hour_revenue {
                 color: $button__color;
                 font-weight: 500;
@@ -100,7 +64,6 @@
                 font-size: 16px;
             }
             #result {
-                width: 42%;
                 margin: 2% 5% 2% 5%;
                 font-size: 32px;
             }
@@ -109,18 +72,23 @@
                 font-size: 16px;
                 margin-left: 5%;
                 margin-bottom: 5%;
+                font-weight: 400;
             }
         }
         select {
             display: none;
         }
     }
-    .secondary_header {
-    justify-content: center;
-    p {
-        color: black;
+    .white_section {
+        display: flex;;
+        text-align: center;
+        justify-content: center;
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+            color: black;
+        }
     }
-}
     .products {
         color: black;
         display: flex;
@@ -136,6 +104,7 @@
             background-color: #fff;
             border-radius: 20px;
             width: 28%;
+            min-width: 330px;
             max-width: 370px;
             max-height: 430px;
             .crypto_icons {
@@ -181,4 +150,3 @@
         }
     }
 }
-
