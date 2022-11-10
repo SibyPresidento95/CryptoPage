@@ -9,6 +9,7 @@
         background-image: url('../../img/background/section-trade-XL.png');
         height: 50vh;
         margin: 100px 0 0 0;
+        min-height: 300px;
         h1 {
             font-size: 40px;
             font-weight: 600;
@@ -38,17 +39,9 @@
             outline: none;
             font-size: 20px;
         }
-        // input:valid ~ .hiden_text,
-        // input:focus ~ .hiden_text {
-        //     display: none;
-        // }
         .top_calculator_part {
             display: flex;
             height: 30%;
-            .hiden_text {
-                position: absolute;
-                transition: 0.5s;
-            }
             .first_calc_text {
                 img {
                     position: absolute;
