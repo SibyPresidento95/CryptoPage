@@ -38,10 +38,10 @@
             outline: none;
             font-size: 20px;
         }
-        input:valid ~ .hiden_text,
-        input:focus ~ .hiden_text {
-            display: none;
-        }
+        // input:valid ~ .hiden_text,
+        // input:focus ~ .hiden_text {
+        //     display: none;
+        // }
         .top_calculator_part {
             display: flex;
             height: 30%;
@@ -54,10 +54,6 @@
                     position: absolute;
                     right: 10%;
                     cursor: pointer;
-                }
-                .third_calc_text {
-                    bottom: 5%;
-                    margin-left: 5%;
                 }
             }
             .third_calculator_container {
@@ -75,7 +71,6 @@
                 font-size: 16px;
             }
             #result {
-                width: 42%;
                 margin: 2% 5% 2% 5%;
                 font-size: 32px;
             }

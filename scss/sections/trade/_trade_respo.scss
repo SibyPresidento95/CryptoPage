@@ -9,6 +9,10 @@
         .calculator_container {
             .top_calculator_part {
                 height: 100%;
+                .hiden_text {
+                    z-index: 1;
+                    left: 5%;
+                }
                 .first_calc_text {
                     position: absolute;
                     width:100%;
@@ -18,9 +22,6 @@
                         left: 5%;
                         top: 10%;
                         position: relative;
-                    }
-                    .product_quantity {
-                        left: 5%;
                     }
                 }
                 .second_calc_text {
@@ -83,6 +84,10 @@
         .calculator_container {
             .top_calculator_part {
                 height: 100%;
+                .hiden_text {
+                    z-index: 1;
+                    left: 5%;
+                }
                 .first_calc_text {
                     position: absolute;
                     width:100%;
@@ -132,7 +137,7 @@
                 bottom: 35%;
                 #result {
                     width: 85%;
-                    margin-bottom: 5%;
+                    margin-bottom: 3%;
                 }
                 p {
                     margin: 0 5%;
@@ -162,10 +167,10 @@
                 .first_calculator_container {
                     position: absolute;
                     width: 45%;
-                    margin-left: 1%;
+                    // margin-left: 1%;
                     top: 15%;
                     .first_calc_text {
-                        width: 100%; 
+                        width: 100%;
                     }
                 }
                 .second_calculator_container {
