@@ -2,33 +2,110 @@
     background-image: url('../../img/background/section-chart_XL.png');
     min-height: 450px;
     color: $primary;
-    .chart_header {
-        display: flex;
+    .chart_caption {
         font-size: 40px;
         font-weight: 600;
         padding: 100px 0;
-        justify-content: center;
         text-align: center;
+        margin: 0 auto;
     }
     .chart_text {
         position: relative;
         opacity: 0.6;
 
     }
-    .chart_properties {
-        position: relative;
+    // .chart_properties {
+    //     position: relative;
+    // }
+    .chart_first {
+        display: flex;
     }
-    .first_chart {
-        display: grid;
-    }
-    .second_chart {
-        display: grid;
-    }
-    .third_chart {
-        display: grid;
-    }
+    // .second_chart {
+    //     display: grid;
+    // }
+    // .third_chart {
+    //     display: grid;
+    // }
 }
 
 @media (max-width: 600px) {
-    
+    .charts {
+        .chart_caption {
+            font-size: 30px;
+            margin: 0 5%;
+        }
+        .chart_properties {
+            display: flex;
+            margin: 5% auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .chart_first {
+            flex-direction: column;
+            flex-wrap: wrap;
+            .chart_first_left {
+                margin-bottom: 10%;
+                .chart_first_title {
+                    font-size: 28px;
+                }
+            }
+            .chart_first_right {
+                margin: auto;
+                .bitcoin_chart {
+                    width: 80vw;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) {
+    .charts {
+        .chart_caption {
+            font-size: 30px;
+        }
+        .chart_properties {
+            display: flex;
+            margin: 5% auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .chart_first {
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-bottom: 15%;
+            .chart_first_right {
+                margin: 15% auto;
+                .bitcoin_chart {
+                    width: 65vw;
+                }
+            }
+            .chart_first_left {
+                .chart_first_title {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .charts {
+        .chart_properties {
+            margin: 10% auto;
+        }
+        .chart_first {
+            flex-direction: row;
+            width: 90vw;
+            margin: 0 auto;
+            .chart_first_right {
+                .bitcoin_chart {
+                    width: 45vw;
+                }
+            }
+            .chart_first_left {
+                margin: auto;
+            }
+        }
+    }
 }
