@@ -1,0 +1,18 @@
+
+button {
+    color: $primary;
+    width: 140px;
+    cursor: pointer;
+}
+
+.cubby {
+    display: block;
+    font-style: normal;
+    height: 65px;
+    background-color: $button__color;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: $primary;
+}

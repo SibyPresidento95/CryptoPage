@@ -148,33 +148,32 @@
             <h4>Let's check hash rate to see how much you will earn today, <br> Exercitation veniam consequat sunt
                 nostrud amet</h4>
         </div>
-
-        <div class="third_calculator_container">
-            <div class="cubby_container">
-                <button class="cubby" onclick="calc();">Calculate</button>
+        <div class="calculator_container">
+            <div class="top_calculator_part">
+                <div class="first_calculator_container">
+                    <div class="first_calc_text">
+                        <input placeholder="Enter your hash rate" class="amount_of_currency" type="text" id="n1"
+                            required="required">
+                    </div>
+                </div>
+                <div class="second_calculator_container">
+                    <div class="second_calc_text">
+                        <input placeholder="TH's" class="type_of_currency" type="text" id="n2" required="required" />
+                        <img class="calculator_arrow" src="./svg/signs/calculatorArrow.svg"
+                            alt="small calculator arrow" />
+                    </div>
+                </div>
+                <div class="third_calculator_container">
+                    <div class="cubby_container">
+                        <button class="cubby" onclick="calc();">Calculate</button>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="third_calculator_container">
-            <div class="cubby_container">
-                <button class="cubby" onclick="calc();">Calculate</button>
+            <div class="bottom_calculator_part">
+                <h4 class="hour_revenue">ESTIMATED 24 HOUR REVENUE:</h4>
+                <input type="text" id="result">
+                <h5 class="mining_difficulty">Revenue will change based on mining difficulty and Ethereum price.</h5>
             </div>
-        </div>
-
-        <div class="third_calculator_container">
-            <div class="cubby_container">
-                <button class="cubby" onclick="calc();">Calculate</button>
-            </div>
-        </div>
-        </div>
-        <div class="bottom_calculator_part">
-            <h4 class="hour_revenue">ESTIMATED 24 HOUR REVENUE:</h4>
-            <input type="text" id="result">
-            <h5 class="mining_difficulty">Revenue will change based on mining difficulty and Ethereum price.</h5>
-        </div>
-        <select id="operators">
-            <option value="X">X</option>
-        </select>
         </div>
         <div class="white_section">
             <h1>Trade securely and market the high <br> growth cryptocurrencies.</h1>
@@ -215,7 +214,7 @@
             </div>
         </div>
     </section>
-    <!-- <section class="charts">
+    <section class="charts">
         <span class="chart_header">Market sentiments, portfolio, and run <br> the infrastructure of your choice</span>
         <div class="first_chart">
             <p class="first_chart_title  col-xs-12">Invest Smart</p>
@@ -246,16 +245,16 @@
             <img src="./svg/charts/third_chart.svg" alt="">
         </div>
     </section>
-    <section class="subscribe">
+    <!-- <section class="subscribe">
         <div class="subscribe_container">
             <span>Start mining now</span>
             <p>Join now with CRAPPO to get the latest news <br> and start mining now</p>
             <input type="text">
             <button class="cubby">Subscribe</button>
         </div>
-    </section>
+    </section> -->
 
-    <footer>
+    <!-- <footer>
         <div class="logo">
             <a class="nav_menu_link footer_crappo" href="#crappo"></i>
                 <img class="crappo_icon" src="./svg/icons/crapo.svg" alt="logo icon">

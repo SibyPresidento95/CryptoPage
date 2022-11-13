@@ -34,11 +34,11 @@
             letter-spacing: 0.01rem;
             line-height: 28px;
         }
-        .content_button {
+        .content_cubby {
             width: 150px;
             height: 30px;
             padding: 15px 20px 20px 25px;
-            .btn_container {
+            .cubby_container {
                 display: flex;
                 justify-content: center;
                 a {
@@ -78,7 +78,7 @@
                     line-height: 36px;
                 }
             }
-            .content_button {
+            .content_cubby {
                 margin: 0 auto;
             }
         }
@@ -118,9 +118,9 @@
                     line-height: 48px;
                 }
             }
-            .content_button {
-                .btn_container {
-                    .btn_container_icon {
+            .content_cubby {
+                .cubby_container {
+                    .cubby_container_icon {
                         position: relative;
                         right: 30%;
                     }
@@ -176,7 +176,7 @@
                 text-align: left;
             }
             .content_info_banner,
-            .content_button {
+            .content_cubby {
                 margin-left: 0;
             }
         }    

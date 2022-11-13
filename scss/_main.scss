@@ -6,12 +6,6 @@
     padding: 0;
 }
 
-// html {
-//     background-image: url(../img/abstraction-3527172_1920.jpg);
-//     background-attachment: fixed;
-//     background-size: cover;
-// }
-
 body {
     width: 100%;
     height: 100%;
@@ -19,24 +13,4 @@ body {
     margin-left: auto;
     background-color: #0d0d2b;
     font-family: 'Rubik', sans-serif;
-
-    .btn {
-        display: block;
-        font-style: normal;
-        height: 65px;
-        background-color: $button__color;
-        border-radius: 50px;
-        font-size: 18px;
-        font-weight: 500;
-        border: none;
-    }
-
-    a.nav_menu_link {
-        align-items: center;
-        color: $primary;
-        text-decoration: none;
-        margin: 0 20px 0 10px;
-        font-weight: 500;
-    }
-
 }

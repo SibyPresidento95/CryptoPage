@@ -2,12 +2,13 @@
     min-height: 700px;
     background-image: url('../img/background/section-experience-XL.png');
     color: $primary;
-    .experience {
+    .experience_block {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        .data {
+        .facts_content {
             display: flex;
+            transition: 0.3s;
             p {
                 min-width: 210px;
                 padding-left: 25px;
@@ -21,7 +22,7 @@
     }
 
 
-    .facts_sec {
+    .incentive_block {
         position: relative;
         .facts_info {
             margin: 20% 8%;
@@ -37,16 +38,9 @@
                 display: flex;
                 color: rgba($color: #e0e0e0, $alpha: .8);
             }
-            .facts_learn {
-                width: 140px;
-                height: 60px;
-                background-color: $button__color;
-                border: none;
-                border-radius: 30px;
-                p {
-                    font-size: 18px;
-                    color: $primary;
-                    font-weight: 500;
+            .cubby_facts_container {
+                .cubby {
+                    width: 150px;
                 }
             }
         }
@@ -59,20 +53,21 @@
 @media (max-width: 600px) {
     .facts {
         padding-top: 30%;
-        .experience {
-            .data {
-                align-items: center;
+        .experience_block {
+            .facts_content {
+                margin: 0 auto;
                 justify-content: center;
                 padding: 5% 0;
                 transition: 0.5s;
             }
         }
-        .facts_sec {
+        .incentive_block {
             flex-wrap: wrap;
             .facts_info {
                 z-index: 1;
                 text-align: center;
                 .spanch_bob {
+                    display: flex;
                     justify-content: center;
                     margin: 5% auto;
                 }
@@ -92,28 +87,31 @@
 @media (min-width: 601px) {
     .facts {
         padding-top: 15%;
-        div {
-            justify-content: center;
-            margin: 0 auto;
-        }
-        .experience {
-            .data {
+        .experience_block {
+            .facts_content {
+                margin: 0 auto;
                 padding: 5% 0;
                 transition: 0.5s;
             }
         }
         .crypto_procesor {
+            display: flex;
             bottom: 30%;
+            width: 100%;
+            justify-content: center;
             img {
-                width: 80vw;
+                width: 80%;
                 opacity: 0.4;
             }
         }
         .facts_info {
+            width: 100%;
             z-index: 1;
             text-align: center;
             .spanch_bob {
-                margin: 5% auto;
+                margin: 5% 0 5% 0;
+                display: flex;
+                justify-content: center;
             }
         }
     }
@@ -122,12 +120,15 @@
 @media (min-width: 1200px) {
     .facts {
         padding-top: 0;
-        .experience {
-            .data:hover {
+        .experience_block {
+            .facts_content {
+                justify-content: center;
+            }
+            .facts_content:hover {
                 transform: scale(1.05);
             }
         }
-        .facts_sec {
+        .incentive_block {
             .crypto_procesor {
                 max-width: 45%;
                 margin-left: 5%;
@@ -137,17 +138,25 @@
                 }
             }
             .facts_info {
-                div {
-                    justify-content: start;
+                display: flex;
+                margin: 20% 8%;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .spanch_bob {
+                    p {
+                        width: 100%;
+                    }
                 }
                 .facts_question {
                     text-align: left;
+                    width: 100%;
                 }
                 .facts_text {
                     text-align: left;
+                    width: 100%;
                 }
                 .facts_learn {
-                    float: left;
+                    margin: 0;
                 }
             }
         }
