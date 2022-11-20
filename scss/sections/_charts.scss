@@ -2,7 +2,7 @@
     background-image: url('../../img/background/section-chart_XL.png');
     min-height: 450px;
     color: $primary;
-    .chart_caption {
+    .chart_description {
         font-size: 40px;
         font-weight: 600;
         padding: 100px 0;
@@ -12,20 +12,17 @@
     .chart_text {
         position: relative;
         opacity: 0.6;
-
     }
-    // .chart_properties {
-    //     position: relative;
-    // }
-    .chart_first {
+    .chart_box {
         display: flex;
     }
-    // .second_chart {
-    //     display: grid;
-    // }
-    // .third_chart {
-    //     display: grid;
-    // }
+    .chart_first_part {
+        .chart_first_left {
+            .chart_first_title {
+                display: flex;
+            }
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -40,29 +37,43 @@
             justify-content: center;
             align-items: center;
         }
-        .chart_first {
+        .chart_box {
             flex-direction: column;
             flex-wrap: wrap;
+        }
+        .chart_img_properties {
+            width: 80vw;
+        }
+        .chart_first_part {
             .chart_first_left {
                 margin-bottom: 10%;
                 .chart_first_title {
                     font-size: 28px;
+                    justify-content: center;
                 }
             }
             .chart_first_right {
                 margin: auto;
-                .bitcoin_chart {
-                    width: 80vw;
-                }
             }
         }
+        .chart_second_part {
+            margin-top: 25%;
+            flex-direction: column-reverse;
+            .chart_second_left {
+                margin: auto;
+            }
+            .chart_second_right {
+                margin-bottom: 10%;
+            }
+        }
+        
     }
 }
 
 @media (min-width: 601px) {
     .charts {
         .chart_caption {
-            font-size: 30px;
+            font-size: 34px;
         }
         .chart_properties {
             display: flex;
@@ -70,19 +81,37 @@
             justify-content: center;
             align-items: center;
         }
-        .chart_first {
+        .chart_first_part {
             flex-direction: column;
             flex-wrap: wrap;
             margin-bottom: 15%;
             .chart_first_right {
-                margin: 15% auto;
-                .bitcoin_chart {
-                    width: 65vw;
-                }
+                margin: 15% auto 0%;
             }
             .chart_first_left {
                 .chart_first_title {
                     font-size: 28px;
+                }
+            }
+        }
+        .chart_second_part {
+            flex-direction: column-reverse;
+            .chart_second_left {
+                margin: auto;
+            }
+            .chart_second_right {
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .charts {
+        .chart_first_part {
+            .chart_first_left {
+                .chart_first_title {
+                    justify-content: center;
                 }
             }
         }
@@ -91,20 +120,42 @@
 
 @media (min-width: 1200px) {
     .charts {
-        .chart_properties {
-            margin: 10% auto;
+        .chart_box {
+            padding-bottom: 10%;
         }
-        .chart_first {
+        .chart_first_part {
             flex-direction: row;
             width: 90vw;
             margin: 0 auto;
-            .chart_first_right {
-                .bitcoin_chart {
-                    width: 45vw;
-                }
-            }
             .chart_first_left {
                 margin: auto;
+                padding-top: 10%;
+                .chart_first_title {
+                    text-align: left;
+                }
+                .chart_properties {
+                    margin: 35px 0;
+                }
+            }
+        }
+        .chart_second_part {
+            flex-direction: row;
+            width: 90vw;
+            .chart_second_left {
+                padding-right: 10%;
+                margin-left: 0;
+            }
+            .chart_second_right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50%;
+            }
+            .chart_properties {
+                margin: 15px auto 15px 0;
+            }
+            .chart_first_title {
+                justify-content: start !important;
             }
         }
     }
