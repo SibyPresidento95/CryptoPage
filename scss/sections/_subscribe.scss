@@ -6,53 +6,75 @@
     color: white;
     align-items: center;
     justify-content: center;
-    .subscribe_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    .sub_container {
+        display: flex;
         background-image: url("../../img/background/sub-area.png");
         background-size: cover;
-        height: 215px;
-        width: 79%;
+        min-height: 215px;
         border-radius: 20px;
-        span {
-            position: relative;
-            grid-area: 1 / 1 / 2 / 2;  
-            font-size: 32px;
-            font-weight: 600;
-            margin-left: 10%;
-            top: 50%;
+        .sub_info {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .sub_title {
+                font-size: 32px;
+                font-weight: 600;
+                margin-left: 10%;
+            }
+            .sub_incentive {
+                opacity: 0.6;
+                margin-left: 10%;
+                line-height: 30px;
+            }
         }
-        p {
-            grid-area: 2 / 1 / 3 / 2;
-            opacity: 0.6;
-            margin-left: 10%;
-            line-height: 30px;
+        .sub_email {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .email_area {
+                background-color: #3671E9;
+                border-left: none;
+                border-top: none;
+                border-right: none;
+                border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+                outline: none;
+                height: 35px;
+                width: 55%;
+                font-size: 16px;
+                color: white;
+            }
+            .sub_btn {
+                color: black;
+                background-color: #fff;
+                width: 150px;
+                height: 55px;
+            }
         }
-        input {
-            position: relative;
-            grid-area: 1 / 2 / 4 / 3;
-            height: 30px;
-            background-color: #3671E9;
-            border-left: none;
-            border-top: none;
-            border-right: none;
-            border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
-            outline: none;
-            width: 55%;
-            top: 40%;
-            font-size: 22px;
-            color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    .subscribe {
+        .sub_container {
+            height: 300px;
+            width: 80vw;
+            .sub_email {
+                margin: 0 10%;
+            }
         }
-        button {
-            position: relative;
-            top: 35%;
-            left: 65%;
-            grid-area: 1 / 2 / 4 / 3;
-            color: black;
-            background-color: #fff;
-            width: 150px;
-            height: 55px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .subscribe {
+        .sub_container {
+            width: 90vw;
+            .sub_info {
+                width: 50vw;
+            }
+            .sub_email {
+                width: 50vw;
+            }
         }
     }
 }
