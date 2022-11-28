@@ -65,6 +65,20 @@
     }
 }
 
+@media (min-width: 601px) {
+    .subscribe {
+        .sub_container {
+            width: 80vw;
+            .sub_email {
+                width: 80vw;
+                .email_area {
+                    margin-left: 5%;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1200px) {
     .subscribe {
         .sub_container {
