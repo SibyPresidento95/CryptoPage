@@ -28,20 +28,22 @@
             }
         }
         .sub_email {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            .email_area {
-                background-color: #3671E9;
-                border-left: none;
-                border-top: none;
-                border-right: none;
-                border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
-                outline: none;
-                height: 35px;
-                width: 55%;
-                font-size: 16px;
-                color: white;
+            .sub_email_container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .email_area {
+                    background-color: #3671E9;
+                    border-left: none;
+                    border-top: none;
+                    border-right: none;
+                    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+                    outline: none;
+                    height: 35px;
+                    width: 55%;
+                    font-size: 16px;
+                    color: white;
+                }
             }
         }
     }
@@ -54,6 +56,10 @@
             width: 80vw;
             .sub_email {
                 margin: 0 10%;
+                .sub_email_container {
+                    width: 100%;
+                    justify-content: space-between;
+                }
             }
         }
     }
@@ -65,8 +71,11 @@
             width: 80vw;
             .sub_email {
                 width: 80vw;
-                .email_area {
-                    margin-left: 5%;
+                .sub_email_container{
+                    width: 100%;
+                    .email_area {
+                        margin-left: 5%;
+                    }
                 }
             }
         }
