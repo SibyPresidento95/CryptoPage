@@ -1,0 +1,22 @@
+Uruchom kalkulator za pomoca JS'a przy pomocy WEB API.
+Za pomoca fetch API(ktore jest czescia web api)(przecytaj czym jest api i sdk). 
+1. Pobierz za pomoca https://api.coinpaprika.com/
+dane na temat ceny ETH i co tam znajdziesz ciekawego, nastepnie zmapuj je do wspolnego interfejsu(obiekt musi wygladac tak samo).
+2. Za pomoca pobranych danych napisz funkcje ktora oblicza fee(wynagrodzenie dla kopacza) w zaleznosci od hasheraetu i trudnosci.
+3. Dodaj eventListenera na buttonie oblicz ktory bedzie odpalal funkcje kaukulacje  powyzej a po udanej operacji odpalal funkcje wstrzykujaca wynik do pola wyliczajacego
+
+
+przerob:
+-zmienna
+-typy danych prostych w js
+-typy danych zlozonych w js
+-okreslanie dostepu do danych prywatna publiczna chroniona
+
+-czym jest klasa
+-czym jest obiekt
+
+-czym rozni sie obiekt od klasy
+-metody czy tez funkcje
+-jakie moga byc metody w obiekcie statyczne vs ...?
+- czym jest przeciazanie metody
+-czym jest przesloniecie funkcji
